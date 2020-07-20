@@ -1,0 +1,633 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile C:/Users/user/Desktop/VLSI_project2/final/ZigZag.v 
+project open C:/Users/user/Desktop/VLSI_project2/final/top_memory_test
+# Loading project top_memory_test
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# 14 compiles, 0 failed with no errors. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# 14 compiles, 0 failed with no errors. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# 14 compiles, 0 failed with no errors. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# 14 compiles, 0 failed with no errors. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# 14 compiles, 0 failed with no errors. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 3 errors.
+# 15 compiles, 1 failed with 3 errors. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+vsim -gui work.RLE
+# vsim -gui work.RLE 
+# Loading work.RLE
+add wave -position end  sim:/RLE/in
+add wave -position end  sim:/RLE/clk
+add wave -position end  sim:/RLE/reset
+add wave -position end  sim:/RLE/out
+add wave -position end  sim:/RLE/count
+add wave -position end  sim:/RLE/run
+add wave -position end  sim:/RLE/zero
+force -freeze sim:/RLE/in 64'haa31a35928193824 0
+run
+run
+run
+run
+force -freeze sim:/RLE/count 000 0
+run
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+restart
+# Loading work.RLE
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+force -freeze sim:/RLE/count 000 0
+run
+run
+run
+noforce sim:/RLE/count
+run
+run
+force -freeze sim:/RLE/in 00000011 0
+run
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+restart
+# Loading work.RLE
+force -freeze sim:/RLE/in 00000001 0
+run
+run
+force -freeze sim:/RLE/count 000 0
+run
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+force -freeze sim:/RLE/in 00000011 0
+run
+run
+force -freeze sim:/RLE/in 00000001 0
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+force -freeze sim:/RLE/in 00000001 0
+run
+noforce sim:/RLE/count
+restart
+run
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+run
+force -freeze sim:/RLE/in 00000001 0
+run
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+restart
+# Loading work.RLE
+force -freeze sim:/RLE/in 00000001 0
+run
+force -freeze sim:/RLE/count 000 0
+restart
+run
+run
+noforce sim:/RLE/count
+run
+run
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+restart
+# Loading work.RLE
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+force -freeze sim:/RLE/in 00000001 0
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+restart
+# Loading work.RLE
+restart
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+force -freeze sim:/RLE/in 00000001 0
+run
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+run
+noforce sim:/RLE/in
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+force -freeze sim:/RLE/in 0000001 0
+run
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+restart
+# Loading work.RLE
+run
+force -freeze sim:/RLE/in 0 0
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+restart
+# Loading work.RLE
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+restart
+# Loading work.RLE
+run
+restart
+run
+force -freeze sim:/RLE/in 00000001 0
+run
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+noforce sim:/RLE/zero
+run
+quit -sim
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+vsim -gui work.RLE
+# vsim -gui work.RLE 
+# Loading work.RLE
+add wave -position end  sim:/RLE/in
+add wave -position end  sim:/RLE/clk
+add wave -position end  sim:/RLE/reset
+add wave -position end  sim:/RLE/out
+add wave -position end  sim:/RLE/count
+add wave -position end  sim:/RLE/run
+add wave -position end  sim:/RLE/zero
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+force -freeze sim:/RLE/in 00000001 0
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/RLE/in 000000000 0
+run
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v failed with 1 errors.
+# 15 compiles, 1 failed with 1 error. 
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+vsim -gui work.RLE
+# vsim -gui work.RLE 
+# Loading work.RLE
+add wave -position end  sim:/RLE/in
+add wave -position end  sim:/RLE/clk
+add wave -position end  sim:/RLE/reset
+add wave -position end  sim:/RLE/out
+add wave -position end  sim:/RLE/count
+add wave -position end  sim:/RLE/run
+add wave -position end  sim:/RLE/zero
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+force -freeze sim:/RLE/in 00000001 0
+run
+# Compile of DCT_1D_column1.v was successful.
+# Compile of DCT_1D_column2.v was successful.
+# Compile of DCT_1D_row1.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of ZigZag.v was successful.
+# Compile of RLE.v was successful.
+# 15 compiles, 0 failed with no errors. 
+restart
+# Loading work.RLE
+force -freeze sim:/RLE/in 00000000 0
+run
+run
+force -freeze sim:/RLE/in 00000001 0
+run
+run
+force -freeze sim:/RLE/in 00000000 0
+run
+run

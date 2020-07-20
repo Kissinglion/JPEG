@@ -1,0 +1,79 @@
+module RLE(in,out,next,run,cnt,clk,reset);
+  
+  input [79:0]in;
+  input [2:0]cnt;
+  input clk,reset;
+  output reg[9:0]out;
+  output reg [5:0]run;
+  output reg [3:0]next;
+  
+  reg [3:0]count;
+  reg [1:0]zero;
+  reg [2:0]num;
+  
+  wire [9:0]in_temp;
+
+  
+  
+  
+
+  assign in_temp = (cnt == 3'b000) ? in[79:70] : 
+                   (cnt == 3'b001) ? in[69:60] :
+                   (cnt == 3'b010) ? in[59:50] :
+                   (cnt == 3'b011) ? in[49:40] :
+                   (cnt == 3'b100) ? in[39:30] :
+                   (cnt == 3'b101) ? in[29:20] :
+                   (cnt == 3'b110) ? in[19:10]  :
+                    in[9:0];
+  
+  
+  
+  always @(posedge clk)
+  begin
+    if (~reset)
+    begin
+      count = 4'b0000;
+      zero = 2'b00;
+      num = 3'b000;
+    end
+    else
+    begin
+      if ((in_temp == 10'd0) && (zero == 2'b01))
+      begin
+        count = count + 4'b0001;
+        zero = 2'b01;
+      end
+      else if ((in_temp == 10'd0) && (zero == 2'b00))
+      begin
+        count = 4'b0001;
+        zero = 2'b01;
+      end
+      else if ((in_temp != 10'd0) && (zero == 2'b01))
+      begin
+        run = count;
+        count = 0;
+        out = in_temp;
+        zero = 2'b00;
+        //num = num + 1'b1;
+      end
+      else
+      begin
+        run = 6'b0;
+        out = in_temp;
+        count = 0;
+        zero = 2'b00;
+        //num = num + 1'b1;
+      end
+    end
+  end
+  
+  always @(posedge clk)
+  begin
+    if(cnt == 7'b0000111)
+      begin
+        next = count;
+      end
+    else
+      next = next;
+  end
+endmodule

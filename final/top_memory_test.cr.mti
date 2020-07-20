@@ -1,0 +1,115 @@
+C:/Users/user/Desktop/VLSI_project2/final/DCT_first.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/DCT_first.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DCT_first
+
+Top level modules:
+	DCT_first
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/RLE.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/RLE.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RLE
+
+Top level modules:
+	RLE
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/TPmem1.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/TPmem1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TPmem1
+
+Top level modules:
+	TPmem1
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/TPmem2.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/TPmem2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TPmem2
+
+Top level modules:
+	TPmem2
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/DCT_second.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/DCT_second.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DCT_second
+
+Top level modules:
+	DCT_second
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/sti_project2.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/sti_project2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sti_project2
+
+Top level modules:
+	sti_project2
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/top_memory_test.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/top_memory_test.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module top_memory_test
+-- Compiling module counter
+-- Compiling module counter2
+-- Compiling module TPcontrol
+
+Top level modules:
+	top_memory_test
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/TPmem.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/TPmem.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TPmem
+
+Top level modules:
+	TPmem
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/ZigZag.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/ZigZag.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ZigZag
+
+Top level modules:
+	ZigZag
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/DCT_1D_column1.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/DCT_1D_column1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DCT_1D_column1
+
+Top level modules:
+	DCT_1D_column1
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/SRAM32768x80.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/SRAM32768x80.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM32768x80
+-- Compiling module spsram_hd_32768x80m16
+-- Compiling module SRAM2
+
+Top level modules:
+	SRAM32768x80
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/DCT_1D_column2.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/DCT_1D_column2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DCT_1D_column2
+
+Top level modules:
+	DCT_1D_column2
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/Quantization.v {2 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/Quantization.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Quantization
+** Warning: C:/Users/user/Desktop/VLSI_project2/final/Quantization.v(99): (vlog-2256) Event expressions should result in a singular type.
+
+
+Top level modules:
+	Quantization
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/DCT_1D_row1.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/DCT_1D_row1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DCT_1D_row1
+
+Top level modules:
+	DCT_1D_row1
+
+} {} {}} C:/Users/user/Desktop/VLSI_project2/final/SRAM32768x64.v {1 {vlog -work work C:/Users/user/Desktop/VLSI_project2/final/SRAM32768x64.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM32768x64
+-- Compiling module spsram_hd_32768x64m16
+-- Compiling module SRAM
+
+Top level modules:
+	SRAM32768x64
+
+} {} {}}
