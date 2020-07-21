@@ -23,7 +23,8 @@ module RLE_top(in,finish,clk,reset);
   reg [79:0]in1,in2,in3,in4,in5,in6,in7,in8;
   reg [3:0]i;
   reg [2:0]count;
-  reg [8:0]count1,count2,count3,count4;
+  reg [3:0]count1;
+  reg [8:0]count2,count3,count4;
   
   RLE test1(in1,out_temp1,next1,run1,count,clk,reset),
       test2(in2,out_temp2,next2,run2,(count-3'b001),clk,reset),
@@ -157,48 +158,47 @@ module RLE_top(in,finish,clk,reset);
       b[i-1] = a[i-1];
   end
   
-  //assign c = r[i-1];
   	
   SRAM512x16 MEM_OUT(1'b0,out_temp,11'd0,count3[3:0]-4'b0010,1'b0,clk, DO);
   
   always @(posedge clk)
   begin
-    if (count1 > 15)
+    if (count1 > 14)
       begin
         d[8] <= index8;
         index8 <= 0;
       end
-    else if (count1 > 14)
+    else if (count1 > 13)
       begin
         d[7] <= index7;
         index7 <= 0;
       end    
-    else if (count1 >13)
+    else if (count1 >12)
       begin
         d[6] <= index6;
         index6 <= 0;
       end
-    else if (count1 > 12)
+    else if (count1 > 11)
       begin
         d[5] <= index5;
         index5 <= 0;
       end
-    else if (count1 >11)
+    else if (count1 >10)
       begin
         d[4] <= index4;
         index4 <= 0;
       end        
-    else if (count1 >10)
+    else if (count1 >9)
       begin
         d[3] <= index3;
         index3 <= 0;
       end
-    else if(count1 > 9)
+    else if(count1 > 8)
       begin
         d[2] <= index2;
         index2 <= 0;
       end    
-   else if (count1 > 9'd8)
+   else if (count1 > 4'd7)
       begin
         d[1] <= index1;
         index1 <= 0;
@@ -207,7 +207,7 @@ module RLE_top(in,finish,clk,reset);
  
   always @(count2 or i)
   begin
-    if(count1 == 9)
+    if(count1 == 8)
       j = index1;
     else 
       j = d[i];
@@ -220,11 +220,11 @@ module RLE_top(in,finish,clk,reset);
         count2 <= 9'b000000000;
         count3 <= 9'b000000000;
         count4 <= 9'b000000000;
-        i = 1;
+        i <= 1;
      end
    else
      begin
-       if (count1 > 9'd8)
+       if (count1 > 9'd7)
          begin
            if( count2 == j)
              begin
@@ -282,7 +282,7 @@ module RLE_top(in,finish,clk,reset);
     if(~reset)
       begin
         count  <= 3'b111;
-        count1 <= 9'b000000000;
+        count1 <= 4'b0000;
       end
     else
       begin

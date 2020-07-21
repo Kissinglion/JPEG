@@ -5,7 +5,7 @@ module RLE(in,out,next,run,cnt,clk,reset);
   input clk,reset;
   output reg[9:0]out;
   output reg [5:0]run;
-  output reg [3:0]next;
+  output wire [3:0]next;
   
   reg [3:0]count;
   reg [1:0]zero;
@@ -27,9 +27,9 @@ module RLE(in,out,next,run,cnt,clk,reset);
   
   always @(posedge clk)
   begin
-    if (~reset)
+    if (cnt == 3'b111)
     begin
-      count = 4'b0000;
+      //count = 4'b0000;
       zero = 2'b00;
       num = 3'b000;
     end
@@ -64,13 +64,16 @@ module RLE(in,out,next,run,cnt,clk,reset);
     end
   end
   
+  assign next = (cnt==3'b111) ? count+1'b1 : next;
+  /*
   always @(posedge clk)
   begin
-    if(cnt == 7'b0000111)
+    if(cnt == 3'b111)
       begin
         next = count;
       end
     else
       next = next;
   end
+  */
 endmodule

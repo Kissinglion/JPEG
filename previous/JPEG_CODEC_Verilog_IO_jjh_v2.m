@@ -2,7 +2,7 @@ clear all
 close all
 clc
 %-------------------------- Initialization -----------------------------
-
+mm = 0;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%      Get the Image data Input     %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,6 +84,26 @@ for kk = 3:3
           49  64  78  87    103   121    120   101;
           72  92  95  98    112   100    103   99];
       
+%     for i = 1:8
+%         for j = 1:8
+%             if Q_pre(i,j) > 100
+%                 Q_pre(i,j) = 128;
+%             elseif Q_pre(i,j) >48
+%                 Q_pre(i,j) = 64;
+% %             elseif Q_pre(i,j) > 32
+% %                 Q_pre(i,j) = 32;
+% %             elseif Q_pre(i,j) > 16
+% %                 Q_pre(i,j) = 16;
+%             else
+%                 Q_pre(i,j) = Q_pre(i,j);
+% %             elseif Q_pre(i,j) > 8
+% %                 Q_pre(i,j) = 8;
+% %             else
+% %                 Q_pre(i,j) = 4;
+%             end
+%         end
+%     end
+      
     Q_temp = zeros(8,8);  
     for i = 1:8
         for j = 1:8
@@ -91,7 +111,8 @@ for kk = 3:3
         end
     end
 
-    Q_pre = quantization(10,Q_temp);
+    Q_pre = quantization(11,Q_temp);
+    Q = quantization(8,Q);
 
     %--------------------------- DCT OPERATION -------------------------------
 
@@ -155,7 +176,7 @@ for kk = 3:3
 
 
             number_of_non_zero_entries = length(non_zero_value_index_array);  % # of non-zero entries in a block
-
+            mm = max(mm,number_of_non_zero_entries);
         % Case 1: if first ac coefficient has no leading zeros then encode first coefficient
             if non_zero_value_index_array(1)==0
                 run_level_pairs=cat(1,run_level_pairs);
@@ -251,7 +272,7 @@ for kk = 3:3
         reverse_zigzag_order_8x8 = zeros(8,8);
         for k = 1:(size(ZigZag_Order,1) *size(ZigZag_Order,2)) 
             reverse_zigzag_order_8x8(k) = find(ZigZag_Order== k); 
-        end;
+        end
 
         %---------------------------------------------------------------------
 

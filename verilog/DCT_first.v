@@ -93,8 +93,41 @@ module DCT_first(in,out);
   assign out_temp[3]= b62 + b65 +a7 - a76 +a5 + a54 - a62 - a63;
   assign out_temp[5]= b72 + b75 +a6 - a66 +a8 + a84 + a72 + a73;
   assign out_temp[7]= 20'd0;
+  
+  round1  rnd1(out_temp[0],out[71:63]),
+          rnd2(out_temp[1],out[62:54]),
+          rnd3(out_temp[2],out[53:45]),
+          rnd4(out_temp[3],out[44:36]),
+          rnd5(out_temp[4],out[35:27]),
+          rnd6(out_temp[5],out[26:18]),
+          rnd7(out_temp[6],out[17:9]),
+          rnd8(out_temp[7],out[7:0]);
 
 
 
   assign out={out_temp[0][17:9],out_temp[1][17:9],out_temp[2][17:9],out_temp[3][17:9],out_temp[4][17:9],out_temp[5][17:9],out_temp[6][17:9],9'b0}; 
+endmodule
+
+module round1(out_temp,out);
+  
+  input [17:0]out_temp;
+  output reg[9:0]out;
+  
+  always @(out_temp)
+  begin
+    if(out_temp[17])
+      begin
+        if(out_temp[8:0] > 9'b100000000)
+          out  = out_temp[17:9] + 1'b1;
+        else
+          out = out_temp[17:9];
+      end
+    else
+      begin
+        if(out_temp[8])
+          out = out_temp[17:9] + 1'b1;
+        else
+          out = out_temp[17:9];
+      end
+  end
 endmodule

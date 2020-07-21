@@ -11,7 +11,7 @@ module DCT_first(in,out);
   wire signed [13:0] a54,a64,a84,b52,b62,b72;
   wire signed [14:0] c1,c2,b33,b43,a55;
   wire signed [15:0] b34,b44,a56,a66,a76;
-  wire signed [16:0] c12,b55,b65,b75;
+  wire signed [16:0] c12,c22,b55,b65,b75;
   wire signed [17:0] c13,b36,b46,c23;
   wire signed [19:0] c15,c25;
 
@@ -93,8 +93,41 @@ module DCT_first(in,out);
   assign out_temp[3]= b62 + b65 +a7 - a76 +a5 + a54 - a62 - a63;
   assign out_temp[5]= b72 + b75 +a6 - a66 +a8 + a84 + a72 + a73;
   assign out_temp[7]= 20'd0;
+  
+  round1  rnd1(out_temp[0],out[79:70]),
+          rnd2(out_temp[1],out[69:60]),
+          rnd3(out_temp[2],out[59:50]),
+          rnd4(out_temp[3],out[49:40]),
+          rnd5(out_temp[4],out[39:30]),
+          rnd6(out_temp[5],out[29:20]),
+          rnd7(out_temp[6],out[19:10]),
+          rnd8(out_temp[7],out[9:0]);
 
 
 
   assign out={out_temp[0][17:9],out_temp[1][17:9],out_temp[2][17:9],out_temp[3][17:9],out_temp[4][17:9],out_temp[5][17:9],out_temp[6][17:9],9'b0}; 
+endmodule
+
+module round1(out_temp,out);
+  
+  input [17:0]out_temp;
+  output reg[9:0]out;
+  
+  always @(out_temp)
+  begin
+    if(out_temp[17])
+      begin
+        if(out_temp[8:0] > 9'b100000000)
+          out  = out_temp[17:9] + 1'b1;
+        else
+          out = out_temp[17:9];
+      end
+    else
+      begin
+        if(out_temp[8])
+          out = out_temp[17:9] + 1'b1;
+        else
+          out = out_temp[17:9];
+      end
+  end
 endmodule

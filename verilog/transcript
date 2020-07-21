@@ -1,2 +1,136 @@
 # Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
-# OpenFile C:/Users/user/Desktop/JPEG/verilog/DCT_first.v 
+# OpenFile C:/Users/user/Desktop/JPEG/verilog/DCT_second.v 
+project open C:/Users/user/Desktop/JPEG/verilog/JPEG
+# Loading project JPEG
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of RLE.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of ZigZag.v was successful.
+# Compile of sti.v was successful.
+# Compile of RLE_top.v was successful.
+# Compile of sti_zig.v was successful.
+# Compile of sti_quant.v was successful.
+# Compile of sti_version.v was successful.
+# Compile of test.v was successful.
+# Compile of sti_test.v was successful.
+# Compile of SRAM512x16.v was successful.
+# Compile of RLE2.v failed with 6 errors.
+# Compile of ZigZag_TP.v was successful.
+# 21 compiles, 1 failed with 6 errors. 
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of RLE.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of ZigZag.v was successful.
+# Compile of sti.v was successful.
+# Compile of RLE_top.v was successful.
+# Compile of sti_zig.v was successful.
+# Compile of sti_quant.v was successful.
+# Compile of sti_version.v was successful.
+# Compile of test.v was successful.
+# Compile of sti_test.v was successful.
+# Compile of SRAM512x16.v was successful.
+# Compile of RLE2.v failed with 6 errors.
+# Compile of ZigZag_TP.v was successful.
+# 21 compiles, 1 failed with 6 errors. 
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of RLE.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of ZigZag.v was successful.
+# Compile of sti.v was successful.
+# Compile of RLE_top.v was successful.
+# Compile of sti_zig.v was successful.
+# Compile of sti_quant.v was successful.
+# Compile of sti_version.v was successful.
+# Compile of test.v was successful.
+# Compile of sti_test.v was successful.
+# Compile of SRAM512x16.v was successful.
+# Compile of RLE2.v failed with 6 errors.
+# Compile of ZigZag_TP.v was successful.
+# 21 compiles, 1 failed with 6 errors. 
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v failed with 1 errors.
+# Compile of Quantization.v was successful with warnings.
+# Compile of RLE.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of ZigZag.v was successful.
+# Compile of sti.v was successful.
+# Compile of RLE_top.v was successful.
+# Compile of sti_zig.v was successful.
+# Compile of sti_quant.v was successful.
+# Compile of sti_version.v was successful.
+# Compile of test.v was successful.
+# Compile of sti_test.v was successful.
+# Compile of SRAM512x16.v was successful.
+# Compile of RLE2.v failed with 6 errors.
+# Compile of ZigZag_TP.v was successful.
+# 21 compiles, 2 failed with 7 errors. 
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of RLE.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of ZigZag.v was successful.
+# Compile of sti.v was successful.
+# Compile of RLE_top.v was successful.
+# Compile of sti_zig.v was successful.
+# Compile of sti_quant.v was successful.
+# Compile of sti_version.v was successful.
+# Compile of test.v was successful.
+# Compile of sti_test.v was successful.
+# Compile of SRAM512x16.v was successful.
+# Compile of RLE2.v failed with 6 errors.
+# Compile of ZigZag_TP.v was successful.
+# 21 compiles, 1 failed with 6 errors. 
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of Quantization.v was successful with warnings.
+# Compile of RLE.v was successful.
+# Compile of SRAM32768x64.v was successful.
+# Compile of SRAM32768x80.v was successful.
+# Compile of sti_project2.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of ZigZag.v was successful.
+# Compile of sti.v was successful.
+# Compile of RLE_top.v was successful.
+# Compile of sti_zig.v was successful.
+# Compile of sti_quant.v was successful.
+# Compile of sti_version.v was successful.
+# Compile of test.v was successful.
+# Compile of sti_test.v was successful.
+# Compile of SRAM512x16.v was successful.
+# Compile of RLE2.v failed with 6 errors.
+# Compile of ZigZag_TP.v was successful.
+# 21 compiles, 1 failed with 6 errors. 
