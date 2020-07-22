@@ -8,8 +8,8 @@
 
 module SRAM512x16
     #(	parameter ADDRESSSIZE = 15,
-	parameter ADDRESSBITSIZE = 32768,		    
-        parameter WORDSIZE = 16)
+	     parameter ADDRESSBITSIZE = 32768,		    
+       parameter WORDSIZE = 16)
 (
  input NWRT,
  input [WORDSIZE-1:0] DIN,

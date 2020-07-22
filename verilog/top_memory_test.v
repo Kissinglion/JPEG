@@ -10,6 +10,7 @@ module top_memory_test (clk,reset);
   wire [63:0]DIN1;
   wire [79:0]qt_out,zg_out1,zg_out2,zg_out,DO,DO1;
   wire en1,en2,en3;
+  wire [191:0]out_temp;
 
 
   SRAM32768x80 MEM_OUT(1'b0,zg_out,count2[14:4],count2[3:0],1'b0,clk, DO);
@@ -28,6 +29,8 @@ module top_memory_test (clk,reset);
   ZigZag  Zg2(qt_out,~en3,clk,reset,zg_out2);
   
   Quantization qt(out,qt_out,(count1[2:0]-3'b011),clk,reset);
+  
+  RLE_top2    r1(qt_out[63:0],out_temp,clk,reset);
   
   counter  cnt1(count1,clk,reset);
   counter2 cnt2(count1,count2,clk,reset);

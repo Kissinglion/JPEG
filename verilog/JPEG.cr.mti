@@ -1,28 +1,32 @@
-C:/Users/user/Desktop/JPEG/verilog/ZigZag.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/ZigZag.v
+C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sti_rle2
+
+Top level modules:
+	sti_rle2
+
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/D_ff_4b.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/D_ff_4b.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module D_ff_4b
+
+Top level modules:
+	D_ff_4b
+
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/ZigZag.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/ZigZag.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module ZigZag
 
 Top level modules:
 	ZigZag
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE2.v {0 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE2.v
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE2.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module RLE2
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE2.v(10): (vlog-2730) Undefined variable: 'next'.
 
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE2.v(15): (vlog-2730) Undefined variable: 'out'.
+Top level modules:
+	RLE2
 
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE2.v(15): (vlog-2730) Undefined variable: 'count'.
-
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE2.v(15): (vlog-2730) Undefined variable: 'i'.
-
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE2.v(15): (vlog-2730) Undefined variable: 'a'.
-
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE2.v(15): LHS in procedural continuous assignment may not be a net: out.
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE2.v(17): LHS in procedural continuous assignment may not be a net: out_temp.
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE2.v(20): near "EOF": syntax error, unexpected end of source code
-
-} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 17.0} {}} C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module SRAM32768x80
 -- Compiling module spsram_hd_32768x80m16
@@ -30,6 +34,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	SRAM32768x80
+
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RLE_top2
+
+Top level modules:
+	RLE_top2
 
 } {} {}} C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -57,12 +68,26 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	SRAM32768x64
 
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RLE_top3
+
+Top level modules:
+	RLE_top3
+
 } {} {}} C:/Users/user/Desktop/JPEG/verilog/sti.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module sti
 
 Top level modules:
 	sti
+
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module D_ff_64b
+
+Top level modules:
+	D_ff_64b
 
 } {} {}} C:/Users/user/Desktop/JPEG/verilog/DCT_first.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/DCT_first.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -86,19 +111,19 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	TPmem1
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/TPmem2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/TPmem2.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module TPmem2
-
-Top level modules:
-	TPmem2
-
 } {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE_top.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE_top.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module RLE_top
 
 Top level modules:
 	RLE_top
+
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/TPmem2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/TPmem2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TPmem2
+
+Top level modules:
+	TPmem2
 
 } {} {}} C:/Users/user/Desktop/JPEG/verilog/sti_version.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_version.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -121,7 +146,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	sti_test
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/sti_quant.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_quant.v
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE22.v {0 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE22.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RLE22
+** Error: C:/Users/user/Desktop/JPEG/verilog/RLE22.v(109): (vlog-2730) Undefined variable: 'out_temp'.
+
+
+} {4.0 5.0} {}} C:/Users/user/Desktop/JPEG/verilog/sti_quant.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_quant.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module sti_quant
 
@@ -149,6 +180,15 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	sti_zig
 
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM512x16
+-- Compiling module spsram_hd_32768x80m16
+-- Compiling module SRAM2
+
+Top level modules:
+	SRAM512x16
+
 } {} {}} C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module top_memory_test
@@ -159,14 +199,5 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	top_memory_test
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module SRAM512x16
--- Compiling module spsram_hd_32768x80m16
--- Compiling module SRAM2
-
-Top level modules:
-	SRAM512x16
 
 } {} {}}

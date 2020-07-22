@@ -6,7 +6,7 @@
 //  WEN=1, CSN=0: 10 READ 
 //  WEN=1, CSN=1: 11 STOP 
 
-module SRAM32768x80
+module SRAM512x16
     #(	parameter ADDRESSSIZE = 15,
 	parameter ADDRESSBITSIZE = 32768,		    
         parameter WORDSIZE = 16)
