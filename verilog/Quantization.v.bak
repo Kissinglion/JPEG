@@ -3,7 +3,7 @@ module Quantization(in,out,count,clk,reset);
   input [79:0]in;
   input clk,reset;
   input [2:0]count;
-  output wire [79:0]out;
+  output wire [71:0]out;
   
   wire signed [9:0] in_temp [7:0];
   reg signed [17:0] out_temp [7:0];
@@ -104,14 +104,14 @@ module Quantization(in,out,count,clk,reset);
   assign out[9:0]   = out_temp[7][17] ? out_temp[7][16:7] : out_temp[0][6] ? (out_temp[7][16:7] + 1'b1) : out_temp[7][16:7];
   */
   
-  round rnd1(out_temp[0],out[79:70]),
-        rnd2(out_temp[1],out[69:60]),
-        rnd3(out_temp[2],out[59:50]),
-        rnd4(out_temp[3],out[49:40]),
-        rnd5(out_temp[4],out[39:30]),
-        rnd6(out_temp[5],out[29:20]),
-        rnd7(out_temp[6],out[19:10]),
-        rnd8(out_temp[7],out[9:0]);
+  round rnd1(out_temp[0],out[63:56]),
+        rnd2(out_temp[1],out[55:48]),
+        rnd3(out_temp[2],out[47:40]),
+        rnd4(out_temp[3],out[39:32]),
+        rnd5(out_temp[4],out[31:24]),
+        rnd6(out_temp[5],out[23:16]),
+        rnd7(out_temp[6],out[15:8]),
+        rnd8(out_temp[7],out[7:0]);
   
   //assign out = {out_temp[0][16:7],out_temp[1][16:7],out_temp[2][16:7],out_temp[3][16:7],out_temp[4][16:7],out_temp[5][16:7],out_temp[6][16:7],out_temp[7][16:7]};
   
@@ -133,23 +133,23 @@ endmodule
 module round(out_temp,out);
   
   input [17:0]out_temp;
-  output reg[9:0]out;
+  output reg[7:0]out;
   
   always @(out_temp)
   begin
     if(out_temp[17])
       begin
-        if(out_temp[6:0] > 6'b1000000)
-          out  = out_temp[16:7] + 1'b1;
+        if(out_temp[6:0] > 7'b1000000)
+          out  = out_temp[14:7] + 1'b1;
         else
-          out = out_temp[16:7];
+          out = out_temp[14:7];
       end
     else
       begin
         if(out_temp[6])
-          out = out_temp[16:7] + 1'b1;
+          out = out_temp[14:7] + 1'b1;
         else
-          out = out_temp[16:7];
+          out = out_temp[14:7];
       end
   end
 endmodule

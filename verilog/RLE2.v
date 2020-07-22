@@ -1,10 +1,10 @@
 module RLE2(in,in_next,out_next,count,en1,en2,en3,en4,en5,en6,en7,en8,run1,run2,run3,run4,run5,run6,run7,run8);
   
   input [63:0]in;
-  input [3:0]in_next;
-  output wire [3:0]out_next;
+  input [5:0]in_next;
+  output wire [5:0]out_next;
   output reg [3:0]count;
-  output reg [3:0]run1,run2,run3,run4,run5,run6,run7,run8;
+  output reg [5:0]run1,run2,run3,run4,run5,run6,run7,run8;
 
   
   output wire en1,en2,en3,en4,en5,en6,en7,en8;
@@ -42,8 +42,8 @@ module RLE2(in,in_next,out_next,count,en1,en2,en3,en4,en5,en6,en7,en8,run1,run2,
       zero1 = in_next + 1'b1;
     else
       begin
-        run1 = 0;
-        zero1 = in_next;
+        run1 = in_next;
+        zero1 = 0;
       end
     if(~en2)
       zero2 = zero1 + 1'b1;

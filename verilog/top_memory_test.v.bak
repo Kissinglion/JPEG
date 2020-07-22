@@ -6,14 +6,14 @@ module top_memory_test (clk,reset);
   wire [15:0]count1;
   wire [14:0]count2,count3;
   wire [71:0]DCT_out1,DCT_out11,tp_out1,tp_out2,DIN2;
-  wire [79:0]DCT_out2,tp_out3,tp_out4,out;
+  wire [79:0]DCT_out2,tp_out3,tp_out4,out,DO1;
   wire [63:0]DIN1;
-  wire [79:0]qt_out,zg_out1,zg_out2,zg_out,DO,DO1;
+  wire [63:0]qt_out,zg_out1,zg_out2,zg_out,DO;
   wire en1,en2,en3;
   wire [191:0]out_temp;
 
 
-  SRAM32768x80 MEM_OUT(1'b0,zg_out,count2[14:4],count2[3:0],1'b0,clk, DO);
+  SRAM32768x64 MEM_OUT(1'b0,zg_out,count2[14:4],count2[3:0],1'b0,clk, DO);
   SRAM32768x80 MEM_OUT1(1'b0,out,count3[14:4],count3[3:0],1'b0,clk, DO1);
   SRAM32768x64 MEM_IN(1'b1,64'b0,count1[14:4],count1[3:0],1'b0,clk, DIN1 );
   
@@ -30,7 +30,7 @@ module top_memory_test (clk,reset);
   
   Quantization qt(out,qt_out,(count1[2:0]-3'b011),clk,reset);
   
-  RLE_top2(qt_out[63:0],out_temp,clk,reset);
+  //RLE_top2    r1(qt_out[63:0],out_temp,clk,reset);
   
   counter  cnt1(count1,clk,reset);
   counter2 cnt2(count1,count2,clk,reset);

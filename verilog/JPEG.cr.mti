@@ -1,66 +1,21 @@
-C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module sti_rle2
+C:/Users/Chung/Desktop/JPEG/verilog/D_ff_6b.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/D_ff_6b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module D_ff_6b
 
 Top level modules:
-	sti_rle2
+	D_ff_6b
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/D_ff_4b.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/D_ff_4b.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module D_ff_4b
-
-Top level modules:
-	D_ff_4b
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/ZigZag.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/ZigZag.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module ZigZag
-
-Top level modules:
-	ZigZag
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE2.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module RLE2
-
-Top level modules:
-	RLE2
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module SRAM32768x80
--- Compiling module spsram_hd_32768x80m16
--- Compiling module SRAM2
-
-Top level modules:
-	SRAM32768x80
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module RLE_top2
-
-Top level modules:
-	RLE_top2
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module ZigZag
-
-Top level modules:
-	ZigZag
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/Quantization.v {2 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/Quantization.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/Quantization.v {2 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/Quantization.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Quantization
-** Warning: C:/Users/user/Desktop/JPEG/verilog/Quantization.v(118): (vlog-2256) Event expressions should result in a singular type.
-
+** Warning: C:/Users/Chung/Desktop/JPEG/verilog/Quantization.v(118): (vlog-2256) Event expressions should result in a singular type.
 -- Compiling module round
 
 Top level modules:
 	Quantization
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module SRAM32768x64
 -- Compiling module spsram_hd_32768x64m16
 -- Compiling module SRAM
@@ -68,129 +23,120 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	SRAM32768x64
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module RLE_top3
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RLE_top2
 
 Top level modules:
-	RLE_top3
+	RLE_top2
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/sti.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/sti.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/sti.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module sti
 
 Top level modules:
 	sti
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module D_ff_64b
-
-Top level modules:
-	D_ff_64b
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/DCT_first.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/DCT_first.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module DCT_first
 -- Compiling module round1
 
 Top level modules:
 	DCT_first
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module D_ff_64b
+
+Top level modules:
+	D_ff_64b
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/RLE.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/RLE.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module RLE
 
 Top level modules:
 	RLE
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/TPmem1.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/TPmem1.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/TPmem1.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/TPmem1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module TPmem1
 
 Top level modules:
 	TPmem1
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE_top.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE_top.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module RLE_top
-
-Top level modules:
-	RLE_top
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/TPmem2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/TPmem2.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module TPmem2
-
-Top level modules:
-	TPmem2
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/sti_version.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_version.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/sti_version.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/sti_version.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module sti_version
 
 Top level modules:
 	sti_version
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/DCT_second.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/DCT_second.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RLE_top
+
+Top level modules:
+	RLE_top
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/TPmem2.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/TPmem2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TPmem2
+
+Top level modules:
+	TPmem2
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module DCT_second
+-- Compiling module round2
 
 Top level modules:
 	DCT_second
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/sti_test.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_test.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/RLE22.v {0 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/RLE22.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RLE22
+** Error: C:/Users/Chung/Desktop/JPEG/verilog/RLE22.v(109): (vlog-2730) Undefined variable: 'out_temp'.
+
+} {4.0 5.0} {}} C:/Users/Chung/Desktop/JPEG/verilog/sti_test.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/sti_test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module sti_test
 
 Top level modules:
 	sti_test
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE22.v {0 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE22.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module RLE22
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE22.v(109): (vlog-2730) Undefined variable: 'out_temp'.
-
-
-} {4.0 5.0} {}} C:/Users/user/Desktop/JPEG/verilog/sti_quant.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_quant.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module sti_quant
-
-Top level modules:
-	sti_quant
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/sti_project2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_project2.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/sti_project2.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/sti_project2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module sti_project2
 
 Top level modules:
 	sti_project2
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/test.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/test.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/sti_quant.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/sti_quant.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sti_quant
+
+Top level modules:
+	sti_quant
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/test.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module test
 
 Top level modules:
 	test
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/sti_zig.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_zig.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/sti_zig.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/sti_zig.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module sti_zig
 
 Top level modules:
 	sti_zig
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module SRAM512x16
--- Compiling module spsram_hd_32768x80m16
--- Compiling module SRAM2
-
-Top level modules:
-	SRAM512x16
-
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module top_memory_test
 -- Compiling module counter
 -- Compiling module counter2
@@ -199,5 +145,44 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	top_memory_test
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/SRAM512x16.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/SRAM512x16.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SRAM512x16
+-- Compiling module spsram_hd_32768x80m16
+-- Compiling module SRAM2
+
+Top level modules:
+	SRAM512x16
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ZigZag
+
+Top level modules:
+	ZigZag
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/sti_rle2.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/sti_rle2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sti_rle2
+
+Top level modules:
+	sti_rle2
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/RLE2.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/RLE2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RLE2
+
+Top level modules:
+	RLE2
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SRAM32768x80
+-- Compiling module spsram_hd_32768x80m16
+-- Compiling module SRAM2
+
+Top level modules:
+	SRAM32768x80
 
 } {} {}}

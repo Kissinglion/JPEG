@@ -27,7 +27,7 @@ module RLE_top2(in,out_temp,clk,reset);
   
   //SRAM512x16 MEM_OUT(1'b0,out_temp1,11'd0,count1,1'b0,clk, DO);
   
-  assign in_next = (count1 == 0) ? 0 : next1;
+  assign in_next = (count1 == 0) ? 4'hf : next1;
   
   assign in1 = in_temp[63:56];
   assign in2 = in_temp[55:48];

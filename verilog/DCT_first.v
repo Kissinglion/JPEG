@@ -101,17 +101,17 @@ module DCT_first(in,out);
           rnd5(out_temp[4],out[35:27]),
           rnd6(out_temp[5],out[26:18]),
           rnd7(out_temp[6],out[17:9]),
-          rnd8(out_temp[7],out[7:0]);
+          rnd8(out_temp[7],out[8:0]);
 
 
 
-  assign out={out_temp[0][17:9],out_temp[1][17:9],out_temp[2][17:9],out_temp[3][17:9],out_temp[4][17:9],out_temp[5][17:9],out_temp[6][17:9],9'b0}; 
+  //assign out={out_temp[0][17:9],out_temp[1][17:9],out_temp[2][17:9],out_temp[3][17:9],out_temp[4][17:9],out_temp[5][17:9],out_temp[6][17:9],9'b0}; 
 endmodule
 
 module round1(out_temp,out);
   
   input [17:0]out_temp;
-  output reg[9:0]out;
+  output reg[8:0]out;
   
   always @(out_temp)
   begin

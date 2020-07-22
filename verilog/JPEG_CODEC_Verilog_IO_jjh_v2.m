@@ -29,7 +29,8 @@ Q   =[  16  11  10  16    24    40     51    61
         49  64  78  87    103   121    120   101
         72  92  95  98    112   100    103   99];
       
-  
+  max_nonzero = 0;
+  max_run = 0;
 %% INPUT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%      Get the Image data Input     %%%%%%%%%%%%%%%
@@ -40,7 +41,7 @@ for index = 3:3
     % Load DCT output text file from verilog (512x512 pixel)
     % Each pixel has 16bit integer data
     
-    M = textread(sprintf('DCT_image_%d.txt',index),'%10c');
+    M = textread(sprintf('DCT_image_%d.txt',index),'%8c');
     M_2 = char(zeros(262144,16));
 
     for i=1:262144
@@ -50,7 +51,9 @@ for index = 3:3
         M_2(i,4)= M(i,1);
         M_2(i,5)= M(i,1);
         M_2(i,6)= M(i,1);
-        M_2(i,7:16) = M(i,1:10);
+        M_2(i,7)= M(i,1);
+        M_2(i,8)= M(i,1);
+        M_2(i,9:16) = M(i,1:8);
     end
 
     DCT_image_80b = typecast(uint16(bin2dec(char(M_2))),'int16');
@@ -92,14 +95,14 @@ for index = 3:3
     b=a(ZigZag_Order,:); 
     c = col2im(b,   [8 8],   [8 8],   'distinct');
         
-    Q_temp = zeros(8,8);  
-    for i = 1:8
-        for j = 1:8
-            Q_temp(i,j) = 1/c(i,j);
-        end
-    end
-    
-    Q_pre = quantization(7,Q_temp);
+%     Q_temp = zeros(8,8);  
+%     for i = 1:8
+%         for j = 1:8
+%             Q_temp(i,j) = 1/c(i,j);
+%         end
+%     end
+%     
+%     Q_pre = quantization(7,Q_temp);
 %     Q_pre = Q_temp;
 
       
@@ -113,8 +116,7 @@ for index = 3:3
     for i=1:m/8
         for j=1:n/8
             Block_DCT = (DCT_image((8*i-7):8*i,(8*j-7):8*j));
-            Block_r = round(Q_pre.*Block_DCT);
-%             Block_r = floor(Q_pre.*Block_DCT);
+%             Block_r = round(Q_pre.*Block_DCT);
             Block_r = Block_DCT;
             Image_tran((8*i-7):8*i,(8*j-7):8*j) = Block_r;
         end
@@ -127,126 +129,130 @@ for index = 3:3
         ZigZaged_Single_Column_Image=Single_column_quantized_image;
         
 %% --------------------------- zigzag ----------------------------------
-%         % using the MatLab Matrix indexing power (specially the ':' operator) rather than any function
+        % using the MatLab Matrix indexing power (specially the ':' operator) rather than any function
 %         ZigZaged_Single_Column_Image=Single_column_quantized_image(ZigZag_Order,:);    
-%         %---------------------------------------------------------------------
-% 
-% 
-%         %---------------------- Run Level Coding -----------------------------
-%         % construct Run Level Pair from ZigZaged_Single_Column_Image
-%         run_level_pairs=int16([]);
-% 
-%         for block_index=1:4096    %block by block - total 256 blocks (8x8) in the 128x128 image
-%             single_block_image_vector_64(1:64)=0;
-%             for Temp_Vector_Index=1:64
-%                 single_block_image_vector_64(Temp_Vector_Index) = ZigZaged_Single_Column_Image(Temp_Vector_Index, block_index);  %select 1 block sequentially from the ZigZaged_Single_Column_Image
-%             end
-%             
-% %             for i = 1:64
-% %                 if single_block_image_vector_64(i) == 1
-% %                     single_block_image_vector_64(i) = 0;
-% %                 elseif single_block_image_vector_64(i) == -1
-% %                     single_block_image_vector_64(i) =0;
-% %                 end
-% %             end
-%                         
-%                 
-%             non_zero_value_index_array = find(single_block_image_vector_64~=0); % index array of next non-zero entry in a block
-% 
-%             if isempty(find(single_block_image_vector_64~=0)) == 1
-%                 non_zero_value_index_array(1) = 0;
-%             end
-% 
-% 
-%             number_of_non_zero_entries = length(non_zero_value_index_array);  % # of non-zero entries in a block
-% 
-%         % Case 1: if first ac coefficient has no leading zeros then encode first coefficient
-%             if non_zero_value_index_array(1)==0
-%                 run_level_pairs=cat(1,run_level_pairs);
-% 
-%             elseif non_zero_value_index_array(1)==1  
-%                run=0;   % no leading zero
-%                 run_level_pairs=cat(1,run_level_pairs, run, single_block_image_vector_64(non_zero_value_index_array(1)));
-%             end
-% 
-%         % Case 2: loop through each non-zero entry    
-%             for i=2:number_of_non_zero_entries 
-%                 % check # of leading zeros (run)
-%                 run=non_zero_value_index_array(i)-non_zero_value_index_array(i-1)-1;
-%                 run_level_pairs=cat(1, run_level_pairs, run, single_block_image_vector_64(non_zero_value_index_array(i)));
-%             end
-% 
-%         % Case 3: "End of Block" mark insertion
-%             run_level_pairs=cat(1, run_level_pairs, 255, 255);
-%         end
-% 
-%         %---------------------------------------------------------------------
-% 
-% 
-%     %     Compressed_image_size = size(run_level_pairs);
-%     %     Compression_Ratio = 20480/Compressed_image_size(1,1);
-% 
-
-% 
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     %%%%%%%%%%%%%%%  After the Transformation  %%%%%%%%%%%%%%%%%%%
-%     %%%%%%%%%%%%   Assume lossless entropy coding   %%%%%%%%%%%%%%
-%     %%%%%%%%   Assume lossless communication channel   %%%%%%%%%%%
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %---------------------------------------------------------------------
 
 
-%% Decoding
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     %%%%%%%%%%%%     For the image restoration    %%%%%%%%%%%%%%%%
-%     %%%%      Multiplication with Quantization Matrix         %%%%
-%     %%%%%%%%%%%%    2-D IDCT Matrix Multiplication   %%%%%%%%%%%%%
-%     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% 
-% 
-%     %--------%--------%--------%--------%--------%--------%--------%--------%--%
-%     %--------- START of Entropy Decoding, Dequantization, 2D IDCT -------------%
-%     %--------%--------%--------%--------%--------%--------%--------%--------%--%
-% 
-% 
-% 
-% 
-% 
-%% ---------------------- Run Level Decoding ---------------------------
-% 
-%         % construct  ZigZaged_Single_Column_Image from Run Level Pair 
-% 
-%         c=[];
-%         for i=1:2:size(run_level_pairs) % loop through run_level_pairs
-%             % Case 1 & Cae 2 
-%             % concatenate zeros according to 'run' value
-%             if run_level_pairs(i)<255 % only end of block should have 255 value
-%                 zero_count=0;
-%                 zero_count=run_level_pairs(i);
-%                 for l=1:zero_count    % concatenation of zeros accouring to zero_count
-%                     c=cat(1,c,0);   % single zero concatenation
-%                 end
-%                 c=cat(1,c,run_level_pairs(i+1)); % concatenate single'level' i.e., a non zero value
-% 
-%             % Case 3: End of Block decoding
-%             else
-%                 number_of_trailing_zeros= 64-mod(size(c),64);
-%                 for l= 1:number_of_trailing_zeros    % concatenate as much zeros as needed to fill a block
-%                     c=cat(1,c,0); 
+        %---------------------- Run Level Coding -----------------------------
+        % construct Run Level Pair from ZigZaged_Single_Column_Image
+        run_level_pairs=int16([]);
+
+        for block_index=1:4096    %block by block - total 256 blocks (8x8) in the 128x128 image
+            single_block_image_vector_64(1:64)=0;
+            for Temp_Vector_Index=1:64
+                single_block_image_vector_64(Temp_Vector_Index) = ZigZaged_Single_Column_Image(Temp_Vector_Index, block_index);  %select 1 block sequentially from the ZigZaged_Single_Column_Image
+            end
+            
+%             for i = 1:64
+%                 if single_block_image_vector_64(i) == 1
+%                     single_block_image_vector_64(i) = 0;
+%                 elseif single_block_image_vector_64(i) == -1
+%                     single_block_image_vector_64(i) = 0;
 %                 end
 %             end
-%         end
-%         %---------------------------------------------------------------------
-% 
-% 
-%         %-----  prepare the ZigZaged_Single_Column_Image vector --------------
-%         ZigZaged_Single_Column_Image = zeros(64,4096);
-%         for i=1:4096
-%             for j=1:64
-%                 ZigZaged_Single_Column_Image(j,i)=c(64*(i-1)+j);
-%             end
-%         end
-% 
+                
+            non_zero_value_index_array = find(single_block_image_vector_64~=0); % index array of next non-zero entry in a block
+
+            if isempty(find(single_block_image_vector_64~=0)) == 1
+                non_zero_value_index_array(1) = 0;
+            end
+
+
+            number_of_non_zero_entries = length(non_zero_value_index_array);  % # of non-zero entries in a block
+            max_nonzero = max(number_of_non_zero_entries,max_nonzero);
+        % Case 1: if first ac coefficient has no leading zeros then encode first coefficient
+            if non_zero_value_index_array(1)==0
+                run_level_pairs=cat(1,run_level_pairs);
+
+            elseif non_zero_value_index_array(1)==1  
+               run=0;   % no leading zero
+                run_level_pairs=cat(1,run_level_pairs, run, single_block_image_vector_64(non_zero_value_index_array(1)));
+            end
+
+        % Case 2: loop through each non-zero entry    
+            for i=2:number_of_non_zero_entries 
+                % check # of leading zeros (run)
+                run=non_zero_value_index_array(i)-non_zero_value_index_array(i-1)-1;
+                max_run = max(max_run,run);
+
+                run_level_pairs=cat(1, run_level_pairs, run, single_block_image_vector_64(non_zero_value_index_array(i)));
+                if run == 55
+                    iii = run_level_pairs;
+                end
+            end
+
+        % Case 3: "End of Block" mark insertion
+            run_level_pairs=cat(1, run_level_pairs, 255, 255);
+        end
+
+        %---------------------------------------------------------------------
+
+
+        Compressed_image_size = size(run_level_pairs);
+        Compression_Ratio = (1-(Compressed_image_size(1,1)/262144))*100
+
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%  After the Transformation  %%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%   Assume lossless entropy coding   %%%%%%%%%%%%%%
+    %%%%%%%%   Assume lossless communication channel   %%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Decoding
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%     For the image restoration    %%%%%%%%%%%%%%%%
+    %%%%      Multiplication with Quantization Matrix         %%%%
+    %%%%%%%%%%%%    2-D IDCT Matrix Multiplication   %%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+    %--------%--------%--------%--------%--------%--------%--------%--------%--%
+    %--------- START of Entropy Decoding, Dequantization, 2D IDCT -------------%
+    %--------%--------%--------%--------%--------%--------%--------%--------%--%
+
+
+
+
+
+% ---------------------- Run Level Decoding ---------------------------
+
+        % construct  ZigZaged_Single_Column_Image from Run Level Pair 
+
+        c=[];
+        for i=1:2:size(run_level_pairs) % loop through run_level_pairs
+            % Case 1 & Cae 2 
+            % concatenate zeros according to 'run' value
+            if run_level_pairs(i)<255 % only end of block should have 255 value
+                zero_count=0;
+                zero_count=run_level_pairs(i);
+                for l=1:zero_count    % concatenation of zeros accouring to zero_count
+                    c=cat(1,c,0);   % single zero concatenation
+                end
+                c=cat(1,c,run_level_pairs(i+1)); % concatenate single'level' i.e., a non zero value
+
+            % Case 3: End of Block decoding
+            else
+                number_of_trailing_zeros= 64-mod(size(c),64);
+                for l= 1:number_of_trailing_zeros    % concatenate as much zeros as needed to fill a block
+                    c=cat(1,c,0); 
+                end
+            end
+        end
+        %---------------------------------------------------------------------
+
+
+        %-----  prepare the ZigZaged_Single_Column_Image vector --------------
+        ZigZaged_Single_Column_Image = zeros(64,4096);
+        for i=1:4096
+            for j=1:64
+                ZigZaged_Single_Column_Image(j,i)=c(64*(i-1)+j);
+            end
+        end
+
 
         % Finding the reverse zigzag order (8x8 matrix)
         reverse_zigzag_order_8x8 = zeros(8,8);

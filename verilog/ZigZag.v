@@ -1,5 +1,5 @@
 module ZigZag
-#( parameter BW = 10 )
+#( parameter BW = 8 )
 
 (  input [8*BW-1:0]  i_data,
    input	   i_enable,

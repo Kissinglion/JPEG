@@ -3,33 +3,31 @@ module RLE_top3(in,out,clk,reset);
   input [63:0]in;
   input clk,reset;
   
-  output reg[95:0]out;
+  output reg[111:0]out;
   
-  reg[191:0]out_temp;
+  reg[223:0]out_temp;
   reg en,e1,e2,e3,e4,e5,e6,e7,e8;
   
   wire [63:0]in_temp;
-  wire [3:0]next1,count2,in_next,out_next;
+  wire [5:0]next1,in_next,out_next;
   wire en1,en2,en3,en4,en5,en6,en7,en8;
-  wire [3:0]run1,run2,run3,run4,run5,run6,run7,run8;
+  wire [5:0]run1,run2,run3,run4,run5,run6,run7,run8;
   wire [7:0]in1,in2,in3,in4,in5,in6,in7,in8;
   
-  reg[11:0]out_temp1,out_temp2,out_temp3;
   reg [3:0]count;
-  reg [3:0]count1,pre_count,pp,ccc;
+  reg [3:0]count1,pre_count,pp;
   reg [3:0]cnt1,cnt2,cnt3,cnt4,cnt5,cnt6,cnt7,cnt8;
-  
-  reg[3:0]next;
-  reg start;
+  reg[5:0]next;
+
   
   D_ff_64b  df1(in,in_temp,clk,reset);
-  D_ff_4b   df2(out_next,next1,clk,reset);
+  D_ff_6b   df2(out_next,next1,clk,reset);
   
-  RLE2  r1(in_temp,in_next,out_next,count2,en1,en2,en3,en4,en5,en6,en7,en8,run1,run2,run3,run4,run5,run6,run7,run8);
+  RLE2  r1(in_temp,in_next,out_next,en1,en2,en3,en4,en5,en6,en7,en8,run1,run2,run3,run4,run5,run6,run7,run8);
   
   //SRAM512x16 MEM_OUT(1'b0,out_temp1,11'd0,count1,1'b0,clk, DO);
   
-  assign in_next = (count1 == 0) ? 0 : next1;
+  assign in_next = (count1 == 1) ? 6'b111111 : next1;
   
   assign in1 = in_temp[63:56];
   assign in2 = in_temp[55:48];
@@ -45,10 +43,10 @@ module RLE_top3(in,out,clk,reset);
   begin
     if((count[3]))
       begin
-        out = out_temp[95:0];
+        out = out_temp[111:0];
       end
     else
-      out = out_temp[191:96];
+      out = out_temp[223:112];
   end
 
   always@(posedge clk)
