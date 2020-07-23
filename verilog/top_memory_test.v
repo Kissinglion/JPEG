@@ -11,6 +11,8 @@ module top_memory_test (clk,reset);
   wire [63:0]qt_out,zg_out1,zg_out2,zg_out,DO;
   wire en1,en2,en3;
   wire [191:0]out_temp;
+  wire [111:0]rle_out;
+  wire en_rle;
 
 
   SRAM32768x64 MEM_OUT(1'b0,zg_out,count2[14:4],count2[3:0],1'b0,clk, DO);
@@ -38,6 +40,9 @@ module top_memory_test (clk,reset);
   
   TPcontrol tp1(count1[4:0],en1,en2,en3,clk,reset);
   
+  RLE_top3  rl(zg_out,rle_out,clk,en_rle);
+  
+  assign en_rle = (count1>=27)? 1'b1 : 1'b0;
   assign DIN2 = en1 ? tp_out2 : tp_out1;
   assign out =  en2 ? tp_out4 : tp_out3;
   assign zg_out = en3 ? zg_out2 : zg_out1;

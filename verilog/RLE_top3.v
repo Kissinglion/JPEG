@@ -7,7 +7,9 @@ module RLE_top3(in,out,clk,reset);
   
   reg[223:0]out_temp;
   reg en,e1,e2,e3,e4,e5,e6,e7,e8;
+  reg [13:0]address;
   
+  wire [111:0]DO;
   wire [63:0]in_temp;
   wire [5:0]next1,in_next,out_next;
   wire en1,en2,en3,en4,en5,en6,en7,en8;
@@ -25,7 +27,8 @@ module RLE_top3(in,out,clk,reset);
   
   RLE2  r1(in_temp,in_next,out_next,en1,en2,en3,en4,en5,en6,en7,en8,run1,run2,run3,run4,run5,run6,run7,run8);
   
-  //SRAM512x16 MEM_OUT(1'b0,out_temp1,11'd0,count1,1'b0,clk, DO);
+  SRAM16384x112 MEM_OUT(1'b0,out,(address-1'b1),1'b0,clk, DO);
+  
   
   assign in_next = (count1 == 1) ? 6'b111111 : next1;
   
@@ -38,15 +41,27 @@ module RLE_top3(in,out,clk,reset);
   assign in7 = in_temp[15:8];
   assign in8 = in_temp[7:0];
   
+  always @(*)
+  begin
+    if (~reset)
+      address = 0;
+    else
+      begin
+        if(out)
+          address = address + 1'b1;
+        else
+          address = address;
+      end
+  end
 
   always @(*)
   begin
     if((count[3]))
       begin
-        out = out_temp[111:0];
+        out = out_temp[223:112];
       end
     else
-      out = out_temp[223:112];
+      out = out_temp[111:0];
   end
 
   always@(posedge clk)
@@ -72,14 +87,14 @@ module RLE_top3(in,out,clk,reset);
           begin
             cnt1 = 0;
             count = cnt1;
-            out_temp[count*12+:12] = {run1,in1};
+            out_temp[223-(count*14)-:14] = {run1,in1};
             //out_temp1 = {run1,in1};
           end
         else
           begin
             cnt1 = pp+en1;
             count = cnt1;
-            out_temp[count*12+:12] = {run1,in1};
+            out_temp[223-(count*14)-:14] = {run1,in1};
             //out_temp1 = {run1,in1};
           end
       end
@@ -98,7 +113,7 @@ module RLE_top3(in,out,clk,reset);
       begin
         cnt2 = cnt1 + en2;
         count = cnt2;
-        out_temp[count*12+:12] = {run2,in2};
+        out_temp[223-(count*14)-:14] = {run2,in2};
         //out_temp2 = {run2,in2};
       end
     else
@@ -107,7 +122,7 @@ module RLE_top3(in,out,clk,reset);
       begin
         cnt3 = cnt2 + en3;
         count = cnt3;
-        out_temp[count*12+:12] = {run3,in3};
+        out_temp[223-(count*14)-:14] = {run3,in3};
         //out_temp2 = {run3,in3};
       end
     else
@@ -116,7 +131,7 @@ module RLE_top3(in,out,clk,reset);
       begin
         cnt4 = cnt3 + en4;
         count = cnt4;
-        out_temp[count*12+:12] = {run4,in4};
+        out_temp[223-(count*14)-:14] = {run4,in4};
         //out_temp2 = {run4,in4};
       end
     else
@@ -125,7 +140,7 @@ module RLE_top3(in,out,clk,reset);
       begin
         cnt5 = cnt4 + en5;
         count = cnt5;
-        out_temp[count*12+:12] = {run5,in5};
+        out_temp[223-(count*14)-:14] = {run5,in5};
         //out_temp2 = {run5,in5};
       end
     else
@@ -134,7 +149,7 @@ module RLE_top3(in,out,clk,reset);
       begin
         cnt6 = cnt5 + en6;
         count = cnt6;
-        out_temp[count*12+:12] = {run6,in6};
+        out_temp[223-(count*14)-:14] = {run6,in6};
         //out_temp2 = {run6,in6};
       end
     else
@@ -143,7 +158,7 @@ module RLE_top3(in,out,clk,reset);
       begin
         cnt7 = cnt6 + en7;
         count = cnt7;
-        out_temp[count*12+:12] = {run7,in7};
+        out_temp[223-(count*14)-:14] = {run7,in7};
         //out_temp2 = {run7,in7};
       end
     else
@@ -153,7 +168,7 @@ module RLE_top3(in,out,clk,reset);
         cnt8 = cnt7 + en8;
         count = cnt8;
         pre_count = cnt8;
-        out_temp[count*12+:12] = {run8,in8};
+        out_temp[223-(count*14)-:14] = {run8,in8};
         //out_temp2 = {run8,in8};
       end
     else
