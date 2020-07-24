@@ -9,7 +9,7 @@
 module SRAM16384x112
     #(	parameter ADDRESSSIZE = 14,
 	     parameter ADDRESSBITSIZE = 16384,		    
-       parameter WORDSIZE = 112)
+       parameter WORDSIZE = 128)
 (
  input NWRT,
  input [WORDSIZE-1:0] DIN,
@@ -28,7 +28,7 @@ spsram_hd_32768x80m16 SRAM_syn2
 .CSN	(NCE		),
 .WEN	(NWRT		),
 .OEN	(1'b0		),
-.A	({RA,CA}	),
+.A	({RA}	),
 .DI	(DIN    	),
 .DOUT	(wDO		));
 
@@ -42,7 +42,7 @@ endmodule
 module spsram_hd_32768x80m16 
     #(	parameter ADDRESSSIZE = 14,
 	parameter ADDRESSBITSIZE = 16384,		    
-        parameter WORDSIZE = 112)
+        parameter WORDSIZE = 128)
 (
  input                      CK,
  input                      CSN,
@@ -64,7 +64,7 @@ endmodule
 module SRAM2
     #(	parameter ADDRESSSIZE = 14,
 	     parameter ADDRESSBITSIZE = 16384,		    
-       parameter WORDSIZE = 112)
+       parameter WORDSIZE = 128)
 (
 
  input iClk,

@@ -111,7 +111,7 @@ for kk = 3:3
         end
     end
 
-    Q_pre = quantization(11,Q_temp);
+    Q_pre = quantization(8,Q_temp);
     Q = quantization(8,Q);
 
     %--------------------------- DCT OPERATION -------------------------------
@@ -146,6 +146,17 @@ for kk = 3:3
                                 24 32 39 46 53 60 61 54 
                                 47 40 48 55 62 63 56 64
                               ]);
+        ZigZag_Order = ZigZag_Order';                  
+%         ZigZag_Order2 = uint8([
+%                         1  2  9  11 10 3  4 11
+%                         18 25 33 26 19 12 5  6
+%                         13 20 27 34 41 49 42 35 
+%                         28 21 14 7  8  15 22 29 
+%                         36 43 50 57 58 51 44 37
+%                         30 23 16 24 31 38 45 52 
+%                         59 60 53 46 39 32 40 47 
+%                         54 61 62 55 48 56 63 64
+%                       ]);
 
 %         a=im2col(DCT_image, [8 8],'distinct');
 %         b=a(ZigZag_Order,:);
@@ -284,7 +295,7 @@ for kk = 3:3
 
 
         %image matrix construction from image column
-        Image_tran = col2im(Single_column_quantized_image,   [8 8],   [m n],   'distinct');
+        Image_tran1 = col2im(Single_column_quantized_image,   [8 8],   [m n],   'distinct');
 
 
         %  Allocate the array for Image restore
@@ -292,7 +303,7 @@ for kk = 3:3
 
         for i=1:m/8
             for j=1:n/8
-                Block_temp = Image_tran((8*i-7):8*i,(8*j-7):8*j);
+                Block_temp = Image_tran1((8*i-7):8*i,(8*j-7):8*j);
                 Block_rq = Q.*Block_temp;
                 Block_IDCT = T'*Block_rq*T;
                 Image_restore((8*i-7):8*i,(8*j-7):8*j) = Block_IDCT;

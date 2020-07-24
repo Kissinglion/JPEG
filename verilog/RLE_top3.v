@@ -16,10 +16,10 @@ module RLE_top3(in,out,clk,reset);
   wire [5:0]run1,run2,run3,run4,run5,run6,run7,run8;
   wire [7:0]in1,in2,in3,in4,in5,in6,in7,in8;
   
-  reg [3:0]count;
+  reg [3:0]count,count2;
   reg [3:0]count1,pre_count,pp;
-  reg [3:0]cnt1,cnt2,cnt3,cnt4,cnt5,cnt6,cnt7,cnt8;
-  reg[5:0]next;
+  reg [3:0]cnt1,cnt2,cnt3,cnt4,cnt5,cnt6,cnt7,cnt8,cnt9;
+  reg [5:0]next;
 
   
   D_ff_64b  df1(in,in_temp,clk,reset);
@@ -30,7 +30,7 @@ module RLE_top3(in,out,clk,reset);
   SRAM16384x112 MEM_OUT(1'b0,out,(address-1'b1),1'b0,clk, DO);
   
   
-  assign in_next = (count1 == 1) ? 6'b111111 : next1;
+  assign in_next = (count1[2:0] == 1) ? 6'b0 : next1;
   
   assign in1 = in_temp[63:56];
   assign in2 = in_temp[55:48];
@@ -73,9 +73,18 @@ module RLE_top3(in,out,clk,reset);
   always @(posedge clk)
   begin
     if(~reset)
-      count1 <= -1;
+      begin
+        count1 <= -1;
+        count2 <= -1;
+      end
     else
-      count1 <= count1 + 1;
+      begin
+        	count1 <= count1 + 1;
+        if(count2 != 2)
+          count2 <= count2 + 1;
+        else
+          count2 <= count2;
+      end
   end
   
   
@@ -83,24 +92,22 @@ module RLE_top3(in,out,clk,reset);
   begin
     if(en1)
       begin
-        if(count1 ==1)
+        if(count2 ==1)
           begin
             cnt1 = 0;
             count = cnt1;
             out_temp[223-(count*14)-:14] = {run1,in1};
-            //out_temp1 = {run1,in1};
           end
         else
           begin
             cnt1 = pp+en1;
             count = cnt1;
             out_temp[223-(count*14)-:14] = {run1,in1};
-            //out_temp1 = {run1,in1};
           end
       end
     else
       begin
-        if(count1 ==1)
+        if(count2 ==1)
           begin
             cnt1 = 0;
             count = 0;
@@ -167,15 +174,28 @@ module RLE_top3(in,out,clk,reset);
       begin
         cnt8 = cnt7 + en8;
         count = cnt8;
-        pre_count = cnt8;
+        //pre_count = cnt8;
         out_temp[223-(count*14)-:14] = {run8,in8};
         //out_temp2 = {run8,in8};
       end
     else
       begin
         cnt8 = cnt7;
-        pre_count = cnt8;
+        //pre_count = cnt8;
       end
+    if(count1[2:0] ==7)
+      begin
+        cnt9 = cnt8+1'b1;
+        count = cnt9;
+        pre_count = cnt9;
+        out_temp[223-(count*14)-:14] = {6'b111111,8'b01111111};
+      end
+    else
+      begin
+        cnt9 = cnt8;
+        pre_count = cnt9;
+      end
+      
   end
 endmodule
 

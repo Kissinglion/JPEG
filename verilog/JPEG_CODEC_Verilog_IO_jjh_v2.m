@@ -10,6 +10,7 @@ ZigZag_Order = uint8([  1  9  2  3  10 17 25 18
                         44 51 58 59 52 45 38 31 
                         24 32 39 46 53 60 61 54 
                         47 40 48 55 62 63 56 64 ]);
+ZigZag_Order = ZigZag_Order';
                           
 Q_pre=[ 4   11  10  16    24    40     51    61
         12  12  14  19    26    58     60    55
@@ -41,10 +42,36 @@ for index = 3:3
     % Load DCT output text file from verilog (512x512 pixel)
     % Each pixel has 16bit integer data
     
+    RLE = textread(sprintf('DCT_image_rle_%d.txt',index),'%14c');
+    RLE_2 = char(zeros(79472,14));
+    for i=1:39736
+        RLE_2(2*i-1,1)= 0;
+        RLE_2(2*i-1,2)= 0;
+        RLE_2(2*i-1,3)= 0;
+        RLE_2(2*i-1,4)= 0;
+        RLE_2(2*i-1,5)= 0;
+        RLE_2(2*i-1,6)= 0;
+        RLE_2(2*i-1,7)= 0;
+        RLE_2(2*i-1,8)= 0;
+        RLE_2(2*i-1,9)= 0;
+        RLE_2(2*i-1,10)= 0;
+        RLE_2(2*i-1,11:16) = RLE(i,1:6);  
+        RLE_2(2*i,1)= RLE(i,7);
+        RLE_2(2*i,2)= RLE(i,7);
+        RLE_2(2*i,3)= RLE(i,7);
+        RLE_2(2*i,4)= RLE(i,7);
+        RLE_2(2*i,5)= RLE(i,7);
+        RLE_2(2*i,6)= RLE(i,7);
+        RLE_2(2*i,7)= RLE(i,7);
+        RLE_2(2*i,8)= RLE(i,7);
+        RLE_2(2*i,9:16) = RLE(i,7:14);
+    end
+    RLE_verilog = typecast(uint16(bin2dec(char(RLE_2))),'int16');
+    RLE_v = RLE_verilog(1:79472,:);
+    
+    
     M = textread(sprintf('DCT_image_%d.txt',index),'%8c');
     M_2 = char(zeros(262144,16));
-%     M_2 = char(zeros(16744,14));
-
     for i=1:262144
         M_2(i,1)= M(i,1);
         M_2(i,2)= M(i,1);
@@ -56,28 +83,8 @@ for index = 3:3
         M_2(i,8)= M(i,1);
         M_2(i,9:16) = M(i,1:8);
     end
-%     for i=1:16744
-%         M_2(2*i-1,1)= 0;
-%         M_2(2*i-1,2)= 0;
-%         M_2(2*i-1,3)= 0;
-%         M_2(2*i-1,4)= 0;
-%         M_2(2*i-1,5)= 0;
-%         M_2(2*i-1,6)= 0;
-%         M_2(2*i-1,7)= 0;
-%         M_2(2*i-1,8)= 0;
-%         M_2(2*i-1,9)= 0;
-%         M_2(2*i-1,10)= 0;
-%         M_2(2*i-1,11:16) = M(i,1:6);  
-%         M_2(2*i,1)= M(i,7);
-%         M_2(2*i,2)= M(i,7);
-%         M_2(2*i,3)= M(i,7);
-%         M_2(2*i,4)= M(i,7);
-%         M_2(2*i,5)= M(i,7);
-%         M_2(2*i,6)= M(i,7);
-%         M_2(2*i,7)= M(i,7);
-%         M_2(2*i,8)= M(i,7);
-%         M_2(2*i,9:16) = M(i,7:14);
-%     end
+
+
 
     DCT_image_80b = typecast(uint16(bin2dec(char(M_2))),'int16');
 
@@ -148,7 +155,7 @@ for index = 3:3
 
         
         % Break 8x8 block into columns
-        Single_column_quantized_image=im2col(Image_tran, [8 8],'distinct');
+        Single_column_quantized_image=im2col(Image_tran', [8 8],'distinct');
         ZigZaged_Single_Column_Image=Single_column_quantized_image;
         
 %% --------------------------- zigzag ----------------------------------
@@ -244,12 +251,21 @@ for index = 3:3
 % ---------------------- Run Level Decoding ---------------------------
 
         % construct  ZigZaged_Single_Column_Image from Run Level Pair 
-
+%         run_level_pairs = RLE_v;
+        error = [];
+        for i = 1:79472
+            if run_level_pairs(i,1) ~= RLE_v(i,1)
+                if (RLE_v(i,1) ~= 63) & (RLE_v(i,1) ~= 127)
+                    error = cat(1,error,i);
+                end
+            end
+        end
+        run_level_pairs = RLE_v;
         c=[];
         for i=1:2:size(run_level_pairs) % loop through run_level_pairs
             % Case 1 & Cae 2 
             % concatenate zeros according to 'run' value
-            if run_level_pairs(i)<255 % only end of block should have 255 value
+            if run_level_pairs(i)<63 % only end of block should have 255 value
                 zero_count=0;
                 zero_count=run_level_pairs(i);
                 for l=1:zero_count    % concatenation of zeros accouring to zero_count
@@ -288,20 +304,21 @@ for index = 3:3
 
         %--------------------------- reverse zigzag --------------------------
         %reverse zigzag procedure using the matrix indexing capability of MatLab (specially the ':' operator)
-        Single_column_quantized_image = ZigZaged_Single_Column_Image(reverse_zigzag_order_8x8,:);
+        Single_column_quantized_image = ZigZaged_Single_Column_Image(reverse_zigzag_order_8x8',:);
+%         Single_column_quantized_image = ZigZaged_Single_Column_Image;
         %---------------------------------------------------------------------
 
 
         %image matrix construction from image column
-        Image_tran = col2im(Single_column_quantized_image,   [8 8],   [m n],   'distinct');
-
+        Image_tran1 = col2im(Single_column_quantized_image,   [8 8],   [m n],   'distinct');
+        Image_tran1 = Image_tran1';
 
         %  Allocate the array for Image restore
         Image_restore = zeros(256,256);
 
         for i=1:m/8
             for j=1:n/8
-                Block_temp = Image_tran((8*i-7):8*i,(8*j-7):8*j);
+                Block_temp = Image_tran1((8*i-7):8*i,(8*j-7):8*j);
                 Block_rq = Q.*Block_temp;
                 Block_IDCT = T'*Block_rq*T;
                 Image_restore((8*i-7):8*i,(8*j-7):8*j) = Block_IDCT;

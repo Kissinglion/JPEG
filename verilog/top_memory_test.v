@@ -5,34 +5,45 @@ module top_memory_test (clk,reset);
   
   wire [15:0]count1;
   wire [14:0]count2,count3;
-  wire [71:0]DCT_out1,DCT_out11,tp_out1,tp_out2,DIN2;
-  wire [79:0]DCT_out2,tp_out3,tp_out4,out,DO1;
+  wire [71:0]DCT_out1,tp_out1,tp_out2,DIN2;
+  wire [79:0]DCT_out2,DO1,out1;
   wire [63:0]DIN1;
-  wire [63:0]qt_out,zg_out1,zg_out2,zg_out,DO;
+  wire [63:0]qt_out,qt_out1,zg_out1,zg_out2,zg_out,DO,tp_out3,tp_out4,out;
   wire en1,en2,en3;
   wire [191:0]out_temp;
-  wire [111:0]rle_out;
+  wire [111:0]rle_out,rle_out1;
   wire en_rle;
+  wire [79:0]tp_out33,tp_out44;
 
-
-  SRAM32768x64 MEM_OUT(1'b0,zg_out,count2[14:4],count2[3:0],1'b0,clk, DO);
+  //SRAM32768x64 MEM_OUT(1'b0,zg_out,count2[14:4],count2[3:0],1'b0,clk, DO);
   //SRAM32768x80 MEM_OUT1(1'b0,out,count3[14:4],count3[3:0],1'b0,clk, DO1);
   SRAM32768x64 MEM_IN(1'b1,64'b0,count1[14:4],count1[3:0],1'b0,clk, DIN1 );
   
   DCT_first     d1(DIN1,DCT_out1);
   DCT_second    d2(DIN2,DCT_out2,count1[2:0]);
   
+  Quantization_re qt(DCT_out2,qt_out,(count1[2:0]-3'b010),clk,reset);
+  
   TPmem1 TP1(DCT_out1, en1,clk,reset,tp_out1);
   TPmem1 TP2(DCT_out1,~en1,clk,reset,tp_out2);
-  TPmem2 TP3(DCT_out2, en2,clk,reset,tp_out3);
-  TPmem2 TP4(DCT_out2,~en2,clk,reset,tp_out4);
   
-  ZigZag  Zg1(qt_out, en3,clk,reset,zg_out1);
-  ZigZag  Zg2(qt_out,~en3,clk,reset,zg_out2);
+  ZigZag_TP TP3(qt_out,  en2,clk,reset,tp_out3),
+            TP4(qt_out, ~en2,clk,reset,tp_out4);
   
-  Quantization qt(out,qt_out,(count1[2:0]-3'b011),clk,reset);
+           
+  RLE_top3  rl(out,rle_out,clk,en_rle);         
   
-  //RLE_top2    r1(qt_out[63:0],out_temp,clk,reset);
+  /*         
+  TPmem2 TP5(DCT_out2, en2,clk,reset,tp_out33);
+  TPmem2 TP6(DCT_out2,~en2,clk,reset,tp_out44);
+  
+  ZigZag  Zg1(qt_out1, en3,clk,reset,zg_out1);
+  ZigZag  Zg2(qt_out1,~en3,clk,reset,zg_out2);
+  
+  Quantization qt1(out1,qt_out1,(count1[2:0]-3'b011),clk,reset);
+  
+  RLE_top3  rl1(zg_out,rle_out1,clk,en_rle1);
+  */
   
   counter  cnt1(count1,clk,reset);
   counter2 cnt2(count1,count2,clk,reset);
@@ -40,11 +51,13 @@ module top_memory_test (clk,reset);
   
   TPcontrol tp1(count1[4:0],en1,en2,en3,clk,reset);
   
-  RLE_top3  rl(zg_out,rle_out,clk,en_rle);
   
-  assign en_rle = (count1>=27)? 1'b1 : 1'b0;
+  
+  assign en_rle = (count1>=18)? 1'b1 : 1'b0;
+  assign en_rle1 = (count1>=27)? 1'b1 : 1'b0;
   assign DIN2 = en1 ? tp_out2 : tp_out1;
   assign out =  en2 ? tp_out4 : tp_out3;
+  assign out1 = en2 ? tp_out44 : tp_out33;
   assign zg_out = en3 ? zg_out2 : zg_out1;
 endmodule
 
