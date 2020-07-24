@@ -1,0 +1,388 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'top_memory_test' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clocks
+Design : top_memory_test
+Version: Z-2007.03-SP4
+Date   : Fri Jul 24 15:16:56 2020
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             10.00   {0 5}                         {clk}
+--------------------------------------------------------------------------------
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : top_memory_test
+Version: Z-2007.03-SP4
+Date   : Fri Jul 24 15:17:06 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: lec25dscc25_SS
+Wire Load Model Mode: top
+
+  Startpoint: tp1/en1_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: TP3/array_reg[0][63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  tp1/en1_reg/CLK (dffles2)                               0.00 #     0.00 r
+  tp1/en1_reg/Q (dffles2)                                 0.34       0.34 f
+  tp1/en1 (TPcontrol)                                     0.00       0.34 f
+  U1117/Q (i1s7)                                          0.32       0.66 r
+  U908/Q (nnd2s2)                                         0.13       0.79 f
+  U1120/Q (nnd2s3)                                        0.16       0.95 r
+  d2/in[19] (DCT_second)                                  0.00       0.95 r
+  d2/add_26/B[1] (DCT_second_DW01_add_15)                 0.00       0.95 r
+  d2/add_26/U90/Q (or2s2)                                 0.28       1.23 r
+  d2/add_26/U143/Q (nnd2s3)                               0.10       1.33 f
+  d2/add_26/U145/Q (xor2s3)                               0.35       1.68 r
+  d2/add_26/SUM[1] (DCT_second_DW01_add_15)               0.00       1.68 r
+  d2/add_1_root_add_39/B[1] (DCT_second_DW01_add_4)       0.00       1.68 r
+  d2/add_1_root_add_39/U106/Q (nor2s2)                    0.18       1.86 f
+  d2/add_1_root_add_39/U170/Q (oai21s3)                   0.25       2.11 r
+  d2/add_1_root_add_39/U95/Q (i1s4)                       0.12       2.23 f
+  d2/add_1_root_add_39/U91/Q (i1s5)                       0.12       2.35 r
+  d2/add_1_root_add_39/U125/Q (aoi21s3)                   0.25       2.60 f
+  d2/add_1_root_add_39/U127/Q (xor2s3)                    0.36       2.95 f
+  d2/add_1_root_add_39/SUM[3] (DCT_second_DW01_add_4)     0.00       2.95 f
+  d2/add_0_root_add_39/B[3] (DCT_second_DW01_add_8)       0.00       2.95 f
+  d2/add_0_root_add_39/U126/Q (or2s3)                     0.23       3.18 f
+  d2/add_0_root_add_39/U167/Q (aoi21s3)                   0.22       3.40 r
+  d2/add_0_root_add_39/U105/Q (oai21s2)                   0.26       3.66 f
+  d2/add_0_root_add_39/U88/Q (i1s3)                       0.13       3.79 r
+  d2/add_0_root_add_39/U139/Q (xor2s3)                    0.35       4.14 r
+  d2/add_0_root_add_39/SUM[5] (DCT_second_DW01_add_8)     0.00       4.14 r
+  d2/U500/Q (oai21s3)                                     0.16       4.30 f
+  d2/U501/Q (nnd2s2)                                      0.17       4.47 r
+  d2/U435/Q (i1s3)                                        0.09       4.56 f
+  d2/U296/Q (oai21s2)                                     0.20       4.75 r
+  d2/U502/Q (nnd2s2)                                      0.16       4.91 f
+  d2/U503/Q (nnd3s2)                                      0.20       5.11 r
+  d2/U416/Q (nnd2s3)                                      0.13       5.23 f
+  d2/U84/Q (i1s3)                                         0.07       5.31 r
+  d2/U244/Q (oai22s2)                                     0.12       5.42 f
+  d2/U271/Q (oai22s2)                                     0.22       5.64 r
+  d2/U443/Q (nnd2s2)                                      0.18       5.83 f
+  d2/U233/Q (nnd2s1)                                      0.17       6.00 r
+  d2/U388/Q (nnd2s2)                                      0.14       6.14 f
+  d2/U232/Q (nnd2s3)                                      0.13       6.27 r
+  d2/U237/Q (xnr2s3)                                      0.29       6.56 r
+  d2/add_0_root_add_0_root_add_41_3/B[13] (DCT_second_DW01_add_5)
+                                                          0.00       6.56 r
+  d2/add_0_root_add_0_root_add_41_3/U135/Q (nor2s2)       0.13       6.70 f
+  d2/add_0_root_add_0_root_add_41_3/U148/Q (oai21s3)      0.24       6.93 r
+  d2/add_0_root_add_0_root_add_41_3/U153/Q (aoi21s3)      0.19       7.12 f
+  d2/add_0_root_add_0_root_add_41_3/U11/Q (oai21s2)       0.25       7.37 r
+  d2/add_0_root_add_0_root_add_41_3/U177/Q (xnr2s2)       0.38       7.75 f
+  d2/add_0_root_add_0_root_add_41_3/SUM[15] (DCT_second_DW01_add_5)
+                                                          0.00       7.75 f
+  d2/U245/Q (nnd2s3)                                      0.11       7.85 r
+  d2/U448/Q (nnd2s3)                                      0.15       8.01 f
+  d2/out[78] (DCT_second)                                 0.00       8.01 f
+  qt/in[78] (Quantization_re)                             0.00       8.01 f
+  qt/U123/Q (i1s3)                                        0.16       8.17 r
+  qt/U117/Q (i1s5)                                        0.12       8.29 f
+  qt/U129/Q (xnr3s2)                                      0.43       8.73 r
+  qt/U246/Q (aoi21s3)                                     0.21       8.93 f
+  qt/U330/Q (aoi21s3)                                     0.21       9.14 r
+  qt/U313/Q (aoi13s3)                                     0.19       9.33 f
+  qt/U370/Q (xor2s2)                                      0.38       9.71 r
+  qt/U375/Q (aoi221s2)                                    0.33      10.04 f
+  qt/rnd1/out_temp[11] (round_0)                          0.00      10.04 f
+  qt/rnd1/r286/A[4] (round_0_DW01_inc_0)                  0.00      10.04 f
+  qt/rnd1/r286/U64/Q (nnd2s2)                             0.22      10.26 r
+  qt/rnd1/r286/U63/Q (nor2s2)                             0.19      10.45 f
+  qt/rnd1/r286/U66/Q (nnd2s2)                             0.17      10.62 r
+  qt/rnd1/r286/U38/Q (nnd2s2)                             0.11      10.73 f
+  qt/rnd1/r286/U40/Q (nnd2s2)                             0.14      10.86 r
+  qt/rnd1/r286/SUM[7] (round_0_DW01_inc_0)                0.00      10.86 r
+  qt/rnd1/U24/Q (nnd2s3)                                  0.10      10.96 f
+  qt/rnd1/U23/Q (nnd2s3)                                  0.13      11.09 r
+  qt/rnd1/out[7] (round_0)                                0.00      11.09 r
+  qt/out[63] (Quantization_re)                            0.00      11.09 r
+  TP3/i_data[63] (ZigZag_TP_0)                            0.00      11.09 r
+  TP3/U77/Q (and2s2)                                      0.39      11.49 r
+  TP3/array_reg[0][63]/DIN (dffles1)                      0.00      11.49 r
+  data arrival time                                                 11.49
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  TP3/array_reg[0][63]/CLK (dffles1)                      0.00      10.00 r
+  library setup time                                     -0.50       9.50
+  data required time                                                 9.50
+  --------------------------------------------------------------------------
+  data required time                                                 9.50
+  data arrival time                                                -11.49
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.98
+
+
+ 
+****************************************
+Report : reference
+Design : top_memory_test
+Version: Z-2007.03-SP4
+Date   : Fri Jul 24 15:17:21 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+DCT_first                     127858.182724       1 127858.182724 h
+DCT_second                    99176.179337       1  99176.179337  h
+Quantization_re               95841.797775       1  95841.797775  h
+RLE_top3                      217528.927486       1 217528.927486 h, n
+TPcontrol                      1119.744396       1   1119.744396  h, n
+TPmem1_0                      141021.602917       1 141021.602917 h, n
+TPmem1_1                      140955.246922       1 140955.246922 h, n
+ZigZag_TP_0                   143111.777401       1 143111.777401 h, n
+ZigZag_TP_1                   143277.665401       1 143277.665401 h, n
+aoi22s2            lec25dscc25_SS    58.060799      64  3715.891113
+counter                        5988.559929       1   5988.559929  h, n
+counter2                       6038.328312       1   6038.328312  h, n
+counter3                       6104.683708       1   6104.683708  h, n
+hi1s1              lec25dscc25_SS    33.177601       2    66.355202
+i1s3               lec25dscc25_SS    41.472000       4   165.888000
+i1s4               lec25dscc25_SS    49.766399       1    49.766399
+i1s5               lec25dscc25_SS    49.766399       3   149.299198
+i1s6               lec25dscc25_SS    58.060799       3   174.182396
+i1s7               lec25dscc25_SS   107.827003       1   107.827003
+ib1s1              lec25dscc25_SS    33.177601      73  2421.964863
+mx21s1             lec25dscc25_SS    82.944000      36  2985.984009
+mx21s2             lec25dscc25_SS    82.944000       6   497.664001
+mx21s3             lec25dscc25_SS    91.238403      20  1824.768066
+mxi21s1            lec25dscc25_SS    66.355202       1    66.355202
+nnd2s1             lec25dscc25_SS    41.472000       3   124.416000
+nnd2s2             lec25dscc25_SS    41.472000      14   580.608002
+nnd2s3             lec25dscc25_SS    58.060799      10   580.607986
+nnd4s1             lec25dscc25_SS    58.060799       1    58.060799
+nor2s1             lec25dscc25_SS    41.472000       1    41.472000
+nor3s1             lec25dscc25_SS    82.944000       1    82.944000
+nor6s1             lec25dscc25_SS   107.827003       1   107.827003
+oai13s2            lec25dscc25_SS    58.060799       1    58.060799
+xor2s3             lec25dscc25_SS   116.122002       1   116.122002
+-----------------------------------------------------------------------------
+Total 33 references                                 1141998.760353
+ 
+****************************************
+Report : area
+Design : top_memory_test
+Version: Z-2007.03-SP4
+Date   : Fri Jul 24 15:17:28 2020
+****************************************
+
+Library(s) Used:
+
+    lec25dscc25_SS (File: /home/admin/lib/lec25/lec25dscc25_SS.db)
+
+Number of ports:                2
+Number of nets:               819
+Number of cells:              259
+Number of references:          33
+
+Combinational area:       641679.701187
+Noncombinational area:    500319.059166
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          1141998.750000
+Total area:                 undefined
+Loading db file '/home/admin/lib/lec25/lec25dscc25_SS.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top_memory_test
+Version: Z-2007.03-SP4
+Date   : Fri Jul 24 15:17:38 2020
+****************************************
+
+
+Library(s) Used:
+
+    lec25dscc25_SS (File: /home/admin/lib/lec25/lec25dscc25_SS.db)
+
+
+Operating Conditions: nom_pvt   Library: lec25dscc25_SS
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 2.25 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  29.6214 mW   (83%)
+  Net Switching Power  =   6.1438 mW   (17%)
+                         ---------
+Total Dynamic Power    =  35.7652 mW  (100%)
+
+Cell Leakage Power     =   5.0777 mW
+
+
+                                  Global cell area               Local cell area
+                                  ---------------------  -------------------------------- 
+Hierarchical cell                 Absolute      Percent  Combi-       Noncombi-    Black
+                                  Total         Total    national     national     boxes   Design
+--------------------------------  ------------  -------  -----------  -----------  ------  ------------------------------
+top_memory_test                   1142016.7500    100.0   13976.0811       0.0000  0.0000  top_memory_test
+TP1                                141020.8906     12.3   26824.1758  114196.9609  0.0000  TPmem1_0
+TP2                                140954.5312     12.3   26741.2227  114213.5547  0.0000  TPmem1_1
+TP3                                143110.8594     12.5   31369.4180  111742.0156  0.0000  ZigZag_TP_0
+TP4                                143276.7344     12.5   31535.3047  111742.0156  0.0000  ZigZag_TP_1
+cnt1                                 5988.5576      0.5    1227.5712    3251.4082  0.0000  counter
+cnt1/add_77                          1509.5808      0.1    1509.5808       0.0000  0.0000  counter_DW01_inc_0
+cnt2                                 6038.3262      0.5    1642.2900    2985.9897  0.0000  counter2
+cnt2/add_100                         1410.0480      0.1    1410.0480       0.0000  0.0000  counter2_DW01_inc_0
+cnt3                                 6104.6816      0.5    1708.6458    2985.9897  0.0000  counter3
+cnt3/add_125                         1410.0480      0.1    1410.0480       0.0000  0.0000  counter3_DW01_inc_0
+d1                                 127858.7188     11.2   51101.7227       0.0000  0.0000  DCT_first
+d1/add_0_root_add_0_root_add_88_4    1957.4780      0.2    1957.4780       0.0000  0.0000  DCT_first_DW01_add_9
+d1/add_0_root_add_0_root_add_92_6    2455.1418      0.2    2455.1418       0.0000  0.0000  DCT_first_DW01_add_15
+d1/add_0_root_add_0_root_add_94_6    2455.1418      0.2    2455.1418       0.0000  0.0000  DCT_first_DW01_add_21
+d1/add_1_root_add_0_root_add_92_6    2123.3660      0.2    2123.3660       0.0000  0.0000  DCT_first_DW01_add_16
+d1/add_1_root_add_0_root_add_94_6    2123.3660      0.2    2123.3660       0.0000  0.0000  DCT_first_DW01_add_22
+d1/add_1_root_add_0_root_sub_93_3    2123.3660      0.2    2123.3660       0.0000  0.0000  DCT_first_DW01_add_27
+d1/add_28                            1293.9263      0.1    1293.9263       0.0000  0.0000  DCT_first_DW01_add_8
+d1/add_29                            1293.9263      0.1    1293.9263       0.0000  0.0000  DCT_first_DW01_add_7
+d1/add_2_root_add_0_root_add_92_6    1957.4780      0.2    1957.4780       0.0000  0.0000  DCT_first_DW01_add_17
+d1/add_30                            1293.9263      0.1    1293.9263       0.0000  0.0000  DCT_first_DW01_add_6
+d1/add_31                            1293.9263      0.1    1293.9263       0.0000  0.0000  DCT_first_DW01_add_5
+d1/add_37                            1459.8142      0.1    1459.8142       0.0000  0.0000  DCT_first_DW01_add_4
+d1/add_38                            1459.8142      0.1    1459.8142       0.0000  0.0000  DCT_first_DW01_add_3
+d1/add_4_root_add_0_root_add_92_6    2289.2539      0.2    2289.2539       0.0000  0.0000  DCT_first_DW01_add_19
+d1/add_4_root_add_0_root_add_94_6    2289.2539      0.2    2289.2539       0.0000  0.0000  DCT_first_DW01_add_25
+d1/add_4_root_add_0_root_sub_93_3    2289.2539      0.2    2289.2539       0.0000  0.0000  DCT_first_DW01_add_30
+d1/add_5_root_add_0_root_add_92_6    2621.0298      0.2    2621.0298       0.0000  0.0000  DCT_first_DW01_add_20
+d1/add_5_root_add_0_root_add_94_6    2621.0298      0.2    2621.0298       0.0000  0.0000  DCT_first_DW01_add_26
+d1/rnd1                              1974.0675      0.2    1161.2161       0.0000  0.0000  round1_0
+d1/rnd1/r286                          812.8511      0.1     812.8511       0.0000  0.0000  round1_0_DW01_inc_0
+d1/rnd2                              1974.0675      0.2    1161.2161       0.0000  0.0000  round1_7
+d1/rnd2/r286                          812.8511      0.1     812.8511       0.0000  0.0000  round1_7_DW01_inc_0
+d1/rnd3                              1974.0676      0.2    1161.2162       0.0000  0.0000  round1_6
+d1/rnd3/r286                          812.8511      0.1     812.8511       0.0000  0.0000  round1_6_DW01_inc_0
+d1/rnd4                              1974.0675      0.2    1161.2161       0.0000  0.0000  round1_5
+d1/rnd4/r286                          812.8511      0.1     812.8511       0.0000  0.0000  round1_5_DW01_inc_0
+d1/rnd5                              1974.0676      0.2    1161.2162       0.0000  0.0000  round1_4
+d1/rnd5/r286                          812.8511      0.1     812.8511       0.0000  0.0000  round1_4_DW01_inc_0
+d1/rnd6                              1974.0675      0.2    1161.2161       0.0000  0.0000  round1_3
+d1/rnd6/r286                          812.8511      0.1     812.8511       0.0000  0.0000  round1_3_DW01_inc_0
+d1/rnd7                              1974.0676      0.2    1161.2162       0.0000  0.0000  round1_2
+d1/rnd7/r286                          812.8511      0.1     812.8511       0.0000  0.0000  round1_2_DW01_inc_0
+d1/rnd8                              1974.0675      0.2    1161.2161       0.0000  0.0000  round1_1
+d1/rnd8/r286                          812.8511      0.1     812.8511       0.0000  0.0000  round1_1_DW01_inc_0
+d1/sub_0_root_add_0_root_sub_93_3    2952.8059      0.3    2952.8059       0.0000  0.0000  DCT_first_DW01_sub_13
+d1/sub_0_root_sub_1_root_add_90_2    2289.2539      0.2    2289.2539       0.0000  0.0000  DCT_first_DW01_sub_9
+d1/sub_1_root_add_0_root_add_88_4    2820.0955      0.2    2820.0955       0.0000  0.0000  DCT_first_DW01_sub_8
+d1/sub_1_root_sub_1_root_add_90_2    3176.7546      0.3    3176.7546       0.0000  0.0000  DCT_first_DW01_sub_10
+d1/sub_32                            1998.9517      0.2    1998.9517       0.0000  0.0000  DCT_first_DW01_sub_7
+d1/sub_33                            2015.5405      0.2    2015.5405       0.0000  0.0000  DCT_first_DW01_sub_6
+d1/sub_34                            1998.9517      0.2    1998.9517       0.0000  0.0000  DCT_first_DW01_sub_5
+d1/sub_35                            1998.9517      0.2    1998.9517       0.0000  0.0000  DCT_first_DW01_sub_4
+d1/sub_39                            2256.0784      0.2    2256.0784       0.0000  0.0000  DCT_first_DW01_sub_3
+d1/sub_40                            1799.8846      0.2    1799.8846       0.0000  0.0000  DCT_first_DW01_sub_2
+d1/sub_5_root_add_0_root_sub_93_3    2256.0764      0.2    2256.0764       0.0000  0.0000  DCT_first_DW01_sub_14
+d2                                  99176.0547      8.7   31444.1133       0.0000  0.0000  DCT_second
+d2/add_0_root_add_0_root_add_41_3    5416.2466      0.5    5416.2466       0.0000  0.0000  DCT_second_DW01_add_5
+d2/add_0_root_add_39                 5134.2363      0.4    5134.2363       0.0000  0.0000  DCT_second_DW01_add_8
+d2/add_0_root_sub_0_root_add_37      3400.7056      0.3    3400.7056       0.0000  0.0000  DCT_second_DW01_add_10
+d2/add_0_root_sub_0_root_sub_44      2571.2656      0.2    2571.2656       0.0000  0.0000  DCT_second_DW01_add_9
+d2/add_1_root_add_39                 4926.8755      0.4    4926.8755       0.0000  0.0000  DCT_second_DW01_add_4
+d2/add_24                            4172.0845      0.4    4172.0845       0.0000  0.0000  DCT_second_DW01_add_11
+d2/add_25                            4230.1465      0.4    4230.1465       0.0000  0.0000  DCT_second_DW01_add_12
+d2/add_26                            4188.6733      0.4    4188.6733       0.0000  0.0000  DCT_second_DW01_add_15
+d2/add_27                            3981.3137      0.3    3981.3137       0.0000  0.0000  DCT_second_DW01_add_2
+d2/add_2_root_add_39                 4520.4492      0.4    4520.4492       0.0000  0.0000  DCT_second_DW01_add_7
+d2/rnd2                              2488.3198      0.2    1559.3473       0.0000  0.0000  round2_0
+d2/rnd2/r286                          928.9727      0.1     928.9727       0.0000  0.0000  round2_0_DW01_inc_0
+d2/rnd3                              2903.0403      0.3    1700.3521       0.0000  0.0000  round2_1
+d2/rnd3/r286                         1202.6888      0.1    1202.6888       0.0000  0.0000  round2_1_DW01_inc_0
+d2/sub_1_root_sub_0_root_sub_44      2222.9009      0.2    2222.9009       0.0000  0.0000  DCT_second_DW01_sub_4
+d2/sub_1_root_sub_42                 4619.9839      0.4    4619.9839       0.0000  0.0000  DCT_second_DW01_sub_7
+d2/sub_28                            2363.9053      0.2    2363.9053       0.0000  0.0000  DCT_second_DW01_sub_2
+d2/sub_2_root_sub_0_root_sub_44      2314.1389      0.2    2314.1389       0.0000  0.0000  DCT_second_DW01_sub_5
+d2/sub_30                            3599.7688      0.3    3599.7688       0.0000  0.0000  DCT_second_DW01_sub_0
+d2/sub_36                            4678.0439      0.4    4678.0439       0.0000  0.0000  DCT_second_DW01_sub_3
+qt                                  95841.9062      8.4   48513.9766       0.0000  0.0000  Quantization_re
+qt/mult_120_S5                       2023.8339      0.2    2023.8339       0.0000  0.0000  Quantization_re_DW_mult_uns_15
+qt/mult_120_S6                       1459.8142      0.1    1459.8142       0.0000  0.0000  Quantization_re_DW_mult_uns_14
+qt/mult_121_S4                       2587.8535      0.2    2587.8535       0.0000  0.0000  Quantization_re_DW_mult_uns_11
+qt/mult_121_S5                       1459.8142      0.1    1459.8142       0.0000  0.0000  Quantization_re_DW_mult_uns_17
+qt/mult_121_S6                       1526.1694      0.1    1526.1694       0.0000  0.0000  Quantization_re_DW_mult_uns_16
+qt/mult_122_S4                       1949.1848      0.2    1949.1848       0.0000  0.0000  Quantization_re_DW_mult_uns_2
+qt/mult_122_S5                       1526.1694      0.1    1526.1694       0.0000  0.0000  Quantization_re_DW_mult_uns_13
+qt/mult_123_S2                       3632.9460      0.3    3632.9460       0.0000  0.0000  Quantization_re_DW_mult_uns_4
+qt/mult_123_S3                       3832.0112      0.3    3832.0112       0.0000  0.0000  Quantization_re_DW_mult_uns_1
+qt/mult_124                          3608.0632      0.3    3608.0632       0.0000  0.0000  Quantization_re_DW_mult_uns_7
+qt/mult_124_S3                       3856.8940      0.3    3856.8940       0.0000  0.0000  Quantization_re_DW_mult_uns_0
+qt/mult_125                          3326.0535      0.3    3326.0535       0.0000  0.0000  Quantization_re_DW_mult_uns_6
+qt/rnd1                              3126.9871      0.3    1368.5759       0.0000  0.0000  round_0
+qt/rnd1/r286                         1758.4133      0.2    1758.4133       0.0000  0.0000  round_0_DW01_inc_0
+qt/rnd2                              2139.9553      0.2    1028.5056       0.0000  0.0000  round_7
+qt/rnd2/r286                         1111.4496      0.1    1111.4496       0.0000  0.0000  round_7_DW01_inc_0
+qt/rnd3                              2579.5583      0.2    1227.5713       0.0000  0.0000  round_6
+qt/rnd3/r286                         1351.9869      0.1    1351.9869       0.0000  0.0000  round_6_DW01_inc_1
+qt/rnd4                              1924.3011      0.2     879.2064       0.0000  0.0000  round_5
+qt/rnd4/r286                         1045.0945      0.1    1045.0945       0.0000  0.0000  round_5_DW01_inc_0
+qt/rnd5                              1692.0579      0.1     978.7393       0.0000  0.0000  round_4
+qt/rnd5/r286                          713.3184      0.1     713.3184       0.0000  0.0000  round_4_DW01_inc_0
+qt/rnd6                              1692.0579      0.1     978.7393       0.0000  0.0000  round_3
+qt/rnd6/r286                          713.3184      0.1     713.3184       0.0000  0.0000  round_3_DW01_inc_0
+qt/rnd7                              1692.0579      0.1     978.7393       0.0000  0.0000  round_2
+qt/rnd7/r286                          713.3184      0.1     713.3184       0.0000  0.0000  round_2_DW01_inc_0
+qt/rnd8                              1692.0579      0.1     978.7393       0.0000  0.0000  round_1
+qt/rnd8/r286                          713.3184      0.1     713.3184       0.0000  0.0000  round_1_DW01_inc_0
+rl                                 217529.5000     19.0  170558.6562   22336.7988  0.0000  RLE_top3
+rl/df1                              10898.8408      1.0      99.5328   10799.3086  0.0000  D_ff_64b
+rl/df2                                995.3280      0.1       0.0000     995.3280  0.0000  D_ff_6b
+rl/r1                               12740.2090      1.1    4172.0806    4454.0903  0.0000  RLE2
+rl/r1/add_41                          514.2528      0.0     514.2528       0.0000  0.0000  RLE2_DW01_inc_7
+rl/r1/add_48                          514.2528      0.0     514.2528       0.0000  0.0000  RLE2_DW01_inc_6
+rl/r1/add_55                          514.2528      0.0     514.2528       0.0000  0.0000  RLE2_DW01_inc_5
+rl/r1/add_62                          514.2528      0.0     514.2528       0.0000  0.0000  RLE2_DW01_inc_4
+rl/r1/add_69                          514.2528      0.0     514.2528       0.0000  0.0000  RLE2_DW01_inc_3
+rl/r1/add_76                          514.2528      0.0     514.2528       0.0000  0.0000  RLE2_DW01_inc_2
+rl/r1/add_83                          514.2528      0.0     514.2528       0.0000  0.0000  RLE2_DW01_inc_1
+rl/r1/add_90                          514.2528      0.0     514.2528       0.0000  0.0000  RLE2_DW01_inc_0
+tp1                                  1119.7444      0.1     505.9584     613.7860  0.0000  TPcontrol
+--------------------------------  ------------  -------  -----------  -----------  ------  ------------------------------
+Total                                                    641680.6250  500317.2812  0.0000
+
+
