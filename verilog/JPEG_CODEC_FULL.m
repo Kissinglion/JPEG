@@ -3,14 +3,48 @@ close all
 clc
 
 
-
- for image_number = 3:3 %%%%%%%%%% "Change this number" to test many different images.
+mm = 255;
+ for image_number = 2:2 %%%%%%%%%% "Change this number" to test many different images.
 
     %---------------------------- Get the Image data Input ----------------------------------
      % Load input image (512x512 pixel), Each pixel has 8bit data (0~255)
      input_image_512x512 = double( imread( sprintf( 'image_in_%d.tif',image_number ),'tiff' ) );
+     original = (imread( sprintf( 'image_in_%d.tif',image_number ),'tif' ));
     %-----------------------------------------------------------------------------------------
-     
+    for i = 1:512
+        for j =1:512
+            minimum = min(mm,input_image_512x512(i,j));
+        end
+    end
+    
+%     original = original./255;
+    
+    for i = 1:512
+        for j =1:512
+            input_image_512x512(i,j) = input_image_512x512(i,j) - 128;
+        end
+    end
+
+%     input_image_512x512(1,1) = -50;
+    
+    input_verilog = zeros(512,512);
+    for i = 1:512
+        for j =1:512
+            if input_image_512x512(i,j) < 0
+                input_verilog(i,j) = 256 + input_image_512x512(i,j);
+            else
+                input_verilog(i,j) = input_image_512x512(i,j);
+            end
+        end
+    end
+    
+    
+%     for i = 1:512
+%         for j =1:512
+%             mm = max(mm,input_image_512x512(i,j));
+%         end
+%     end
+    
     [m,n] = size(input_image_512x512);
 
     m = floor(m/8)*8;
@@ -18,7 +52,8 @@ clc
      
     %------------------------------------ show input image -----------------------------------
      subplot(4,4,image_number*2-1);
-     imshow(input_image_512x512./255);
+%      imshow(input_image_512x512./255);
+     imshow(original);
      title ( sprintf('Original image #%d \n size : %dx%d',image_number,m,n) );
     %-----------------------------------------------------------------------------------------    
     
@@ -29,7 +64,7 @@ clc
         for k = 1:64   
             for i = 1:8
                 for j = 1:8
-                    vector_temp(1, x) = input_image_512x512((i+8*(l-1)),(j+8*(k-1)));
+                    vector_temp(1, x) = input_verilog((i+8*(l-1)),(j+8*(k-1)));
                     x= x+1;
                 end
             end
@@ -50,7 +85,7 @@ clc
 
     for i = 1 : 32768
 
-        fprintf(input_vector, '%X', vector_1(1,i));
+        fprintf(input_vector, '%012X', vector_1(1,i));
         if(vector_2(1,i)<16)        fprintf(input_vector, '000%X \n',vector_2(1,i));
         elseif(vector_2(1,i)<256)   fprintf(input_vector, '00%X \n',vector_2(1,i));
         elseif(vector_2(1,i)<4096)  fprintf(input_vector, '0%X \n',vector_2(1,i));
@@ -282,20 +317,25 @@ Q_pre=[4   11  10  16    24    40     51    61;
             end
         end   
 
-        for i=1:m
-            for j=1:n
-                if Image_restore(i,j) > 255
-                   Image_restore(i,j) = 255;
-                end
+%         for i=1:m
+%             for j=1:n
+%                 if Image_restore(i,j) > 255-128
+%                    Image_restore(i,j) = 255-128;
+%                 end
+% 
+%                 if Image_restore(i,j) < 0-128
+%                    Image_restore(i,j) = 0-128;
+%                 end
+% 
+%             end
+%         end   
 
-                if Image_restore(i,j) < 0
-                   Image_restore(i,j) = 0;
-                end
-
-            end
-        end   
-
-
+    for i = 1:512
+        for j =1:512
+            Image_restore(i,j) = Image_restore(i,j) + 128;
+            input_image_512x512(i,j) = input_image_512x512(i,j) + 128;
+        end
+    end
     %------------------------Generate the output Image--------------------------    
 
     output_file_name = sprintf( 'image_out_%d.tif',image_number);

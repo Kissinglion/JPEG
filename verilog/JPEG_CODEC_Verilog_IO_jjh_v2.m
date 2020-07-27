@@ -140,6 +140,17 @@ for index = 3:3
 %     Q_pre = quantization(7,Q_temp);
 %     Q_pre = Q_temp;
     Q = quantization(7,Q);
+%     Q = Quant(8,Q);
+
+    input_vec = fopen('Q.txt','w');
+
+    for i = 1:8
+        for j = 1:8
+            fprintf(input_vec,'%02X \n',Q(i,j));
+        end
+    end
+    fclose(input_vec);
+
 
       
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -303,6 +314,8 @@ for index = 3:3
 %% --------- image matrix construction from image column ----------
         Image_tran1 = col2im(Single_column_quantized_image,   [8 8],   [m n],   'distinct');
         Image_tran1 = Image_tran1';
+        Image_tran2 = col2im(ZigZaged_Single_Column_Image,   [8 8],   [m n],   'distinct');
+        Image_tran2 = Image_tran2';
 
         %  Allocate the array for Image restore
         Image_restore = zeros(256,256);
@@ -310,8 +323,12 @@ for index = 3:3
         for i=1:m/8
             for j=1:n/8
                 Block_temp = Image_tran1((8*i-7):8*i,(8*j-7):8*j);
-                Block_rq = Q.*Block_temp;
+                Block_temp1 = Image_tran2((8*i-7):8*i,(8*j-7):8*j);
+%                 Block_rq = Q.*Block_temp;
+                Block_rq = Block_temp;
+                Block_rq1 = Block_temp1;
                 Block_IDCT = T2'*Block_rq*T1;
+                Block_IDCT1 = T2'*Block_rq1*T1;
                 Image_restore((8*i-7):8*i,(8*j-7):8*j) = Block_IDCT;
             end
         end   
