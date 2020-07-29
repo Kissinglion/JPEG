@@ -2,7 +2,7 @@ library verilog;
 use verilog.vl_types.all;
 entity TPmem2 is
     generic(
-        BW              : integer := 10
+        BW              : integer := 8
     );
     port(
         i_data          : in     vl_logic_vector;

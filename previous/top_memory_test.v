@@ -5,9 +5,9 @@ module top_memory_test (clk,reset);
   
   wire [15:0]count1;
   wire [14:0]count2;
-  wire [71:0]DCT_out1,DCT_out11,tp_out1,tp_out2,DIN2;
-  wire [79:0]DCT_out2,tp_out3,tp_out4,DO,out;
-  wire [63:0]DIN1;
+  wire [63:0]DCT_out11,tp_out1,tp_out2,DIN2;
+  wire [63:0]tp_out3,tp_out4,DO,out;
+  wire [63:0]DIN1,DCT_out1,DCT_out2;
   wire en1,en3;
 
 

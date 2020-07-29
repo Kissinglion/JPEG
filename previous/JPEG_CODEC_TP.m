@@ -1,6 +1,6 @@
-clear all
-close all
-clc
+% clear all
+% close all
+% clc
 %-------------------------- Initialization -----------------------------
 mm = 0;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -11,7 +11,7 @@ for kk = 3:3
 
     % Load DCT output text file from verilog (512x512 pixel)
     % Each pixel has 16bit integer data
-    M = textread(sprintf('DCT_image_%d.txt',kk),'%10c');
+    M = textread(sprintf('DCT_image_%d.txt',kk),'%8c');
 %     M = textread('DCT_image_3.txt','%10c');
     M_2 = char(zeros(262144,16));
 
@@ -22,7 +22,9 @@ for kk = 3:3
         M_2(i,4)= M(i,1);
         M_2(i,5)= M(i,1);
         M_2(i,6)= M(i,1);
-        M_2(i,7:16) = M(i,1:10);
+        M_2(i,7:14) = M(i,1:8);
+        M_2(i,15)= 0;
+        M_2(i,16)= 0;
     end
 
     DCT_image_80b = typecast(uint16(bin2dec(char(M_2))),'int16');

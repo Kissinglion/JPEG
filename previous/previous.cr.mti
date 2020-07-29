@@ -7,19 +7,19 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	SRAM32768x64
 
-} {} {}} C:/Users/user/Desktop/JPEG/previous/sti_project2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/previous/sti_project2.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module sti_project2
-
-Top level modules:
-	sti_project2
-
 } {} {}} C:/Users/user/Desktop/JPEG/previous/TPmem1.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/previous/TPmem1.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module TPmem1
 
 Top level modules:
 	TPmem1
+
+} {} {}} C:/Users/user/Desktop/JPEG/previous/sti_project2.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/previous/sti_project2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sti_project2
+
+Top level modules:
+	sti_project2
 
 } {} {}} C:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -37,6 +37,21 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	TPmem2
 
+} {} {}} C:/Users/user/Desktop/JPEG/previous/DCT_second.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/previous/DCT_second.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DCT_second
+
+Top level modules:
+	DCT_second
+
+} {} {}} C:/Users/user/Desktop/JPEG/previous/DCT_first.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/previous/DCT_first.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DCT_first
+-- Compiling module round1
+
+Top level modules:
+	DCT_first
+
 } {} {}} C:/Users/user/Desktop/JPEG/previous/top_memory_test.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/previous/top_memory_test.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module top_memory_test
@@ -46,19 +61,5 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	top_memory_test
-
-} {} {}} C:/Users/user/Desktop/JPEG/previous/DCT_first.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/previous/DCT_first.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module DCT_first
-
-Top level modules:
-	DCT_first
-
-} {} {}} C:/Users/user/Desktop/JPEG/previous/DCT_second.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/previous/DCT_second.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module DCT_second
-
-Top level modules:
-	DCT_second
 
 } {} {}}

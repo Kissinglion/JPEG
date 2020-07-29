@@ -1,17 +1,17 @@
 module DCT_first(in,out);
   
   input [63:0]in;
-  output wire [71:0]out;
+  output wire [63:0]out;
   
   wire [7:0] in_temp [7:0];
   wire signed [17:0] out_temp [7:0];
   wire signed [9:0] a1,a2,a3,a4,a5,a6,a7,a8;
-  wire signed [11:0] b1,b2,b3,b4,b5,b6,b7,a62,a72,a82;
-  wire signed [12:0] b31,a63,a73,a83;
-  wire signed [13:0] a54,a64,a84,b52,b62,b72;
+  wire signed [11:0] b1,b2,b3,b4,b5,b6,b7,b8,a52,a62,a72,a82;
+  wire signed [12:0] b31,a53,a63,a73,a83;
+  wire signed [13:0] a54,a64,a74,a84,b52,b62,b72,b82;
   wire signed [14:0] c1,c2,b33,b43,a55;
-  wire signed [15:0] b34,b44,a56,a66,a76;
-  wire signed [16:0] c12,b55,b65,b75;
+  wire signed [15:0] b34,b44,a56,a66,a76,a86;
+  wire signed [16:0] c12,c22,b55,b65,b75,b85;
   wire signed [17:0] c13,b36,b46,c23;
   wire signed [19:0] c15,c25;
 
@@ -41,6 +41,7 @@ module DCT_first(in,out);
   assign b5 = a6 + a7;
   assign b6 = a5 - a8;
   assign b7 = a5 + a8;
+  assign b8 = a7 - a6;
   assign c1 = b1 + b2; 
   assign c2 = b1 - b2;
   
@@ -51,14 +52,21 @@ module DCT_first(in,out);
   assign b44 = {b4,4'b0};
   assign b43 = {b4,3'b0};
   assign b46 = {b4,6'b0};
+  
   assign b52 = {b5,2'b0};
   assign b55 = {b5,5'b0};
+  
   assign b62 = {b6,2'b0};
   assign b65 = {b6,5'b0};
   
   assign b72 = {b7,2'b0};
   assign b75 = {b7,5'b0};
+  
+  assign b82 = {b8,2'b0};
+  assign b85 = {b8,5'b0};
     
+  assign a52 = {a5,2'b0};
+  assign a53 = {a5,3'b0};
   assign a54 = {a5,4'b0};
   assign a56 = {a5,6'b0};
     
@@ -69,31 +77,70 @@ module DCT_first(in,out);
     
   assign a72 = {a7,2'b0};
   assign a73 = {a7,3'b0};
+  assign a74 = {a7,4'b0};
   assign a76 = {a7,6'b0};
   
   assign a82 = {a8,2'b0};
   assign a83 = {a8,3'b0};
   assign a84 = {a8,4'b0};
+  assign a86 = {a8,6'b0};
   
   
   assign c12 = {c1,2'b0};
   assign c13 = {c1,3'b0};
   assign c15 = {c1,5'b0};
+  assign c22 = {c2,2'b0};
   assign c23 = {c2,3'b0};
   assign c25 = {c2,5'b0};
 
 
   assign out_temp[0]= c1 + c12 + c13 + c15; 
-  assign out_temp[2]= /*b3*/ b31 - b33 + b36 + b43 + b44;
-  assign out_temp[4]= /*c2 + c22 + */c23 + c25;
-  assign out_temp[6]=/*-b4*/-b43 - b46 + b33 + b34;
+  assign out_temp[2]= b3 + b31 - b33 + b36 + b43 + b44;
+  assign out_temp[4]= c2 + c22 + c23 + c25;
+  assign out_temp[6]= -b4 -b43 - b46 + b33 + b34;
 
-  assign out_temp[1]= b52 + b55 /*-a5  */+ a56 +/*a6 + */ a64 + a82 + a83;
-  assign out_temp[3]= b62 + b65 /*+a7  */- a76 +/*a5 + */ a54 - a62 - a63;
-  assign out_temp[5]= b72 + b75 /*+a6  */- a66 +/*a8 + */ a84 + a72 + a73;
-  assign out_temp[7]= 20'd0;
+  assign out_temp[1]= b52 + b55 - a5 + a56 + a6 + a64 + a82 + a83;
+  assign out_temp[3]= b62 + b65 + a7 - a76 + a5 + a54 - a62 - a63;
+  assign out_temp[5]= b72 + b75 + a6 - a66 + a8 + a84 + a72 + a73;
+  assign out_temp[7]= b82 + b85 + a8 - a86 + a7 + a74 - a52 - a53;
+  
+  round1  rnd1(out_temp[0],out[63:56]),
+          rnd2(out_temp[1],out[55:48]),
+          rnd3(out_temp[2],out[47:40]),
+          rnd4(out_temp[3],out[39:32]),
+          rnd5(out_temp[4],out[31:24]),
+          rnd6(out_temp[5],out[23:16]),
+          rnd7(out_temp[6],out[15:8]),
+          rnd8(out_temp[7],out[7:0]);
 
 
 
-  assign out={out_temp[0][17:9],out_temp[1][17:9],out_temp[2][17:9],out_temp[3][17:9],out_temp[4][17:9],out_temp[5][17:9],out_temp[6][17:9],9'b0}; 
+  //assign out={out_temp[0][17:9],out_temp[1][17:9],out_temp[2][17:9],out_temp[3][17:9],out_temp[4][17:9],out_temp[5][17:9],out_temp[6][17:9],9'b0}; 
 endmodule
+
+module round1(out_temp,out);
+  
+  input [17:0]out_temp;
+  output reg[7:0]out;
+  
+  always @(out_temp)
+  begin
+    if(out_temp[17])
+      begin
+        if(out_temp[9:0] > 10'b1000000000)
+          out  = out_temp[17:10] + 1'b1;
+        else
+          out = out_temp[17:10];
+      end
+    else
+      begin
+        if(out_temp[9])
+          out = out_temp[17:10] + 1'b1;
+        else
+          out = out_temp[17:10];
+      end
+  end
+endmodule
+
+
+

@@ -4,7 +4,7 @@ entity spsram_hd_32768x80m16 is
     generic(
         ADDRESSSIZE     : integer := 15;
         ADDRESSBITSIZE  : integer := 32768;
-        WORDSIZE        : integer := 80
+        WORDSIZE        : integer := 64
     );
     port(
         CK              : in     vl_logic;

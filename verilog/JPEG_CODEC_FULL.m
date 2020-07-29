@@ -4,7 +4,7 @@ clc
 
 
 mm = 255;
- for image_number = 2:2 %%%%%%%%%% "Change this number" to test many different images.
+ for image_number = 3:3 %%%%%%%%%% "Change this number" to test many different images.
 
     %---------------------------- Get the Image data Input ----------------------------------
      % Load input image (512x512 pixel), Each pixel has 8bit data (0~255)
@@ -141,7 +141,7 @@ Q_pre=[4   11  10  16    24    40     51    61;
       %---------------------Quatization bit setup-----------------------------
         % The number of bits for Result of 1D-DCT Quantization
         % You can "adjust this number" to improve the qualities of images.
-        Result_1D_DCT_quantization_bit = 9;
+        Result_1D_DCT_quantization_bit = 8;
         % The number of integer bits for Result of 1D-DCT
         num_int = 11;
  
@@ -155,8 +155,8 @@ Q_pre=[4   11  10  16    24    40     51    61;
                     
                 Block_DCT_1D_temp = T1*Block_temp';
                 
-%                 Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant(Block_DCT_1D_temp, Result_1D_DCT_quantization_bit, num_int);   % result of 1D DCT for debugging
-                Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = quantization(6,Block_DCT_1D_temp);  
+                Block_DCT_1D_quant1((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant(Block_DCT_1D_temp, Result_1D_DCT_quantization_bit, num_int);   % result of 1D DCT for debugging
+                Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = quantization(8,Block_DCT_1D_temp);  
                 Block_DCT_2D_temp = T2*Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j)';
                                
                 Block_DCT_2D_quant((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant_trunc(Block_DCT_2D_temp); % result of 2D DCT for debugging
