@@ -69,34 +69,7 @@ for index = 3:3
 %     end
 %     RLE_verilog = typecast(uint16(bin2dec(char(RLE_2))),'int16');
 %     RLE_v = RLE_verilog(1:79472,:);
-=======
-    RLE = textread(sprintf('DCT_image_rle_%d.txt',index),'%14c');
-    RLE_2 = char(zeros(79472,14));
-    for i=1:39736
-        RLE_2(2*i-1,1)= 0;
-        RLE_2(2*i-1,2)= 0;
-        RLE_2(2*i-1,3)= 0;
-        RLE_2(2*i-1,4)= 0;
-        RLE_2(2*i-1,5)= 0;
-        RLE_2(2*i-1,6)= 0;
-        RLE_2(2*i-1,7)= 0;
-        RLE_2(2*i-1,8)= 0;
-        RLE_2(2*i-1,9)= 0;
-        RLE_2(2*i-1,10)= 0;
-        RLE_2(2*i-1,11:16) = RLE(i,1:6);  
-        RLE_2(2*i,1)= RLE(i,7);
-        RLE_2(2*i,2)= RLE(i,7);
-        RLE_2(2*i,3)= RLE(i,7);
-        RLE_2(2*i,4)= RLE(i,7);
-        RLE_2(2*i,5)= RLE(i,7);
-        RLE_2(2*i,6)= RLE(i,7);
-        RLE_2(2*i,7)= RLE(i,7);
-        RLE_2(2*i,8)= RLE(i,7);
-        RLE_2(2*i,9:16) = RLE(i,7:14);
-    end
-    RLE_verilog = typecast(uint16(bin2dec(char(RLE_2))),'int16');
-    RLE_v = RLE_verilog(1:79472,:);
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+
     
     
     M = textread(sprintf('DCT_image_%d.txt',index),'%8c');
