@@ -1,6 +1,7 @@
 % function out = IDCT(in)
 
-input = round(rand(1,8)*100);
+% input = round(rand(1,8)*100);
+input = [2,4,8,16,32,64,32,32];
 %% Each DCT coefficients
 a = 0.5*cos(pi/16);
 b = 0.5*cos(2*pi/16);
@@ -27,8 +28,8 @@ c7 = g;
       f -b  b -f -f  b -b  f;
       g -e  c -a  a -c  e -g];
 %% DCT
-in = T*input';
-in = in';
+% in = T*input';
+in = input;
 %% 
   
 out = zeros(1,8);

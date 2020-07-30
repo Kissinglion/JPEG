@@ -154,20 +154,13 @@ Q_pre=[4   11  10  16    24    40     51    61;
                 Block_temp = input_image_512x512((8*i-7):8*i,(8*j-7):8*j);
                     
                 Block_DCT_1D_temp = T1*Block_temp';
-                
-                Block_DCT_1D_quant1((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant(Block_DCT_1D_temp, Result_1D_DCT_quantization_bit, num_int);   % result of 1D DCT for debugging
-                Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = quantization(8,Block_DCT_1D_temp);  
+                Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant(Block_DCT_1D_temp, Result_1D_DCT_quantization_bit, num_int);   % result of 1D DCT for debugging
+%                 Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = quantization(8,Block_DCT_1D_temp);  
+
                 Block_DCT_2D_temp = T2*Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j)';
-                               
                 Block_DCT_2D_quant((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant_trunc(Block_DCT_2D_temp); % result of 2D DCT for debugging
                 
-                Block_DCT_final((8*i-7):8*i,(8*j-7):8*j) = Block_DCT_2D_quant((8*i-7):8*i,(8*j-7):8*j);
-                
                 Block_DCT = Block_DCT_2D_quant((8*i-7):8*i,(8*j-7):8*j);
-                
-                %Block_DCT_temp = T*Block_temp*T';
-                %Block_DCT = func_DCTquant_trunc(Block_DCT_temp);
-                
                 Block_r = round(Block_DCT./Q_pre);
                 
                 Image_tran((8*i-7):8*i,(8*j-7):8*j) = Block_r;
@@ -285,16 +278,12 @@ Q_pre=[4   11  10  16    24    40     51    61;
 %             end
 %         end
 
-
-        % Finding the reverse zigzag order (8x8 matrix)
+%%     Finding the reverse zigzag order (8x8 matrix)
         reverse_zigzag_order_8x8 = zeros(8,8);
         for k = 1:(size(ZigZag_Order,1) *size(ZigZag_Order,2)) 
             reverse_zigzag_order_8x8(k) = find(ZigZag_Order== k); 
         end
-
-        %---------------------------------------------------------------------
-
-
+        
         %--------------------------- reverse zigzag --------------------------
         %reverse zigzag procedure using the matrix indexing capability of MatLab (specially the ':' operator)
         Single_column_quantized_image = ZigZaged_Single_Column_Image(reverse_zigzag_order_8x8,:);
@@ -317,18 +306,18 @@ Q_pre=[4   11  10  16    24    40     51    61;
             end
         end   
 
-%         for i=1:m
-%             for j=1:n
-%                 if Image_restore(i,j) > 255-128
-%                    Image_restore(i,j) = 255-128;
-%                 end
-% 
-%                 if Image_restore(i,j) < 0-128
-%                    Image_restore(i,j) = 0-128;
-%                 end
-% 
-%             end
-%         end   
+        for i=1:m
+            for j=1:n
+                if Image_restore(i,j) > 255-128
+                   Image_restore(i,j) = 255-128;
+                end
+
+                if Image_restore(i,j) < 0-128
+                   Image_restore(i,j) = 0-128;
+                end
+
+            end
+        end   
 
     for i = 1:512
         for j =1:512

@@ -52,6 +52,32 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	ZigZag_TP
 
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v {2 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module De_Quantization
+** Warning: C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v(49): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v(50): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v(51): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v(52): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v(53): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v(54): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v(55): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v(56): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v(118): (vlog-2256) Event expressions should result in a singular type.
+
+-- Compiling module round
+
+Top level modules:
+	De_Quantization
+
 } {} {}} C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module SRAM32768x64
@@ -107,6 +133,14 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	DCT_first
 
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/IDCT_first.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/IDCT_first.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IDCT_first
+-- Compiling module round1
+
+Top level modules:
+	IDCT_first
+
 } {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module RLE
@@ -151,7 +185,21 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	TPmem2
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/DCT_second.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/DCT_second.v
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/Decoding.v {0 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/Decoding.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Decoding
+** Error: C:/Users/user/Desktop/JPEG/verilog/Decoding.v(35): (vlog-2730) Undefined variable: 'terminate'.
+
+** Error: C:/Users/user/Desktop/JPEG/verilog/Decoding.v(38): (vlog-2730) Undefined variable: 'index1'.
+
+** Error: C:/Users/user/Desktop/JPEG/verilog/Decoding.v(39): near "a": syntax error, unexpected IDENTIFIER, expecting ';'
+** Error: C:/Users/user/Desktop/JPEG/verilog/Decoding.v(45): (vlog-2730) Undefined variable: 'index2'.
+
+** Error: C:/Users/user/Desktop/JPEG/verilog/Decoding.v(47): (vlog-2730) Undefined variable: 'a'.
+
+** Error: C:/Users/user/Desktop/JPEG/verilog/Decoding.v(66): near "endmodule": syntax error, unexpected endmodule
+
+} {4.0 5.0 6.0 7.0 8.0 10.0 11.0 12.0 13.0 14.0} {}} C:/Users/user/Desktop/JPEG/verilog/DCT_second.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/DCT_second.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module DCT_second
 -- Compiling module round2
@@ -159,13 +207,7 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	DCT_second
 
-} {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE22.v {0 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE22.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module RLE22
-** Error: C:/Users/user/Desktop/JPEG/verilog/RLE22.v(109): (vlog-2730) Undefined variable: 'out_temp'.
-
-
-} {4.0 5.0} {}} C:/Users/user/Desktop/JPEG/verilog/sti_test.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_test.v
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/sti_test.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/sti_test.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module sti_test
 
@@ -199,6 +241,17 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	sti_zig
+
+} {} {}} C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module top_memory_test
+-- Compiling module counter
+-- Compiling module counter2
+-- Compiling module counter3
+-- Compiling module TPcontrol
+
+Top level modules:
+	top_memory_test
 
 } {} {}} C:/Users/user/Desktop/JPEG/verilog/RLE_88.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/verilog/RLE_88.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012

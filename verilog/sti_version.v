@@ -34,8 +34,8 @@ begin
 	#100
 	$fclose(f);
 end  
-*/
 
+*/
 begin
 	f = $fopen("DCT_image_rle_3.txt","w"); //output image, this is the output file that finished 2D-DCT operations.
 	#727300;
