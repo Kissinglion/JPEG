@@ -2,9 +2,9 @@ library verilog;
 use verilog.vl_types.all;
 entity spsram_hd_32768x80m16 is
     generic(
-        ADDRESSSIZE     : integer := 15;
-        ADDRESSBITSIZE  : integer := 32768;
-        WORDSIZE        : integer := 16
+        ADDRESSSIZE     : integer := 14;
+        ADDRESSBITSIZE  : integer := 16384;
+        WORDSIZE        : integer := 112
     );
     port(
         CK              : in     vl_logic;

@@ -8,14 +8,14 @@ Z1 !s100 jUDX8XE`=JDcP1G3ZRN2Z2
 Z2 I11La7AK5?8<KA2Fzd?I`G2
 Z3 VaQP<E9A?o3NDiY=C`5P882
 Z4 dC:\Users\user\Desktop\JPEG\previous
-Z5 w1594793610
+Z5 w1596000801
 Z6 8C:/Users/user/Desktop/JPEG/previous/top_memory_test.v
 Z7 FC:/Users/user/Desktop/JPEG/previous/top_memory_test.v
 L0 34
 Z8 OV;L;10.1d;51
 r1
 31
-Z9 !s108 1594793976.148000
+Z9 !s108 1596003983.367000
 Z10 !s107 C:/Users/user/Desktop/JPEG/previous/top_memory_test.v|
 Z11 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/top_memory_test.v|
 Z12 o-work work -O0
@@ -42,186 +42,205 @@ R12
 !s85 0
 !s101 -O0
 vDCT_first
-Z16 !s100 QC?nMnMP>;_C8;BmM^AW30
-Z17 IjF8P:S1el2i]?bPd3TKC?3
-Z18 VXbl^]<mO1kC>^c494PeoC0
+Z16 !s100 a7bcUP?GnbJ1h=hZK15j71
+Z17 ICcDRJA_??UZSC`eBcA85=1
+Z18 V97LO3AFTN@eFh]7MJOe9?2
 R4
-Z19 w1592461724
+Z19 w1596001450
 Z20 8C:/Users/user/Desktop/JPEG/previous/DCT_first.v
 Z21 FC:/Users/user/Desktop/JPEG/previous/DCT_first.v
 L0 1
 R8
 r1
 31
-Z22 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/DCT_first.v|
+Z22 !s108 1596003982.966000
+Z23 !s107 C:/Users/user/Desktop/JPEG/previous/DCT_first.v|
+Z24 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/DCT_first.v|
 R12
-Z23 n@d@c@t_first
-Z24 !s108 1594793975.801000
-Z25 !s107 C:/Users/user/Desktop/JPEG/previous/DCT_first.v|
+Z25 n@d@c@t_first
 !i10b 1
 !s85 0
 !s101 -O0
 vDCT_second
-Z26 !s100 RB9Wm]Yb_V2<GGloI9hIW3
-Z27 IG=W^Oe<U^<I4O<K4QD[Rc2
-Z28 VlPge6]aRdzMWEX:@ic]@Q3
+Z26 IG1[XS0N5_gIdjTJnRP`MF1
+Z27 VQcReG7[RoLlk<PgA8:^LK1
 R4
-Z29 w1592525265
-Z30 8C:/Users/user/Desktop/JPEG/previous/DCT_second.v
-Z31 FC:/Users/user/Desktop/JPEG/previous/DCT_second.v
+Z28 w1596003981
+Z29 8C:/Users/user/Desktop/JPEG/previous/DCT_second.v
+Z30 FC:/Users/user/Desktop/JPEG/previous/DCT_second.v
 L0 1
 R8
 r1
 31
-Z32 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/DCT_second.v|
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/DCT_second.v|
 R12
-Z33 n@d@c@t_second
-Z34 !s108 1594793975.876000
+Z32 n@d@c@t_second
+Z33 !s100 CDzCL[adAPC]=G>>F>fH:2
+Z34 !s108 1596003983.061000
 Z35 !s107 C:/Users/user/Desktop/JPEG/previous/DCT_second.v|
 !i10b 1
 !s85 0
 !s101 -O0
-vspsram_hd_32768x64m16
-Z36 !s100 Y_>@B9gBj0Yjj81I;9m0X3
-Z37 IKk7RD>em7h3Lk7imI35HU2
-Z38 V?nfjggkS]9^2b2eC4RePW0
+vround1
+Z36 !s100 7z=ibO=7<iGYC0HZ>`^lC1
+Z37 I`in@]TCZ1O^6J7o[m:FEG3
+Z38 V2:>;Z<HY?77?mHL[Zc9jg1
 R4
-Z39 w1590057760
-Z40 8C:/Users/user/Desktop/JPEG/previous/SRAM32768x64.v
-Z41 FC:/Users/user/Desktop/JPEG/previous/SRAM32768x64.v
+R19
+R20
+R21
+Z39 L0 121
+R8
+r1
+31
+R22
+R23
+R24
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vspsram_hd_32768x64m16
+Z40 !s100 Y_>@B9gBj0Yjj81I;9m0X3
+Z41 IKk7RD>em7h3Lk7imI35HU2
+Z42 V?nfjggkS]9^2b2eC4RePW0
+R4
+Z43 w1590057760
+Z44 8C:/Users/user/Desktop/JPEG/previous/SRAM32768x64.v
+Z45 FC:/Users/user/Desktop/JPEG/previous/SRAM32768x64.v
 L0 43
 R8
 r1
 31
-Z42 !s108 1594793975.949000
-Z43 !s107 C:/Users/user/Desktop/JPEG/previous/SRAM32768x64.v|
-Z44 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/SRAM32768x64.v|
+Z46 !s108 1596003983.136000
+Z47 !s107 C:/Users/user/Desktop/JPEG/previous/SRAM32768x64.v|
+Z48 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/SRAM32768x64.v|
 R12
 !i10b 1
 !s85 0
 !s101 -O0
 vspsram_hd_32768x80m16
-Z45 !s100 H=5ZD5?lT@J0N1ma@9:FC3
-Z46 I_>DhkH:M6:?B<6amBBK>=0
-Z47 VKm]fnmKfYXYW<nL@KJUn=3
+Z49 !s100 B>G6LPASAWBc02jGGkD_B1
+Z50 IOlgJ;aR4d2Fam3>?GAXdj2
+Z51 V=5cFgHZF?hPSSf@5oV9=00
 R4
-Z48 w1590057788
-Z49 8C:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v
-Z50 FC:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v
+Z52 w1596000859
+Z53 8C:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v
+Z54 FC:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v
 L0 43
 R8
 r1
 31
-Z51 !s108 1594793976.042000
-Z52 !s107 C:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v|
-Z53 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v|
+Z55 !s108 1596003983.232000
+Z56 !s107 C:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v|
+Z57 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/SRAM32768x80.v|
 R12
 !i10b 1
 !s85 0
 !s101 -O0
 vSRAM
-Z54 !s100 IePj567z[k`Vz:e711[8W2
-Z55 IT@B97`6VOjU=@?F<6FXaY1
-Z56 Vb6U@;GhGW`NO1i3>?<gT_0
+Z58 !s100 IePj567z[k`Vz:e711[8W2
+Z59 IT@B97`6VOjU=@?F<6FXaY1
+Z60 Vb6U@;GhGW`NO1i3>?<gT_0
 R4
-R39
-R40
-R41
+R43
+R44
+R45
 L0 65
 R8
 r1
 31
-R42
-R43
-R44
+R46
+R47
+R48
 R12
-Z57 n@s@r@a@m
+Z61 n@s@r@a@m
 !i10b 1
 !s85 0
 !s101 -O0
 vSRAM2
-Z58 !s100 g>[a0ZDhA[Md<=Ic5VIn;2
-Z59 Ihc@L^0ZB]fe`FdhJ6@=ee3
-Z60 Vz4<dm48TRlDKaNVb@^BeD0
+Z62 !s100 l8mIjL5l?XQ@Ml9>SkMz@1
+Z63 IgPGbQzIjWRaPzC5V;khcR1
+Z64 VFm>FSX=EF;ThbY`YYmOVi3
 R4
-R48
-R49
-R50
+R52
+R53
+R54
 L0 65
 R8
 r1
 31
-R51
-R52
-R53
+R55
+R56
+R57
 R12
-Z61 n@s@r@a@m2
+Z65 n@s@r@a@m2
 !i10b 1
 !s85 0
 !s101 -O0
 vSRAM32768x64
-Z62 !s100 <LO9j80166;MDLAZm<o>?2
-Z63 I99z41lgAAKE]<lEZcB[_31
-Z64 VH4QDd9XA4z6iOf?zZF^KK1
+Z66 !s100 <LO9j80166;MDLAZm<o>?2
+Z67 I99z41lgAAKE]<lEZcB[_31
+Z68 VH4QDd9XA4z6iOf?zZF^KK1
 R4
-R39
-R40
-R41
+R43
+R44
+R45
 L0 9
 R8
 r1
 31
-R42
-R43
-R44
+R46
+R47
+R48
 R12
-Z65 n@s@r@a@m32768x64
+Z69 n@s@r@a@m32768x64
 !i10b 1
 !s85 0
 !s101 -O0
 vSRAM32768x80
-Z66 !s100 MW0P3kPQ1n5=n^[e5I5@?1
-Z67 I5PbVf8SUE9kQQ7m:L9;YK3
-Z68 VRgEbgljZz;<]Azn=I3nT;2
+Z70 !s100 ?jRTQ8Y<URM?;32XkMcT^0
+Z71 I7I>[PdQZ2JE5ZMi;Zk`PX3
+Z72 V[n][WKm2>l?Hl[BKSZ_aL1
 R4
-R48
-R49
-R50
+R52
+R53
+R54
 L0 9
 R8
 r1
 31
-R51
-R52
-R53
+R55
+R56
+R57
 R12
-Z69 n@s@r@a@m32768x80
+Z73 n@s@r@a@m32768x80
 !i10b 1
 !s85 0
 !s101 -O0
 vsti_project2
 !i10b 1
-Z70 !s100 671TXUNZE:`_]h3AJSX3_2
-Z71 I0PXeGT489Vec^4O56hU<_3
-Z72 VRm@62SfJ1b8@T_Qoi1;Ul1
+Z74 !s100 671TXUNZE:`_]h3AJSX3_2
+Z75 I0PXeGT489Vec^4O56hU<_3
+Z76 VRm@62SfJ1b8@T_Qoi1;Ul1
 R4
-Z73 w1594793969
-Z74 8C:/Users/user/Desktop/JPEG/previous/sti_project2.v
-Z75 FC:/Users/user/Desktop/JPEG/previous/sti_project2.v
+Z77 w1594793969
+Z78 8C:/Users/user/Desktop/JPEG/previous/sti_project2.v
+Z79 FC:/Users/user/Desktop/JPEG/previous/sti_project2.v
 L0 1
 R8
 r1
 !s85 0
 31
-!s108 1594793976.402000
+!s108 1596003983.608000
 !s107 C:/Users/user/Desktop/JPEG/previous/sti_project2.v|
-Z76 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/sti_project2.v|
+Z80 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/sti_project2.v|
 !s101 -O0
 R12
 vtop_memory_test
-Z77 !s100 >H`ml^hBOgM3Q5B[aT64X3
-Z78 IY8OO?4VHf=44[@]PD7oAf1
-Z79 V`LOfb:>GITKz7740o0P^V0
+Z81 !s100 lz4j>dUYC1Q:]JLCze_4T0
+Z82 IN_o67ga2SIKQa530HGoc@3
+Z83 V`LOfb:>GITKz7740o0P^V0
 R4
 R5
 R6
@@ -238,9 +257,9 @@ R12
 !s85 0
 !s101 -O0
 vTPcontrol
-Z80 !s100 S1a4JW[_30:7`]bO5FnC23
-Z81 IaXhXIO3R;zjajW=fg1HV[3
-Z82 VFQMFnWf[96QFi[D`HPd392
+Z84 !s100 S1a4JW[_30:7`]bO5FnC23
+Z85 IaXhXIO3R;zjajW=fg1HV[3
+Z86 VFQMFnWf[96QFi[D`HPd392
 R4
 R5
 R6
@@ -253,47 +272,47 @@ R9
 R10
 R11
 R12
-Z83 n@t@pcontrol
+Z87 n@t@pcontrol
 !i10b 1
 !s85 0
 !s101 -O0
 vTPmem1
-Z84 !s100 z=5;QFih=J^fcVfZzfP_K2
-Z85 IHemNL7ooAP8>@WQJfJhl33
-Z86 VEZcLoR`22a:H`XClgm]]N3
+Z88 !s100 :[o=[W1VWG87:;49;DJi53
+Z89 I8zLn<IEjGEFJj8Fb[MND20
+Z90 VfJhKDeWQhzMl5Z8[?mo`10
 R4
-Z87 w1592495112
-Z88 8C:/Users/user/Desktop/JPEG/previous/TPmem1.v
-Z89 FC:/Users/user/Desktop/JPEG/previous/TPmem1.v
+Z91 w1596000657
+Z92 8C:/Users/user/Desktop/JPEG/previous/TPmem1.v
+Z93 FC:/Users/user/Desktop/JPEG/previous/TPmem1.v
 L0 1
 R8
 r1
 31
-Z90 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/TPmem1.v|
+Z94 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/TPmem1.v|
 R12
-Z91 n@t@pmem1
-Z92 !s108 1594793976.269000
-Z93 !s107 C:/Users/user/Desktop/JPEG/previous/TPmem1.v|
+Z95 n@t@pmem1
+Z96 !s108 1596003983.476000
+Z97 !s107 C:/Users/user/Desktop/JPEG/previous/TPmem1.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vTPmem2
-Z94 !s100 LHl_n4D>B:R<A`8;1alAf3
-Z95 IR8nl`VNa9IzZN4?o=eFdY2
-Z96 VHh4DYkE>AXII47m=`6:8C1
+Z98 !s100 FcLQOBk8B`G>UT=KcY^ST0
+Z99 I@m9ZJjGhkd@Q;=ofH<l?I1
+Z100 VW<QM:PJf;;R4<kJkd^W^K2
 R4
-Z97 w1592495125
-Z98 8C:/Users/user/Desktop/JPEG/previous/TPmem2.v
-Z99 FC:/Users/user/Desktop/JPEG/previous/TPmem2.v
+Z101 w1596000750
+Z102 8C:/Users/user/Desktop/JPEG/previous/TPmem2.v
+Z103 FC:/Users/user/Desktop/JPEG/previous/TPmem2.v
 L0 1
 R8
 r1
 31
-Z100 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/TPmem2.v|
+Z104 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/previous/TPmem2.v|
 R12
-Z101 n@t@pmem2
+Z105 n@t@pmem2
 !i10b 1
 !s85 0
-Z102 !s108 1594793976.331000
-Z103 !s107 C:/Users/user/Desktop/JPEG/previous/TPmem2.v|
+Z106 !s108 1596003983.544000
+Z107 !s107 C:/Users/user/Desktop/JPEG/previous/TPmem2.v|
 !s101 -O0

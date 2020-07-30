@@ -3,14 +3,48 @@ close all
 clc
 
 
-
+mm = 255;
  for image_number = 3:3 %%%%%%%%%% "Change this number" to test many different images.
 
     %---------------------------- Get the Image data Input ----------------------------------
      % Load input image (512x512 pixel), Each pixel has 8bit data (0~255)
      input_image_512x512 = double( imread( sprintf( 'image_in_%d.tif',image_number ),'tiff' ) );
+     original = (imread( sprintf( 'image_in_%d.tif',image_number ),'tif' ));
     %-----------------------------------------------------------------------------------------
-     
+    for i = 1:512
+        for j =1:512
+            minimum = min(mm,input_image_512x512(i,j));
+        end
+    end
+    
+%     original = original./255;
+    
+    for i = 1:512
+        for j =1:512
+            input_image_512x512(i,j) = input_image_512x512(i,j) - 128;
+        end
+    end
+
+%     input_image_512x512(1,1) = -50;
+    
+    input_verilog = zeros(512,512);
+    for i = 1:512
+        for j =1:512
+            if input_image_512x512(i,j) < 0
+                input_verilog(i,j) = 256 + input_image_512x512(i,j);
+            else
+                input_verilog(i,j) = input_image_512x512(i,j);
+            end
+        end
+    end
+    
+    
+%     for i = 1:512
+%         for j =1:512
+%             mm = max(mm,input_image_512x512(i,j));
+%         end
+%     end
+    
     [m,n] = size(input_image_512x512);
 
     m = floor(m/8)*8;
@@ -18,7 +52,8 @@ clc
      
     %------------------------------------ show input image -----------------------------------
      subplot(4,4,image_number*2-1);
-     imshow(input_image_512x512./255);
+%      imshow(input_image_512x512./255);
+     imshow(original);
      title ( sprintf('Original image #%d \n size : %dx%d',image_number,m,n) );
     %-----------------------------------------------------------------------------------------    
     
@@ -29,7 +64,7 @@ clc
         for k = 1:64   
             for i = 1:8
                 for j = 1:8
-                    vector_temp(1, x) = input_image_512x512((i+8*(l-1)),(j+8*(k-1)));
+                    vector_temp(1, x) = input_verilog((i+8*(l-1)),(j+8*(k-1)));
                     x= x+1;
                 end
             end
@@ -50,7 +85,7 @@ clc
 
     for i = 1 : 32768
 
-        fprintf(input_vector, '%X', vector_1(1,i));
+        fprintf(input_vector, '%012X', vector_1(1,i));
         if(vector_2(1,i)<16)        fprintf(input_vector, '000%X \n',vector_2(1,i));
         elseif(vector_2(1,i)<256)   fprintf(input_vector, '00%X \n',vector_2(1,i));
         elseif(vector_2(1,i)<4096)  fprintf(input_vector, '0%X \n',vector_2(1,i));
@@ -106,7 +141,7 @@ Q_pre=[4   11  10  16    24    40     51    61;
       %---------------------Quatization bit setup-----------------------------
         % The number of bits for Result of 1D-DCT Quantization
         % You can "adjust this number" to improve the qualities of images.
-        Result_1D_DCT_quantization_bit = 9;
+        Result_1D_DCT_quantization_bit = 8;
         % The number of integer bits for Result of 1D-DCT
         num_int = 11;
  
@@ -119,20 +154,13 @@ Q_pre=[4   11  10  16    24    40     51    61;
                 Block_temp = input_image_512x512((8*i-7):8*i,(8*j-7):8*j);
                     
                 Block_DCT_1D_temp = T1*Block_temp';
-                
-%                 Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant(Block_DCT_1D_temp, Result_1D_DCT_quantization_bit, num_int);   % result of 1D DCT for debugging
-                Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = quantization(6,Block_DCT_1D_temp);  
+                Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant(Block_DCT_1D_temp, Result_1D_DCT_quantization_bit, num_int);   % result of 1D DCT for debugging
+%                 Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = quantization(8,Block_DCT_1D_temp);  
+
                 Block_DCT_2D_temp = T2*Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j)';
-                               
                 Block_DCT_2D_quant((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant_trunc(Block_DCT_2D_temp); % result of 2D DCT for debugging
                 
-                Block_DCT_final((8*i-7):8*i,(8*j-7):8*j) = Block_DCT_2D_quant((8*i-7):8*i,(8*j-7):8*j);
-                
                 Block_DCT = Block_DCT_2D_quant((8*i-7):8*i,(8*j-7):8*j);
-                
-                %Block_DCT_temp = T*Block_temp*T';
-                %Block_DCT = func_DCTquant_trunc(Block_DCT_temp);
-                
                 Block_r = round(Block_DCT./Q_pre);
                 
                 Image_tran((8*i-7):8*i,(8*j-7):8*j) = Block_r;
@@ -250,16 +278,12 @@ Q_pre=[4   11  10  16    24    40     51    61;
 %             end
 %         end
 
-
-        % Finding the reverse zigzag order (8x8 matrix)
+%%     Finding the reverse zigzag order (8x8 matrix)
         reverse_zigzag_order_8x8 = zeros(8,8);
         for k = 1:(size(ZigZag_Order,1) *size(ZigZag_Order,2)) 
             reverse_zigzag_order_8x8(k) = find(ZigZag_Order== k); 
         end
-
-        %---------------------------------------------------------------------
-
-
+        
         %--------------------------- reverse zigzag --------------------------
         %reverse zigzag procedure using the matrix indexing capability of MatLab (specially the ':' operator)
         Single_column_quantized_image = ZigZaged_Single_Column_Image(reverse_zigzag_order_8x8,:);
@@ -284,18 +308,23 @@ Q_pre=[4   11  10  16    24    40     51    61;
 
         for i=1:m
             for j=1:n
-                if Image_restore(i,j) > 255
-                   Image_restore(i,j) = 255;
+                if Image_restore(i,j) > 255-128
+                   Image_restore(i,j) = 255-128;
                 end
 
-                if Image_restore(i,j) < 0
-                   Image_restore(i,j) = 0;
+                if Image_restore(i,j) < 0-128
+                   Image_restore(i,j) = 0-128;
                 end
 
             end
         end   
 
-
+    for i = 1:512
+        for j =1:512
+            Image_restore(i,j) = Image_restore(i,j) + 128;
+            input_image_512x512(i,j) = input_image_512x512(i,j) + 128;
+        end
+    end
     %------------------------Generate the output Image--------------------------    
 
     output_file_name = sprintf( 'image_out_%d.tif',image_number);

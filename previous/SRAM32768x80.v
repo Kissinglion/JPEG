@@ -9,7 +9,7 @@
 module SRAM32768x80
     #(	parameter ADDRESSSIZE = 15,
 	parameter ADDRESSBITSIZE = 32768,		    
-        parameter WORDSIZE = 80)
+        parameter WORDSIZE = 64)
 (
  input NWRT,
  input [WORDSIZE-1:0] DIN,
@@ -43,7 +43,7 @@ endmodule
 module spsram_hd_32768x80m16 
     #(	parameter ADDRESSSIZE = 15,
 	parameter ADDRESSBITSIZE = 32768,		    
-        parameter WORDSIZE = 80)
+        parameter WORDSIZE = 64)
 (
  input                      CK,
  input                      CSN,
@@ -65,15 +65,15 @@ endmodule
 module SRAM2
     #(	parameter ADDRESSSIZE = 15,
 	parameter ADDRESSBITSIZE = 32768,		    
-        parameter WORDSIZE = 80)
+        parameter WORDSIZE = 64)
 (
 
  input iClk,
 // input iReset,
- input [80-1:0] D,
+ input [WORDSIZE-1:0] D,
  input [ADDRESSSIZE-1:0] A,
  input WEN, CSN, 
- output reg [80-1:0] Q
+ output reg [WORDSIZE-1:0] Q
  );
 
 	reg [WORDSIZE-1:0] Mem [0:ADDRESSBITSIZE-1];

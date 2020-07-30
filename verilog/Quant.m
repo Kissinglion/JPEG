@@ -69,7 +69,7 @@ input_vec = fopen('Q.txt','w');
 for k = 1:d
     for i = 1:r
         for j = 1:c
-            fprintf(input_vec, '%03X \n', inputt(i,j,k));
+            fprintf(input_vec, '%X \n', inputt(i,j,k));
         end
     end
 end

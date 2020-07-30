@@ -1,9 +1,8 @@
-module RLE2(in,in_next,out_next,count,en1,en2,en3,en4,en5,en6,en7,en8,run1,run2,run3,run4,run5,run6,run7,run8);
+module RLE2(in,in_next,out_next,en1,en2,en3,en4,en5,en6,en7,en8,run1,run2,run3,run4,run5,run6,run7,run8);
   
   input [63:0]in;
   input [5:0]in_next;
   output wire [5:0]out_next;
-  output reg [3:0]count;
   output reg [5:0]run1,run2,run3,run4,run5,run6,run7,run8;
 
   
@@ -11,7 +10,7 @@ module RLE2(in,in_next,out_next,count,en1,en2,en3,en4,en5,en6,en7,en8,run1,run2,
   wire [7:0]in1,in2,in3,in4,in5,in6,in7,in8;
 
   
-  reg [3:0]zero1,zero2,zero3,zero4,zero5,zero6,zero7,zero8;
+  reg [5:0]zero1,zero2,zero3,zero4,zero5,zero6,zero7,zero8;
   
   assign in1 = in[63:56];
   assign in2 = in[55:48];

@@ -21,21 +21,38 @@ initial	$readmemh("image_in_3.txt", TEST.MEM_IN.SRAM_syn.SRAM32768x64.Mem); //in
 integer f;
 integer i;
 initial
+<<<<<<< HEAD
 
 begin
 	f = $fopen("DCT_image_3.txt","w"); //output image, this is the output file that finished 2D-DCT operations.
+=======
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
 
+
+begin
+	f = $fopen("DCT_image_3.txt","w"); //output image, this is the output file that finished 2D-DCT operations.
 	#328100;
-
-	for (i = 0; i<32768; i=i+1)
+	for (i=0; i<32768; i=i+1)
 	begin
 		$display("DATA %b", TEST.MEM_OUT.SRAM_syn.SRAM32768x64.Mem[i]); //check the path of memory rocation (module instance)
-		$fwrite(f,"%b\n",   TEST.MEM_OUT.SRAM_syn.SRAM32768x64.Mem[i]); //check the path of memory rocation (module instance)
+    $fwrite(f,"%b\n",   TEST.MEM_OUT.SRAM_syn.SRAM32768x64.Mem[i]); //check the path of memory rocation (module instance)
 	end
-   
+	#100
+	$fclose(f);
+end  
+
+
+begin
+	f = $fopen("DCT_image_rle_3.txt","w"); //output image, this is the output file that finished 2D-DCT operations.
+	#727300;
+	for (i = 0; i<5670; i=i+1)
+	begin
+	  $display("DATA %b", TEST.rl.MEM_OUT.SRAM_syn2.SRAM32768x80.Mem[i]); //check the path of memory rocation (module instance)
+		$fwrite(f,"%b\n",   TEST.rl.MEM_OUT.SRAM_syn2.SRAM32768x80.Mem[i]); //check the path of memory rocation (module instance)
+	end
+	
 	#100
 	$fclose(f);  
-	//$finish;
 end
 /*
 begin

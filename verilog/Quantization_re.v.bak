@@ -118,6 +118,7 @@ module Quantization_re(in,out,count,clk,reset);
   always @(in_temp or count)
   case(count)
     3'b000: begin out_temp[0] = in_temp[0] * q11;out_temp[1] = in_temp[1] * q21;out_temp[2] = in_temp[2] * q31;out_temp[3] = in_temp[3] * q41;out_temp[4] = in_temp[4] * q51;out_temp[5] = in_temp[5] * q61;out_temp[6] = in_temp[6] * q71;out_temp[7] = in_temp[7] * q81; end
+<<<<<<< HEAD
     3'b001: begin out_temp[0] = in_temp[0] * q12;out_temp[1] = in_temp[1] * q22;out_temp[2] = in_temp[2] * q32;out_temp[3] = in_temp[3] * q42;out_temp[4] = in_temp[4] * q52;out_temp[5] = in_temp[5] * q62;out_temp[6] = in_temp[6] * q72;out_temp[7] = in_temp[7] * q82; end
     3'b010: begin out_temp[0] = in_temp[0] * q13;out_temp[1] = in_temp[1] * q23;out_temp[2] = in_temp[2] * q33;out_temp[3] = in_temp[3] * q43;out_temp[4] = in_temp[4] * q53;out_temp[5] = in_temp[5] * q63;out_temp[6] = in_temp[6] * q73;out_temp[7] = in_temp[7] * q83; end
     3'b011: begin out_temp[0] = in_temp[0] * q14;out_temp[1] = in_temp[1] * q24;out_temp[2] = in_temp[2] * q34;out_temp[3] = in_temp[3] * q44;out_temp[4] = in_temp[4] * q54;out_temp[5] = in_temp[5] * q64;out_temp[6] = in_temp[6] * q74;out_temp[7] = in_temp[7] * q84; end
@@ -125,6 +126,15 @@ module Quantization_re(in,out,count,clk,reset);
     3'b101: begin out_temp[0] = in_temp[0] * q16;out_temp[1] = in_temp[1] * q26;out_temp[2] = in_temp[2] * q36;out_temp[3] = in_temp[3] * q46;out_temp[4] = in_temp[4] * q56;out_temp[5] = in_temp[5] * q66;out_temp[6] = in_temp[6] * q76;out_temp[7] = in_temp[7] * q86; end
     3'b110: begin out_temp[0] = in_temp[0] * q17;out_temp[1] = in_temp[1] * q27;out_temp[2] = in_temp[2] * q37;out_temp[3] = in_temp[3] * q47;out_temp[4] = in_temp[4] * q57;out_temp[5] = in_temp[5] * q67;out_temp[6] = in_temp[6] * q77;out_temp[7] = in_temp[7] * q87; end
     3'b111: begin out_temp[0] = in_temp[0] * q18;out_temp[1] = in_temp[1] * q28;out_temp[2] = in_temp[2] * q38;out_temp[3] = in_temp[3] * q48;out_temp[4] = in_temp[4] * q58;out_temp[5] = in_temp[5] * q68;out_temp[6] = in_temp[6] * q78;out_temp[7] = in_temp[7] * q88; end
+=======
+    3'b001: begin out_temp[0] = in_temp[0] * q21;out_temp[1] = in_temp[1] * q22;out_temp[2] = in_temp[2] * q32;out_temp[3] = in_temp[3] * q42;out_temp[4] = in_temp[4] * q52;out_temp[5] = in_temp[5] * q62;out_temp[6] = in_temp[6] * q72;out_temp[7] = in_temp[7] * q82; end
+    3'b010: begin out_temp[0] = in_temp[0] * q31;out_temp[1] = in_temp[1] * q32;out_temp[2] = in_temp[2] * q33;out_temp[3] = in_temp[3] * q43;out_temp[4] = in_temp[4] * q53;out_temp[5] = in_temp[5] * q63;out_temp[6] = in_temp[6] * q73;out_temp[7] = in_temp[7] * q83; end
+    3'b011: begin out_temp[0] = in_temp[0] * q41;out_temp[1] = in_temp[1] * q42;out_temp[2] = in_temp[2] * q34;out_temp[3] = in_temp[3] * q44;out_temp[4] = in_temp[4] * q54;out_temp[5] = in_temp[5] * q64;out_temp[6] = in_temp[6] * q74;out_temp[7] = in_temp[7] * q84; end
+    3'b100: begin out_temp[0] = in_temp[0] * q51;out_temp[1] = in_temp[1] * q52;out_temp[2] = in_temp[2] * q35;out_temp[3] = in_temp[3] * q45;out_temp[4] = in_temp[4] * q55;out_temp[5] = in_temp[5] * q65;out_temp[6] = in_temp[6] * q75;out_temp[7] = in_temp[7] * q85; end
+    3'b101: begin out_temp[0] = in_temp[0] * q61;out_temp[1] = in_temp[1] * q62;out_temp[2] = in_temp[2] * q36;out_temp[3] = in_temp[3] * q46;out_temp[4] = in_temp[4] * q56;out_temp[5] = in_temp[5] * q66;out_temp[6] = in_temp[6] * q76;out_temp[7] = in_temp[7] * q86; end
+    3'b110: begin out_temp[0] = in_temp[0] * q71;out_temp[1] = in_temp[1] * q72;out_temp[2] = in_temp[2] * q37;out_temp[3] = in_temp[3] * q47;out_temp[4] = in_temp[4] * q57;out_temp[5] = in_temp[5] * q67;out_temp[6] = in_temp[6] * q77;out_temp[7] = in_temp[7] * q87; end
+    3'b111: begin out_temp[0] = in_temp[0] * q81;out_temp[1] = in_temp[1] * q82;out_temp[2] = in_temp[2] * q38;out_temp[3] = in_temp[3] * q48;out_temp[4] = in_temp[4] * q58;out_temp[5] = in_temp[5] * q68;out_temp[6] = in_temp[6] * q78;out_temp[7] = in_temp[7] * q88; end
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
   endcase
   
   
