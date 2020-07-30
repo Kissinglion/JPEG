@@ -1,0 +1,118 @@
+C:/Users/Chung/Desktop/JPEG/new/Quantization_re.v {2 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/Quantization_re.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Quantization_re
+** Warning: C:/Users/Chung/Desktop/JPEG/new/Quantization_re.v(108): (vlog-2256) Event expressions should result in a singular type.
+-- Compiling module round
+
+Top level modules:
+	Quantization_re
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/D_ff_6b.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/D_ff_6b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module D_ff_6b
+
+Top level modules:
+	D_ff_6b
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/ZigZag_TP.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/ZigZag_TP.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ZigZag_TP
+
+Top level modules:
+	ZigZag_TP
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/SRAM32768x64.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/SRAM32768x64.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SRAM32768x64
+-- Compiling module spsram_hd_32768x64m16
+-- Compiling module SRAM
+
+Top level modules:
+	SRAM32768x64
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/D_ff_80b.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/D_ff_80b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module D_ff_80b
+
+Top level modules:
+	D_ff_80b
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/D_ff_64b.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/D_ff_64b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module D_ff_64b
+
+Top level modules:
+	D_ff_64b
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/DCT_first.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/DCT_first.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DCT_first
+-- Compiling module round1
+
+Top level modules:
+	DCT_first
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/RLE.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/RLE.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RLE
+
+Top level modules:
+	RLE
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/TPmem1.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/TPmem1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TPmem1
+
+Top level modules:
+	TPmem1
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/TPmem2.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/TPmem2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TPmem2
+
+Top level modules:
+	TPmem2
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/RLE_top.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/RLE_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RLE_top
+
+Top level modules:
+	RLE_top
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/SRAM16384x112.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/SRAM16384x112.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SRAM16384x112
+-- Compiling module spsram_hd_16384x112
+-- Compiling module SRAM2
+
+Top level modules:
+	SRAM16384x112
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/sti_version.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/sti_version.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sti_version
+
+Top level modules:
+	sti_version
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/DCT_second.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/DCT_second.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DCT_second
+-- Compiling module round2
+
+Top level modules:
+	DCT_second
+
+} {} {}} C:/Users/Chung/Desktop/JPEG/new/top_memory_test.v {1 {vlog -work work -stats=none C:/Users/Chung/Desktop/JPEG/new/top_memory_test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module top_memory_test
+-- Compiling module counter
+-- Compiling module counter2
+-- Compiling module counter3
+-- Compiling module TPcontrol
+
+Top level modules:
+	top_memory_test
+
+} {} {}}

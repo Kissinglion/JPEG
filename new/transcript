@@ -1,57 +1,73 @@
 # Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
-# OpenFile C:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v
-project open C:/Users/Chung/Desktop/JPEG/verilog/JPEG
-# Loading project JPEG
-vsim -gui sti_version
-# vsim -gui sti_version 
-# Start time: 00:08:13 on Jul 31,2020
-# Loading work.sti_version
-# Loading work.top_memory_test
-# Loading work.SRAM32768x64
-# Loading work.spsram_hd_32768x64m16
-# Loading work.SRAM
-# Loading work.DCT_first
-# Loading work.round1
-# Loading work.TPmem1
-# Loading work.DCT_second
-# Loading work.round2
-# Loading work.D_ff_80b
-# Loading work.Quantization_re
-# Loading work.round
-# Loading work.ZigZag_TP
-# Loading work.RLE_top
-# Loading work.D_ff_64b
-# Loading work.D_ff_6b
-# Loading work.RLE
-# Loading work.SRAM16384x112
-# Loading work.spsram_hd_32768x80m16
-# Loading work.SRAM2
-# Loading work.counter
-# Loading work.counter2
-# Loading work.counter3
-# Loading work.TPcontrol
-add wave -position end sim:/sti_version/TEST/*
-add wave -position end sim:/sti_version/TEST/d1/*
-run
-run
+# OpenFile C:/Users/Chung/Desktop/JPEG/new/D_ff_6b.v
+# Loading project New
+# Compile of D_ff_6b.v was successful.
 # Compile of D_ff_64b.v was successful.
+# Compile of D_ff_80b.v was successful.
 # Compile of DCT_first.v was successful.
 # Compile of DCT_second.v was successful.
-# Compile of SRAM512x16.v was successful.
+# Compile of Quantization_re.v was successful with warnings.
+# Compile of RLE.v was successful.
+# Compile of RLE_top.v was successful.
+# Compile of SRAM16384x112.v was successful.
 # Compile of SRAM32768x64.v was successful.
 # Compile of SRAM32768x80.v was successful.
 # Compile of sti_version.v was successful.
 # Compile of top_memory_test.v was successful.
 # Compile of TPmem1.v was successful.
 # Compile of TPmem2.v was successful.
-# Compile of D_ff_6b.v was successful.
-# Compile of Quantization_re.v was successful with warnings.
 # Compile of ZigZag_TP.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -gui sti_version
+# vsim -gui sti_version 
+# Start time: 02:56:20 on Jul 31,2020
+# Loading work.sti_version
+# Loading work.top_memory_test
+# Loading work.SRAM32768x64
+# Loading work.spsram_hd_32768x64m16
+# Loading work.SRAM
+# Loading work.DCT_first
+# Loading work.round1
+# Loading work.TPmem1
+# Loading work.DCT_second
+# Loading work.round2
+# Loading work.D_ff_80b
+# Loading work.Quantization_re
+# Loading work.round
+# Loading work.ZigZag_TP
+# Loading work.RLE_top
+# Loading work.D_ff_64b
+# Loading work.D_ff_6b
+# Loading work.RLE
+# Loading work.SRAM16384x112
+# Loading work.spsram_hd_16384x112
+# Loading work.SRAM2
+# Loading work.counter
+# Loading work.counter2
+# Loading work.counter3
+# Loading work.TPcontrol
+# ** Warning: (vsim-3015) C:/Users/Chung/Desktop/JPEG/new/SRAM16384x112.v(58): [PCDPC] - Port size (80) does not match connection size (112) for port 'D'. The port definition is at: C:/Users/Chung/Desktop/JPEG/new/SRAM32768x80.v(73).
+#    Time: 0 ps  Iteration: 0  Instance: /sti_version/TEST/rl/MEM_OUT/SRAM_16384x112/SRAM16384x112_2 File: C:/Users/Chung/Desktop/JPEG/new/SRAM32768x80.v
+# ** Warning: (vsim-3015) C:/Users/Chung/Desktop/JPEG/new/SRAM16384x112.v(58): [PCDPC] - Port size (15) does not match connection size (14) for port 'A'. The port definition is at: C:/Users/Chung/Desktop/JPEG/new/SRAM32768x80.v(74).
+#    Time: 0 ps  Iteration: 0  Instance: /sti_version/TEST/rl/MEM_OUT/SRAM_16384x112/SRAM16384x112_2 File: C:/Users/Chung/Desktop/JPEG/new/SRAM32768x80.v
+# ** Warning: (vsim-3015) C:/Users/Chung/Desktop/JPEG/new/SRAM16384x112.v(58): [PCDPC] - Port size (80) does not match connection size (112) for port 'Q'. The port definition is at: C:/Users/Chung/Desktop/JPEG/new/SRAM32768x80.v(76).
+#    Time: 0 ps  Iteration: 0  Instance: /sti_version/TEST/rl/MEM_OUT/SRAM_16384x112/SRAM16384x112_2 File: C:/Users/Chung/Desktop/JPEG/new/SRAM32768x80.v
+# Compile of D_ff_6b.v was successful.
+# Compile of D_ff_64b.v was successful.
 # Compile of D_ff_80b.v was successful.
-# Compile of RLE_top.v was successful.
+# Compile of DCT_first.v was successful.
+# Compile of DCT_second.v was successful.
+# Compile of Quantization_re.v was successful with warnings.
 # Compile of RLE.v was successful.
+# Compile of RLE_top.v was successful.
 # Compile of SRAM16384x112.v was successful.
-# 17 compiles, 0 failed with no errors.
+# Compile of SRAM32768x64.v was successful.
+# Compile of sti_version.v was successful.
+# Compile of top_memory_test.v was successful.
+# Compile of TPmem1.v was successful.
+# Compile of TPmem2.v was successful.
+# Compile of ZigZag_TP.v was successful.
+# 15 compiles, 0 failed with no errors.
 restart
 # Loading work.sti_version
 # Loading work.top_memory_test
@@ -72,14 +88,12 @@ restart
 # Loading work.D_ff_6b
 # Loading work.RLE
 # Loading work.SRAM16384x112
-# Loading work.spsram_hd_32768x80m16
+# Loading work.spsram_hd_16384x112
 # Loading work.SRAM2
 # Loading work.counter
 # Loading work.counter2
 # Loading work.counter3
 # Loading work.TPcontrol
-run
-restart
 run -all
 # DATA 0000010000000001111101010000101100000001000000000000000000000000
 # DATA 0000010000001100000000001111111100000000000000000000000000000000
@@ -32849,7 +32863,5 @@ run -all
 # DATA 0000000000000000000000000000000000000000000000000000000000000000
 # DATA 0000000000000000000000000000000000000000000000000000000000000000
 # DATA 0000000000000000000000000000000000000000000000000000000000000000
-# End time: 00:19:25 on Jul 31,2020, Elapsed time: 0:11:12
-# Errors: 0, Warnings: 0
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            # End time: 00:19:30 on Jul 31,2020, Elapsed time: 0:18:26
-# Errors: 0, Warnings: 0
+# End time: 02:57:55 on Jul 31,2020, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 3

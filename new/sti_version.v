@@ -43,8 +43,8 @@ begin
 	#727300;
 	for (i = 0; i<5670; i=i+1)
 	begin
-	  $display("DATA %b", TEST.rl.MEM_OUT.SRAM_syn2.SRAM32768x80.Mem[i]); //check the path of memory rocation (module instance)
-		$fwrite(f,"%b\n",   TEST.rl.MEM_OUT.SRAM_syn2.SRAM32768x80.Mem[i]); //check the path of memory rocation (module instance)
+	  $display("DATA %b", TEST.rl.MEM_OUT.SRAM_16384x112.SRAM16384x112_2.Mem[i]); //check the path of memory rocation (module instance)
+	  $fwrite(f,"%b\n",   TEST.rl.MEM_OUT.SRAM_16384x112.SRAM16384x112_2.Mem[i]); //check the path of memory rocation (module instance)
 	end
 	
 	#100

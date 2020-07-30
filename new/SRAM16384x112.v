@@ -22,13 +22,13 @@ module SRAM16384x112
 
 wire   [WORDSIZE-1:0] wDO;
 
-spsram_hd_32768x80m16 SRAM_syn2
+spsram_hd_16384x112 SRAM_16384x112
 (
 .CK	(CK		),
 .CSN	(NCE		),
 .WEN	(NWRT		),
 .OEN	(1'b0		),
-.A	({RA}	),
+.A	(RA	),
 .DI	(DIN    	),
 .DOUT	(wDO		));
 
@@ -39,7 +39,7 @@ endmodule
 `ifdef STIMULUS
 
 
-module spsram_hd_32768x80m16 
+module spsram_hd_16384x112
     #(	parameter ADDRESSSIZE = 14,
 	parameter ADDRESSBITSIZE = 16384,		    
         parameter WORDSIZE = 112)
@@ -55,7 +55,7 @@ module spsram_hd_32768x80m16
 
  wire [WORDSIZE-1:0] wDOUT ;
 
-SRAM2 SRAM32768x80 ( CK, DI, A, WEN, CSN, wDOUT );
+SRAM2 SRAM16384x112_2 ( CK, DI, A, WEN, CSN, wDOUT );
 
 assign DOUT = wDOUT ; 
 

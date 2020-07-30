@@ -6,15 +6,15 @@
 //  WEN=1, CSN=0: 10 READ 
 //  WEN=1, CSN=1: 11 STOP 
 
-module SRAM512x16
-    #(	parameter ADDRESSSIZE = 15,
-	parameter ADDRESSBITSIZE = 32768,		    
-        parameter WORDSIZE = 16)
+module SRAM16384x112
+    #(	parameter ADDRESSSIZE = 14,
+	     parameter ADDRESSBITSIZE = 16384,		    
+       parameter WORDSIZE = 112)
 (
  input NWRT,
  input [WORDSIZE-1:0] DIN,
- input [11-1:0] RA,
- input [4-1:0] CA,
+ input [14-1:0] RA,
+ //input CA,
  input NCE,
  input CK,
  output [WORDSIZE-1:0] DO 
@@ -28,7 +28,7 @@ spsram_hd_32768x80m16 SRAM_syn2
 .CSN	(NCE		),
 .WEN	(NWRT		),
 .OEN	(1'b0		),
-.A	({RA,CA}	),
+.A	({RA}	),
 .DI	(DIN    	),
 .DOUT	(wDO		));
 
@@ -38,12 +38,11 @@ endmodule
 
 `ifdef STIMULUS
 
-// input iReset,
 
 module spsram_hd_32768x80m16 
-    #(	parameter ADDRESSSIZE = 15,
-	parameter ADDRESSBITSIZE = 32768,		    
-        parameter WORDSIZE = 16)
+    #(	parameter ADDRESSSIZE = 14,
+	parameter ADDRESSBITSIZE = 16384,		    
+        parameter WORDSIZE = 112)
 (
  input                      CK,
  input                      CSN,
@@ -63,9 +62,9 @@ assign DOUT = wDOUT ;
 endmodule
 
 module SRAM2
-    #(	parameter ADDRESSSIZE = 15,
-	     parameter ADDRESSBITSIZE = 32768,		    
-       parameter WORDSIZE = 16)
+    #(	parameter ADDRESSSIZE = 14,
+	     parameter ADDRESSBITSIZE = 16384,		    
+       parameter WORDSIZE = 112)
 (
 
  input iClk,
