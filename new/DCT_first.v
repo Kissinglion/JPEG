@@ -3,7 +3,7 @@ module DCT_first(in,out);
   input [63:0]in;
   output wire [71:0]out;
   
-  wire signed [7:0] in_temp [7:0];
+  wire  [7:0] in_temp [7:0];
   wire signed [17:0] out_temp [7:0];
   wire signed [9:0] a1,a2,a3,a4,a5,a6,a7,a8;
   wire signed [11:0] b1,b2,b3,b4,b5,b6,b7,a62,a72,a82;

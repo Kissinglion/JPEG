@@ -42,32 +42,32 @@ for index = 3:3
     % Load DCT output text file from verilog (512x512 pixel)
     % Each pixel has 16bit integer data
     
-%     RLE = textread(sprintf('DCT_image_rle_%d.txt',index),'%14c');
-%     RLE_2 = char(zeros(79472,14));
-%     for i=1:39736
-%         RLE_2(2*i-1,1)= 0;
-%         RLE_2(2*i-1,2)= 0;
-%         RLE_2(2*i-1,3)= 0;
-%         RLE_2(2*i-1,4)= 0;
-%         RLE_2(2*i-1,5)= 0;
-%         RLE_2(2*i-1,6)= 0;
-%         RLE_2(2*i-1,7)= 0;
-%         RLE_2(2*i-1,8)= 0;
-%         RLE_2(2*i-1,9)= 0;
-%         RLE_2(2*i-1,10)= 0;
-%         RLE_2(2*i-1,11:16) = RLE(i,1:6);  
-%         RLE_2(2*i,1)= RLE(i,7);
-%         RLE_2(2*i,2)= RLE(i,7);
-%         RLE_2(2*i,3)= RLE(i,7);
-%         RLE_2(2*i,4)= RLE(i,7);
-%         RLE_2(2*i,5)= RLE(i,7);
-%         RLE_2(2*i,6)= RLE(i,7);
-%         RLE_2(2*i,7)= RLE(i,7);
-%         RLE_2(2*i,8)= RLE(i,7);
-%         RLE_2(2*i,9:16) = RLE(i,7:14);
-%     end
-%     RLE_verilog = typecast(uint16(bin2dec(char(RLE_2))),'int16');
-%     RLE_v = RLE_verilog(1:79472,:);
+    RLE = textread(sprintf('DCT_image_rle_%d.txt',index),'%14c');
+    RLE_2 = char(zeros(79472,14));
+    for i=1:39736
+        RLE_2(2*i-1,1)= 0;
+        RLE_2(2*i-1,2)= 0;
+        RLE_2(2*i-1,3)= 0;
+        RLE_2(2*i-1,4)= 0;
+        RLE_2(2*i-1,5)= 0;
+        RLE_2(2*i-1,6)= 0;
+        RLE_2(2*i-1,7)= 0;
+        RLE_2(2*i-1,8)= 0;
+        RLE_2(2*i-1,9)= 0;
+        RLE_2(2*i-1,10)= 0;
+        RLE_2(2*i-1,11:16) = RLE(i,1:6);  
+        RLE_2(2*i,1)= RLE(i,7);
+        RLE_2(2*i,2)= RLE(i,7);
+        RLE_2(2*i,3)= RLE(i,7);
+        RLE_2(2*i,4)= RLE(i,7);
+        RLE_2(2*i,5)= RLE(i,7);
+        RLE_2(2*i,6)= RLE(i,7);
+        RLE_2(2*i,7)= RLE(i,7);
+        RLE_2(2*i,8)= RLE(i,7);
+        RLE_2(2*i,9:16) = RLE(i,7:14);
+    end
+    RLE_verilog = typecast(uint16(bin2dec(char(RLE_2))),'int16');
+    RLE_v = RLE_verilog(1:79472,:);
     
     
     M = textread(sprintf('DCT_image_%d.txt',index),'%8c');
@@ -83,8 +83,31 @@ for index = 3:3
         M_2(i,8)= M(i,1);
         M_2(i,9:16) = M(i,1:8);
     end
+    
+%     input_verilog = zeros(512,512);
 
-
+    for i = 1:79472
+        if RLE_v(i,1) < 0
+            input_verilog(i,1) = 256 + RLE_v(i,1);
+        else
+            input_verilog(i,1) = RLE_v(i,1);
+        end
+    end
+    RLE_v = input_verilog;
+    image_number = 3;
+    input_vector = fopen(sprintf( 'image_decoding_%d.txt',image_number), 'w');
+    
+    for i = 1:9967
+        fprintf(input_vector, '%02X', RLE_v(i,1));
+        fprintf(input_vector, '%02X', RLE_v(i+1,1));
+        fprintf(input_vector, '%02X', RLE_v(i+2,1));
+        fprintf(input_vector, '%02X', RLE_v(i+3,1));
+        fprintf(input_vector, '%02X', RLE_v(i+4,1));
+        fprintf(input_vector, '%02X', RLE_v(i+5,1));
+        fprintf(input_vector, '%02X', RLE_v(i+6,1));
+        fprintf(input_vector, '%02X\n', RLE_v(i+7,1));
+    end
+        
 
     DCT_image_80b = typecast(uint16(bin2dec(char(M_2))),'int16');
 
@@ -338,11 +361,11 @@ for index = 3:3
 %             end
 %         end   
         
-        for i = 1:512
-            for j = 1:512
-                Image_restore(i,j) = Image_restore(i,j) + 128;
-            end
-        end
+%         for i = 1:512
+%             for j = 1:512
+%                 Image_restore(i,j) = Image_restore(i,j) + 128;
+%             end
+%         end
 
 
 %% -------------------Generate the output Image--------------------------

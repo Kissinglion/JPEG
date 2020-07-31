@@ -42,7 +42,7 @@ for index = 3:3
     % Load DCT output text file from verilog (512x512 pixel)
     % Each pixel has 16bit integer data
     
-<<<<<<< HEAD
+
 %     RLE = textread(sprintf('DCT_image_rle_%d.txt',index),'%14c');
 %     RLE_2 = char(zeros(79472,14));
 %     for i=1:39736
@@ -174,13 +174,13 @@ for index = 3:3
 
         
         % Break 8x8 block into columns
-<<<<<<< HEAD
+
         Single_column_quantized_image=im2col(Image_tran', [8 8],'distinct');
         ZigZaged_Single_Column_Image=Single_column_quantized_image;
-=======
+
 %         Single_column_quantized_image=im2col(Image_tran', [8 8],'distinct');
 %         ZigZaged_Single_Column_Image=Single_column_quantized_image;
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+
         
 %% --------------------------- zigzag ----------------------------------
         % using the MatLab Matrix indexing power (specially the ':' operator) rather than any function
@@ -274,7 +274,7 @@ for index = 3:3
 %%  ---------------------- Run Level Decoding ---------------------
         % construct  ZigZaged_Single_Column_Image from Run Level Pair 
 
-<<<<<<< HEAD
+
 %         error = [];
 %         for i = 1:79472
 %             if run_level_pairs(i,1) ~= RLE_v(i,1)
@@ -283,16 +283,8 @@ for index = 3:3
 %                 end
 %             end
 %         end
-=======
-        error = [];
-        for i = 1:79472
-            if run_level_pairs(i,1) ~= RLE_v(i,1)
-                if (RLE_v(i,1) ~= 63) & (RLE_v(i,1) ~= 127)
-                    error = cat(1,error,i);
-                end
-            end
-        end
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+
+
 %         run_level_pairs = RLE_v;
 
         c=[];
@@ -332,12 +324,7 @@ for index = 3:3
 %% --------- image matrix construction from image column ----------
         Image_tran1 = col2im(Single_column_quantized_image,   [8 8],   [m n],   'distinct');
         Image_tran1 = Image_tran1';
-<<<<<<< HEAD
-
-=======
-        Image_tran2 = col2im(ZigZaged_Single_Column_Image,   [8 8],   [m n],   'distinct');
-        Image_tran2 = Image_tran2';
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+ 
 
         %  Allocate the array for Image restore
         Image_restore = zeros(256,256);
@@ -345,7 +332,6 @@ for index = 3:3
         for i=1:m/8
             for j=1:n/8
                 Block_temp = Image_tran1((8*i-7):8*i,(8*j-7):8*j);
-<<<<<<< HEAD
                 Block_rq = Q.*Block_temp;
                 Block_IDCT = T2'*Block_rq*T1;
                 Image_restore((8*i-7):8*i,(8*j-7):8*j) = Block_IDCT;
@@ -365,7 +351,7 @@ for index = 3:3
         for i = 1:512
             for j = 1:512
                 Image_restore(i,j) = Image_restore(i,j) + 128;
-=======
+
                 Block_temp1 = Image_tran2((8*i-7):8*i,(8*j-7):8*j);
                 Block_rq = Q.*Block_temp;
 %                 Block_rq = Block_temp;
@@ -383,7 +369,6 @@ for index = 3:3
                 if Image_restore(i,j) < 0
                    Image_restore(i,j) = 0;
                 end
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
             end
         end
 

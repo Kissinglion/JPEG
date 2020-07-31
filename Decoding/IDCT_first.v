@@ -6,6 +6,28 @@ module IDCT_first(in,out);
   wire [7:0] in_temp [7:0];
   wire signed [17:0] out_temp [7:0];
   wire signed [9:0] a0,a1;
+  
+  wire signed [14:0]a05,a15;
+  wire signed [12:0]a03,a13;
+  wire signed [11:0]a02,a12;
+  
+  wire signed [15:0]a00,a11;
+  
+  wire signed [13:0]a26,a66;
+  wire signed [11:0]a24,a64;
+  wire signed [10:0]a23,a63;
+  wire signed [8:0]a21,a61;
+  
+  wire signed [15:0]b1,b2,b3,b4;
+  wire signed [16:0]temp0,temp1,temp2,temp3;
+  
+  wire signed [13:0]c16,c36,c56,c76;
+  wire signed [12:0]c15,c35,c55,c75;
+  wire signed [11:0]c14,c34,c54,c74;
+  wire signed [10:0]c13,c33,c53,c73;
+  wire signed [9:0]c12,c32,c52,c72;
+  
+  wire signed [17:0]temp4,temp5,temp6,temp7;
 
   assign in_temp[7] = in[7:0];
   assign in_temp[6] = in[15:8];
@@ -20,11 +42,7 @@ module IDCT_first(in,out);
   assign a0 = in_temp[0] + in_temp[4];
   assign a1 = in_temp[0] - in_temp[4];
   
-  wire signed [14:0]a05,a15;
-  wire signed [12:0]a03,a13;
-  wire signed [11:0]a02,a12;
   
-  wire signed [15:0]a00,a11;
   
   assign a05 = {a0,5'b0};
   assign a03 = {a0,3'b0};
@@ -36,10 +54,7 @@ module IDCT_first(in,out);
   assign a00 = a05 + a03 + a02; //+ a0;
   assign a11 = a15 + a13 + a12; //+ a1;
   
-  wire signed [13:0]a26,a66;
-  wire signed [11:0]a24,a64;
-  wire signed [10:0]a23,a63;
-  wire signed [8:0]a21,a61;
+  
   
   assign a26 = {in_temp[2],6'b0};
   assign a24 = {in_temp[2],4'b0};
@@ -51,8 +66,7 @@ module IDCT_first(in,out);
   assign a63 = {in_temp[6],3'b0};
   assign a61 = {in_temp[6],1'b0};
   
-  wire signed [15:0]b1,b2,b3,b4;
-  wire signed [16:0]temp0,temp1,temp2,temp3;
+  
   
   assign b1 = a26 - a23 + a21; // + a2;
   assign b2 = a66 - a63 + a61; // + a6;
@@ -64,11 +78,7 @@ module IDCT_first(in,out);
   assign temp2 = a11 - b3 + b2;
   assign temp3 = a00 - b1 - b4;
   
-  wire signed [13:0]c16,c36,c56,c76;
-  wire signed [12:0]c15,c35,c55,c75;
-  wire signed [11:0]c14,c34,c54,c74;
-  wire signed [10:0]c13,c33,c53,c73;
-  wire signed [9:0]c12,c32,c52,c72;
+  
   
   assign c16 = {in_temp[1],6'b0};
   assign c15 = {in_temp[1],5'b0};
@@ -94,7 +104,7 @@ module IDCT_first(in,out);
   assign c73 = {in_temp[7],3'b0};
   assign c72 = {in_temp[7],2'b0};
   
-  wire signed [17:0]temp4,temp5,temp6,temp7;
+  
 
   assign temp4 = c16 + c35 + c34 + c32 + c55 + c52 + c73 + c72;
   assign temp5 = c15 + c14 + c12 - c33 - c32 - c56 - c75 - c72;
@@ -122,7 +132,6 @@ module IDCT_first(in,out);
           rnd6(out_temp[5],out[26:18]),
           rnd7(out_temp[6],out[17:9]),
           rnd8(out_temp[7],out[8:0]);
-
 
 
   //assign out={out_temp[0][17:9],out_temp[1][17:9],out_temp[2][17:9],out_temp[3][17:9],out_temp[4][17:9],out_temp[5][17:9],out_temp[6][17:9],9'b0}; 

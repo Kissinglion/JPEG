@@ -93,20 +93,6 @@ module Quantization_re(in,out,count,clk,reset);
   parameter signed q87 = 7'h01;
   parameter signed q88 = 7'h01;
   
-<<<<<<< HEAD
-
-=======
-  /*
-  assign out[79:70] = out_temp[0][17] ? out_temp[0][16:7] : out_temp[0][6] ? (out_temp[0][16:7] + 1'b1) : out_temp[0][16:7];
-  assign out[69:60] = out_temp[1][17] ? out_temp[1][16:7] : out_temp[1][6] ? (out_temp[1][16:7] + 1'b1) : out_temp[1][16:7];
-  assign out[59:50] = out_temp[2][17] ? out_temp[2][16:7] : out_temp[2][6] ? (out_temp[2][16:7] + 1'b1) : out_temp[2][16:7];
-  assign out[49:40] = out_temp[3][17] ? out_temp[3][16:7] : out_temp[3][6] ? (out_temp[3][16:7] + 1'b1) : out_temp[3][16:7];
-  assign out[39:30] = out_temp[4][17] ? out_temp[4][16:7] : out_temp[4][6] ? (out_temp[4][16:7] + 1'b1) : out_temp[4][16:7];
-  assign out[29:20] = out_temp[5][17] ? out_temp[5][16:7] : out_temp[5][6] ? (out_temp[5][16:7] + 1'b1) : out_temp[5][16:7];
-  assign out[19:10] = out_temp[6][17] ? out_temp[6][16:7] : out_temp[6][6] ? (out_temp[6][16:7] + 1'b1) : out_temp[6][16:7];
-  assign out[9:0]   = out_temp[7][17] ? out_temp[7][16:7] : out_temp[0][6] ? (out_temp[7][16:7] + 1'b1) : out_temp[7][16:7];
-  */
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
   
   round rnd1(out_temp[0],out[63:56]),
         rnd2(out_temp[1],out[55:48]),
@@ -117,10 +103,6 @@ module Quantization_re(in,out,count,clk,reset);
         rnd7(out_temp[6],out[15:8]),
         rnd8(out_temp[7],out[7:0]);
   
-<<<<<<< HEAD
-=======
-  //assign out = {out_temp[0][16:7],out_temp[1][16:7],out_temp[2][16:7],out_temp[3][16:7],out_temp[4][16:7],out_temp[5][16:7],out_temp[6][16:7],out_temp[7][16:7]};
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
   
   always @(in_temp or count)
   case(count)

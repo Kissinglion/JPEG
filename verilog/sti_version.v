@@ -21,12 +21,9 @@ initial	$readmemh("image_in_3.txt", TEST.MEM_IN.SRAM_syn.SRAM32768x64.Mem); //in
 integer f;
 integer i;
 initial
-<<<<<<< HEAD
 
 begin
 	f = $fopen("DCT_image_3.txt","w"); //output image, this is the output file that finished 2D-DCT operations.
-=======
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
 
 /*
 begin

@@ -1,0 +1,62 @@
+C:/Users/user/Desktop/JPEG/Decoding/IDCT_first.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/Decoding/IDCT_first.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IDCT_first
+-- Compiling module round1
+
+Top level modules:
+	IDCT_first
+
+} {} {}} C:/Users/user/Desktop/JPEG/Decoding/IDCT_second.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/Decoding/IDCT_second.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IDCT_second
+
+Top level modules:
+	IDCT_second
+
+} {} {}} C:/Users/user/Desktop/JPEG/Decoding/SRAM32768x64.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/Decoding/SRAM32768x64.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM32768x64
+-- Compiling module spsram_hd_32768x64m16
+-- Compiling module SRAM
+
+Top level modules:
+	SRAM32768x64
+
+} {} {}} C:/Users/user/Desktop/JPEG/Decoding/sti_decoding.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/Decoding/sti_decoding.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sti_decoding
+
+Top level modules:
+	sti_decoding
+
+} {} {}} C:/Users/user/Desktop/JPEG/Decoding/Decoding.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/Decoding/Decoding.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Decoding
+
+Top level modules:
+	Decoding
+
+} {} {}} C:/Users/user/Desktop/JPEG/Decoding/SRAM16384x112.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/Decoding/SRAM16384x112.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM16384x112
+-- Compiling module spsram_hd_16384x112
+-- Compiling module SRAM2
+
+Top level modules:
+	SRAM16384x112
+
+} {} {}} C:/Users/user/Desktop/JPEG/Decoding/D_ff_6b.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/Decoding/D_ff_6b.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module D_ff_6b
+
+Top level modules:
+	D_ff_6b
+
+} {} {}} C:/Users/user/Desktop/JPEG/Decoding/RLD.v {1 {vlog -work work C:/Users/user/Desktop/JPEG/Decoding/RLD.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RLD
+
+Top level modules:
+	RLD
+
+} {} {}}

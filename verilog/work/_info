@@ -3,1600 +3,1791 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\user\Desktop\JPEG\verilog
-vcounter
 <<<<<<< HEAD
-Z0 !s110 1596121826
-!i10b 1
-!s100 >LnY<zo::2kR1VkeTd41X2
-ISR?:?U]XQN?Y6?MdIC;J01
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/Chung/Desktop/JPEG/verilog
-Z3 w1596118576
-Z4 8C:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v
-Z5 FC:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v
+Z1 !s110 1596121826
+Z2 ISR?:?U]XQN?Y6?MdIC;J01
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 dC:/Users/Chung/Desktop/JPEG/verilog
+Z5 w1596118576
+Z6 8C:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v
+Z7 FC:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v
 L0 50
-Z6 OV;L;10.5b;63
-=======
-Z1 !s100 a<enKH=^mXODZce8O]l?O2
-Z2 IBL8>VM7XAfo^]Jo3L<@ZU3
-Z3 VaQP<E9A?o3NDiY=C`5P882
-Z4 dC:\Users\user\Desktop\JPEG\verilog
-Z5 w1596093617
-Z6 8C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v
-Z7 FC:/Users/user/Desktop/JPEG/verilog/top_memory_test.v
+Z8 OV;L;10.5b;63
+Z9 =======
+Z10 !s100 a<enKH=^mXODZce8O]l?O2
+Z11 IBL8>VM7XAfo^]Jo3L<@ZU3
+Z12 VaQP<E9A?o3NDiY=C`5P882
+Z13 dC:\Users\user\Desktop\JPEG\verilog
+Z14 w1596093617
+Z15 8C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v
+Z16 FC:/Users/user/Desktop/JPEG/verilog/top_memory_test.v
 L0 66
-Z8 OV;L;10.1d;51
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-r1
-31
+Z17 OV;L;10.1d;51
+Z18 !s100 >LnY<zo::2kR1VkeTd41X2
+!i10b 1
 <<<<<<< HEAD
-Z7 !s108 1596121825.000000
-Z8 !s107 C:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v|
-Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v|
+Z19 !s108 1596121825.000000
+Z20 !s107 C:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v|
+Z21 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/top_memory_test.v|
+Z22 o-work work
+Z23 tCvgOpt 0
+R13
 !i113 1
-Z10 o-work work
-Z11 tCvgOpt 0
-vcounter2
-R0
-!i10b 1
-!s100 6eoNVP@EG^PBbRKOXAj6]1
-IX0SWUGGPNoLghl9lJLTT=0
-R1
-R2
-R3
-R4
-R5
-L0 67
-=======
-Z9 !s108 1596097653.240000
-Z10 !s107 C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v|
-Z11 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v|
-Z12 o-work work -O0
-!i10b 1
-!s85 0
-!s101 -O0
-vcounter2
-Z13 !s100 Xd<>H7QXO;zJo@oQm6m]f0
-Z14 InEAN>cBC34G_lP9>7WoH<0
-Z15 V8jV23eH17i2>85R@2QRco2
-R4
-R5
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R6
-R7
-L0 83
-R8
-r1
-31
-R9
+<<<<<<< HEAD
+Z24 I;6kD@Y_VWLHmkonn2LT[o0
 R10
 R11
 R12
+R13
+R14
+L0 92
+R9
+Z25 !s100 CVS_azdgOSdg;==92U_P]1
+!s85 0
+!s101 -O0
+<<<<<<< HEAD
+Z26 IHJQS;I?AFCCmUm^Ij2DPA0
+R10
+R11
+Z27 o-work work -O0
+Z28 8C:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v
+Z29 FC:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v
+R9
+Z30 !s100 _<fK1CYX]XM_4QVb21IHo2
+Z31 IHYnkU8EAj43n7kSmNRz]Z2
+Z32 V4jURekB7Y>:`2Ljol_21c0
+R13
+Z33 w1595393101
+Z34 8C:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v
+Z35 FC:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v
+Z36 !s110 1596121824
+Z37 !s100 gD`k2VC_^l1mB__Z<:<>20
 !i10b 1
 <<<<<<< HEAD
-!s100 CVS_azdgOSdg;==92U_P]1
-I;6kD@Y_VWLHmkonn2LT[o0
-R1
-R2
-R3
-R4
-R5
-L0 92
-=======
-!s85 0
-!s101 -O0
-vcounter3
-Z16 !s100 iG?S0BNTh>a9^Jf9TnUX<3
-Z17 I3OFSO?bSK=Z>:0B>IaJn63
-Z18 VSLY1Mo0YD_bKPCo_2gJ5Q2
-R4
-R5
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R6
-R7
-Z19 L0 108
-R8
-r1
-31
+Z38 !s108 1596121824.000000
+Z39 !s107 C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v|
+Z40 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/top_memory_test.v|
+Z41 n@d_ff_64b
+R13
+Z42 !s107 C:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v|
+Z43 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v|
+!i113 1
+<<<<<<< HEAD
+Z44 !s108 1596121826.000000
+R39
+R40
+Z45 n@d_ff_6b
+R13
+Z46 !s107 C:/Users/Chung/Desktop/JPEG/verilog/D_ff_6b.v|
+Z47 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/D_ff_6b.v|
+!i113 1
+<<<<<<< HEAD
+R38
+Z48 !s107 C:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v|
+Z49 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v|
+R39
+R40
+Z50 n@d@c@t_first
+R13
+!i113 1
+<<<<<<< HEAD
+R19
+Z51 !s107 C:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v|
+Z52 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v|
+R39
+R40
+Z53 n@d@c@t_second
+R13
+!i113 1
+<<<<<<< HEAD
+Z54 !s108 1596118728.000000
+R39
+R40
+Z55 n@quantization
+R13
+Z56 !s107 C:/Users/Chung/Desktop/JPEG/verilog/Quantization.v|
+Z57 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/Quantization.v|
+!i113 1
+<<<<<<< HEAD
+Z58 !s108 1596121827.000000
+R39
+R40
+Z59 n@r@l@e
+R13
+Z60 !s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE.v|
+Z61 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE.v|
+!i113 1
+<<<<<<< HEAD
+Z62 !s108 1596117635.000000
+R39
+R40
+Z63 n@r@l@e2
+R13
+Z64 !s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE2.v|
+Z65 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE2.v|
+!i113 1
+<<<<<<< HEAD
+R58
+R39
+R40
+Z66 n@r@l@e_top
+R13
+Z67 !s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v|
+Z68 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v|
+!i113 1
+<<<<<<< HEAD
+R62
+R39
+R40
+Z69 n@r@l@e_top2
+R13
+Z70 !s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v|
+Z71 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v|
+!i113 1
+<<<<<<< HEAD
+R62
+R39
+R40
+Z72 n@r@l@e_top3
+R13
+Z73 !s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE_top3.v|
+Z74 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE_top3.v|
+!i113 1
+<<<<<<< HEAD
+R44
+Z75 !s107 C:/Users/Chung/Desktop/JPEG/verilog/Quantization_re.v|
+Z76 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/Quantization_re.v|
+R39
+R40
+R13
+!i113 1
+<<<<<<< HEAD
+R38
+R48
+R49
+R39
+R40
+R13
+!i113 1
+<<<<<<< HEAD
+R19
+R51
+R52
+R39
+R40
+R13
+!i113 1
+<<<<<<< HEAD
+R19
+Z77 !s107 C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v|
+Z78 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v|
+R39
+R40
+R13
+!i113 1
+<<<<<<< HEAD
+R58
+Z79 !s107 C:/Users/Chung/Desktop/JPEG/verilog/SRAM16384x112.v|
+Z80 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/SRAM16384x112.v|
+R39
+R40
+R13
+!i113 1
+<<<<<<< HEAD
+R19
+R77
+R78
+R39
+R40
+Z81 n@s@r@a@m
+R13
+!i113 1
+<<<<<<< HEAD
+R58
+R79
+R80
+R39
+R40
+Z82 n@s@r@a@m16384x112
+R13
+!i113 1
+<<<<<<< HEAD
+Z83 8C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v
+Z84 FC:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v
 R9
-R10
-R11
-R12
+Z85 n@s@r@a@m2
+Z86 !s100 kjL]e6]H@biBEjAEm6?F32
+R13
 !i10b 1
 !s85 0
 !s101 -O0
-vD_ff_4b
-Z20 IF4QZHS0imYU7UZZ:l[;z^0
-Z21 VDg1SIo80bB@j0V0VzS_@n1
-Z22 dC:/Users/Chung/Desktop/JPEG/verilog
-Z23 w1595412724
-Z24 8C:/Users/Chung/Desktop/JPEG/verilog/D_ff_4b.v
-Z25 FC:/Users/Chung/Desktop/JPEG/verilog/D_ff_4b.v
-L0 1
-Z26 OV;L;10.5b;63
+<<<<<<< HEAD
+R19
+R77
+R78
+R39
+R40
+Z87 n@s@r@a@m32768x64
+R13
+!i113 1
+<<<<<<< HEAD
+R19
+R39
+R40
+Z88 n@s@r@a@m32768x80
+R13
+Z89 !s107 C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v|
+Z90 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v|
+!i113 1
+<<<<<<< HEAD
+R19
+R39
+R40
+Z91 n@s@r@a@m512x16
+R13
+Z92 !s107 C:/Users/Chung/Desktop/JPEG/verilog/SRAM512x16.v|
+Z93 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/SRAM512x16.v|
+!i113 1
+<<<<<<< HEAD
+R54
+R39
+R40
+R13
+Z94 !s107 C:/Users/Chung/Desktop/JPEG/verilog/sti.v|
+Z95 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti.v|
+!i113 1
+<<<<<<< HEAD
+Z96 !s108 1596118729.000000
+R39
+R40
+R13
+Z97 !s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_project2.v|
+Z98 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_project2.v|
+!i113 1
+<<<<<<< HEAD
+R96
+R39
+R40
+R13
+Z99 !s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_quant.v|
+Z100 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_quant.v|
+!i113 1
+<<<<<<< HEAD
+R96
+R39
+R40
+R13
+Z101 !s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_rle2.v|
+Z102 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_rle2.v|
+!i113 1
+<<<<<<< HEAD
+R96
+R39
+R40
+R13
+Z103 !s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_test.v|
+Z104 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_test.v|
+!i113 1
+<<<<<<< HEAD
+R19
+R39
+R40
+R13
+Z105 !s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_version.v|
+Z106 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_version.v|
+!i113 1
+<<<<<<< HEAD
+R96
+R39
+R40
+R13
+Z107 !s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_zig.v|
+Z108 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_zig.v|
+!i113 1
+<<<<<<< HEAD
+Z109 !s108 1596118730.000000
+R39
+R40
+R13
+Z110 !s107 C:/Users/Chung/Desktop/JPEG/verilog/test.v|
+Z111 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/test.v|
+!i113 1
+<<<<<<< HEAD
+Z112 IYlcOXbkVh]`7CCU]dCOFe2
+R10
+R11
+R12
+R13
+R14
+Z113 L0 117
+R9
+Z114 !s100 8WK^<X;gCP^GX6e]V3cnh1
+!s85 0
+!s101 -O0
+<<<<<<< HEAD
+R44
+R39
+R40
+Z115 n@t@pmem1
+R9
+Z116 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/TPmem1.v|
+R27
+R115
+Z117 !s108 1596097653.386000
+Z118 !s107 C:/Users/user/Desktop/JPEG/verilog/TPmem1.v|
+R13
+Z119 !s107 C:/Users/Chung/Desktop/JPEG/verilog/TPmem1.v|
+Z120 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/TPmem1.v|
+!i113 1
+!i10b 1
+!s85 0
+!s101 -O0
+<<<<<<< HEAD
+R44
+R39
+R40
+Z121 n@t@pmem2
+R13
+Z122 !s107 C:/Users/Chung/Desktop/JPEG/verilog/TPmem2.v|
+Z123 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/TPmem2.v|
+!i113 1
+<<<<<<< HEAD
+R109
+R39
+R40
+Z124 n@zig@zag
+R13
+Z125 !s107 C:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v|
+Z126 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v|
+!i113 1
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
 r1
 31
-Z27 o-work work
-Z28 tCvgOpt 0
-Z29 n@d_ff_4b
-Z30 !s110 1595427029
-Z31 !s100 dVB<4B>mk2RmSCgULHd011
-Z32 !s108 1595427029.000000
-Z33 !s107 C:/Users/Chung/Desktop/JPEG/verilog/D_ff_4b.v|
-Z34 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/D_ff_4b.v|
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R15
+R19
+L0 83
+R20
+r1
+31
+Z127 !s108 1596097653.240000
+R39
+R40
+R27
+R13
+!i10b 1
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R15
+R19
+Z128 L0 108
+R20
+r1
+31
+R127
+R39
+R40
+R27
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+Z129 !s108 1596097653.991000
+Z130 !s107 C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v|
+Z131 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v|
+R27
+Z132 n@de_@quantization
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+Z133 !s108 1596097653.756000
+Z134 !s107 C:/Users/user/Desktop/JPEG/verilog/Quantization_re.v|
+Z135 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/Quantization_re.v|
+R27
+Z136 n@quantization_re
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R13
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R13
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R13
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R13
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 9
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 9
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R27
+R88
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R27
+R91
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R27
+Z137 !s108 1596097652.713000
+Z138 !s107 C:/Users/user/Desktop/JPEG/verilog/sti.v|
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R27
+Z139 !s108 1596097652.769000
+Z140 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_project2.v|
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R27
+Z141 !s108 1596097652.846000
+Z142 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_quant.v|
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R27
+Z143 !s108 1596097652.915000
+Z144 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v|
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R27
+Z145 !s100 @e`G2>M;C?He5^Me@N95b2
+Z146 !s108 1596097653.048000
+Z147 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_version.v|
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R27
+Z148 !s108 1596097653.114000
+Z149 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_zig.v|
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R13
+R14
+R15
+R19
+L0 1
+R20
+r1
+31
+R127
+R39
+R40
+R27
+!i10b 1
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R15
+R19
+Z150 L0 133
+R20
+r1
+31
+R127
+R39
+R40
+R27
+Z151 n@t@pcontrol
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+L0 1
+R20
+r1
+31
+R13
+>>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R13
+vcounter
+R13
+vcounter2
+R1
+Z152 IX0SWUGGPNoLghl9lJLTT=0
+R10
+R11
+R12
+R13
+R14
+L0 67
+R9
+R127
+R39
+R40
+R27
+Z153 !s100 6eoNVP@EG^PBbRKOXAj6]1
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vcounter2
+Z154 !s100 Xd<>H7QXO;zJo@oQm6m]f0
+Z155 InEAN>cBC34G_lP9>7WoH<0
+Z156 V8jV23eH17i2>85R@2QRco2
+R13
+R14
+vcounter3
+Z157 !s100 iG?S0BNTh>a9^Jf9TnUX<3
+Z158 I3OFSO?bSK=Z>:0B>IaJn63
+Z159 VSLY1Mo0YD_bKPCo_2gJ5Q2
+R13
+R14
+vD_ff_4b
+Z160 IF4QZHS0imYU7UZZ:l[;z^0
+R3
+R4
+Z161 w1595412724
+Z162 8C:/Users/Chung/Desktop/JPEG/verilog/D_ff_4b.v
+Z163 FC:/Users/Chung/Desktop/JPEG/verilog/D_ff_4b.v
+L0 1
+R8
+r1
+31
+R22
+R23
+Z164 n@d_ff_4b
+Z165 !s110 1595427029
+Z166 !s100 dVB<4B>mk2RmSCgULHd011
+Z167 !s108 1595427029.000000
+Z168 !s107 C:/Users/Chung/Desktop/JPEG/verilog/D_ff_4b.v|
+Z169 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/D_ff_4b.v|
 !i10b 1
 !s85 0
 !i113 1
 vD_ff_64b
-<<<<<<< HEAD
-!s110 1596121824
-!i10b 1
-!s100 gD`k2VC_^l1mB__Z<:<>20
-IHJQS;I?AFCCmUm^Ij2DPA0
-R1
-R2
-R12
-8C:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v
-FC:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v
-=======
-Z35 !s100 _<fK1CYX]XM_4QVb21IHo2
-Z36 IHYnkU8EAj43n7kSmNRz]Z2
-Z37 V4jURekB7Y>:`2Ljol_21c0
-R4
-Z38 w1595393101
-Z39 8C:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v
-Z40 FC:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-Z13 !s108 1596121824.000000
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/D_ff_64b.v|
-!i113 1
-R10
-R11
-n@d_ff_64b
-vD_ff_6b
-R0
-!i10b 1
-!s100 FW=O_RgmB?@SBiHze]<?V1
-Il7[86^zLRPZLUC9K3dfYo1
-R1
-R2
-w1595429053
-8C:/Users/Chung/Desktop/JPEG/verilog/D_ff_6b.v
-FC:/Users/Chung/Desktop/JPEG/verilog/D_ff_6b.v
-=======
-Z41 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v|
-R12
-Z42 n@d_ff_64b
-Z43 !s108 1596097651.762000
-Z44 !s107 C:/Users/user/Desktop/JPEG/verilog/D_ff_64b.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vD_ff_6b
-Z45 !s100 Gc0W_JkgSV@dNBOUCg`HK3
-Z46 IFXoc65D:DVZ`b<9A=mRQP2
-Z47 VJ>AgUzGK?QY;34OFSRTal0
-R4
-Z48 w1595488933
-Z49 8C:/Users/user/Desktop/JPEG/verilog/D_ff_6b.v
-Z50 FC:/Users/user/Desktop/JPEG/verilog/D_ff_6b.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-Z14 !s108 1596121826.000000
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/D_ff_6b.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/D_ff_6b.v|
-!i113 1
-R10
-R11
-n@d_ff_6b
-vD_ff_80b
-Z15 !s110 1596121827
-!i10b 1
-!s100 ^2FdnL4=R4E`4RCO:5^?W0
-IzP4mAe>Jao]3]Z<E]]TgL0
-R1
-R2
-w1596116501
-8C:/Users/Chung/Desktop/JPEG/verilog/D_ff_80b.v
-FC:/Users/Chung/Desktop/JPEG/verilog/D_ff_80b.v
-L0 1
-R6
-r1
-!s85 0
-31
-Z16 !s108 1596121827.000000
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/D_ff_80b.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/D_ff_80b.v|
-!i113 1
-R10
-R11
-n@d_ff_80b
-vDCT_first
-Z17 !s110 1596121825
-!i10b 1
-!s100 69<ffG[HcPQcbR_QleNYG1
-Ienf1ngOdU<1P6@0FkdG:81
-R1
-R2
-Z18 w1596121814
-Z19 8C:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v
-Z20 FC:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v
-=======
-Z51 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/D_ff_6b.v|
-R12
-Z52 n@d_ff_6b
-Z53 !s108 1596097651.689000
-Z54 !s107 C:/Users/user/Desktop/JPEG/verilog/D_ff_6b.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vDCT_first
-Z55 !s100 j@V6lH5O1X9f@f?IGEI780
-Z56 Ik51WbP2cX2G=ZEn<MNZmL1
-Z57 VXbl^]<mO1kC>^c494PeoC0
-R4
-R48
-Z58 8C:/Users/user/Desktop/JPEG/verilog/DCT_first.v
-Z59 FC:/Users/user/Desktop/JPEG/verilog/DCT_first.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
 R13
-Z21 !s107 C:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v|
-Z22 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v|
-!i113 1
-R10
-R11
-n@d@c@t_first
-vDCT_second
+vD_ff_6b
+!i10b 1
+Z170 !s100 Gc0W_JkgSV@dNBOUCg`HK3
+Z171 IFXoc65D:DVZ`b<9A=mRQP2
+Z172 VJ>AgUzGK?QY;34OFSRTal0
+R13
+Z173 w1595488933
+Z174 8C:/Users/user/Desktop/JPEG/verilog/D_ff_6b.v
+Z175 FC:/Users/user/Desktop/JPEG/verilog/D_ff_6b.v
+L0 1
 R17
+r1
+!s85 0
+31
+!s108 1596174068.957000
+!s107 C:/Users/user/Desktop/JPEG/verilog/D_ff_6b.v|
+Z176 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/D_ff_6b.v|
+!s101 -O0
+R27
+R41
+vD_ff_6b
+R170
+R171
+R172
+R13
+R173
+R174
+R175
+vD_ff_80b
+Z177 !s110 1596121827
+Z178 IzP4mAe>Jao]3]Z<E]]TgL0
+R10
+R11
+Z179 w1596116501
+Z180 8C:/Users/Chung/Desktop/JPEG/verilog/D_ff_80b.v
+Z181 FC:/Users/Chung/Desktop/JPEG/verilog/D_ff_80b.v
+L0 1
+R15
+r1
+31
+R58
+R39
+R40
+Z182 n@d_ff_80b
+R13
+Z183 !s100 ^2FdnL4=R4E`4RCO:5^?W0
+Z184 !s107 C:/Users/Chung/Desktop/JPEG/verilog/D_ff_80b.v|
+Z185 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/D_ff_80b.v|
 !i10b 1
-!s100 2NnCY>l`i4`H6l24B^Wl90
-I75@[Mz=<R?zzA_SIPmmEG3
-R1
-R2
-Z23 w1596117044
-Z24 8C:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v
-Z25 FC:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v
-=======
-Z60 !s108 1596097651.828000
-Z61 !s107 C:/Users/user/Desktop/JPEG/verilog/DCT_first.v|
-Z62 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/DCT_first.v|
-R12
-Z63 n@d@c@t_first
+!s85 0
+!i113 1
+vDCT_first
+Z186 !s110 1596121825
+Z187 Ienf1ngOdU<1P6@0FkdG:81
+R10
+R11
+Z188 w1596121814
+Z189 8C:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v
+Z190 FC:/Users/Chung/Desktop/JPEG/verilog/DCT_first.v
+R9
+R176
+R27
+R45
+Z191 !s108 1596097651.689000
+Z192 !s107 C:/Users/user/Desktop/JPEG/verilog/D_ff_6b.v|
+R13
+Z193 !s100 69<ffG[HcPQcbR_QleNYG1
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vDCT_first
+Z194 !s100 j@V6lH5O1X9f@f?IGEI780
+Z195 Ik51WbP2cX2G=ZEn<MNZmL1
+Z196 VXbl^]<mO1kC>^c494PeoC0
+R13
+R173
+Z197 8C:/Users/user/Desktop/JPEG/verilog/DCT_first.v
+Z198 FC:/Users/user/Desktop/JPEG/verilog/DCT_first.v
+vDCT_second
+R186
+Z199 I75@[Mz=<R?zzA_SIPmmEG3
+R10
+R11
+Z200 w1596117044
+Z201 8C:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v
+Z202 FC:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v
+R9
+Z203 !s108 1596097651.828000
+Z204 !s107 C:/Users/user/Desktop/JPEG/verilog/DCT_first.v|
+Z205 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/DCT_first.v|
+R27
+R50
+R13
+Z206 !s100 2NnCY>l`i4`H6l24B^Wl90
+!i10b 1
 !i10b 1
 !s85 0
 !s101 -O0
 vDCT_second
-Z64 !s100 EX<HLE9bjcdNUI2zOW`^]3
-Z65 IB8W3n5M`fXFn[B6QIdDWo1
-Z66 VlPge6]aRdzMWEX:@ic]@Q3
-R4
-R48
-Z67 8C:/Users/user/Desktop/JPEG/verilog/DCT_second.v
-Z68 FC:/Users/user/Desktop/JPEG/verilog/DCT_second.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R7
-Z26 !s107 C:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v|
-Z27 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/DCT_second.v|
-!i113 1
-R10
-R11
-n@d@c@t_second
-vQuantization
-!s110 1596118728
-!i10b 1
-!s100 JKbUo763CFRC6Q35cfl7k3
-Ie1[nX`^O1?koEJXa?O;ga0
-R1
-R2
-w1595426206
-8C:/Users/Chung/Desktop/JPEG/verilog/Quantization.v
-FC:/Users/Chung/Desktop/JPEG/verilog/Quantization.v
-=======
-Z69 !s108 1596097651.916000
-Z70 !s107 C:/Users/user/Desktop/JPEG/verilog/DCT_second.v|
-Z71 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/DCT_second.v|
-R12
-Z72 n@d@c@t_second
-!i10b 1
-!s85 0
-!s101 -O0
+Z207 !s100 EX<HLE9bjcdNUI2zOW`^]3
+Z208 IB8W3n5M`fXFn[B6QIdDWo1
+Z209 VlPge6]aRdzMWEX:@ic]@Q3
+R13
+R173
+Z210 8C:/Users/user/Desktop/JPEG/verilog/DCT_second.v
+Z211 FC:/Users/user/Desktop/JPEG/verilog/DCT_second.v
 vDe_Quantization
-Z73 !s100 i?Nj[FNb`5AE1k7XeUd[81
-Z74 ImZnZTBfbZ8EECJbDXP4eM3
-Z75 VDRmQz[U:<3lN;@C7I=?TV0
-R4
-Z76 w1596092109
-Z77 8C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v
-Z78 FC:/Users/user/Desktop/JPEG/verilog/De_Quantization.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+Z212 !s100 i?Nj[FNb`5AE1k7XeUd[81
+Z213 ImZnZTBfbZ8EECJbDXP4eM3
+Z214 VDRmQz[U:<3lN;@C7I=?TV0
+R13
+Z215 w1596092109
+Z216 8C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v
+Z217 FC:/Users/user/Desktop/JPEG/verilog/De_Quantization.v
+vDecoding
+Z218 IB:@b77V0MLRn8zkj2W]QV0
+Z219 V_Vmhz_A^eO]?lfE4TCOj=1
+R13
+Z220 w1596174067
+Z221 8C:/Users/user/Desktop/JPEG/verilog/Decoding.v
+Z222 FC:/Users/user/Desktop/JPEG/verilog/Decoding.v
 L0 1
-R8
+R17
 r1
 31
-Z79 !s108 1596097653.991000
-Z80 !s107 C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v|
-Z81 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/De_Quantization.v|
-R12
-Z82 n@de_@quantization
+Z223 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/Decoding.v|
+R27
+Z224 n@decoding
+Z225 !s100 NS]AFY;>0UFbNfN^cchAR1
+Z226 !s108 1596174068.745000
+Z227 !s107 C:/Users/user/Desktop/JPEG/verilog/Decoding.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vIDCT_first
-Z83 !s100 gnV_IHBPYK;PK>V;<j^@?1
-Z84 I]mXRom;Z=cimMRXmf0C410
-Z85 VJ8dz7@8AnFc9YYLZ49hU22
-R4
-Z86 w1596091315
-Z87 8C:/Users/user/Desktop/JPEG/verilog/IDCT_first.v
-Z88 FC:/Users/user/Desktop/JPEG/verilog/IDCT_first.v
+Z228 !s100 gnV_IHBPYK;PK>V;<j^@?1
+Z229 I]mXRom;Z=cimMRXmf0C410
+Z230 VJ8dz7@8AnFc9YYLZ49hU22
+R13
+Z231 w1596091315
+Z232 8C:/Users/user/Desktop/JPEG/verilog/IDCT_first.v
+Z233 FC:/Users/user/Desktop/JPEG/verilog/IDCT_first.v
 L0 1
-R8
+R20
 r1
 31
-<<<<<<< HEAD
-Z28 !s108 1596118728.000000
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/Quantization.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/Quantization.v|
-!i113 1
-R10
-R11
-n@quantization
-vQuantization_re
-R0
-!i10b 1
-!s100 ai57ASzGM^^gKNfjbLW4@0
-IGoQ2e1:Zb;Nm>1;;ER[ER2
-R1
-R2
-Z29 w1596115087
-Z30 8C:/Users/Chung/Desktop/JPEG/verilog/Quantization_re.v
-Z31 FC:/Users/Chung/Desktop/JPEG/verilog/Quantization_re.v
+vIDCT_second
+Z234 !s100 jk[kaJRCC6ikkz[0hh?<G2
+Z235 I5:X^:O`U^zHjU9CS]hj031
+Z236 V2ikj?65B?Ji4`IIWHlbd60
+R13
+Z237 w1596169779
+Z238 8C:/Users/user/Desktop/JPEG/verilog/IDCT_second.v
+Z239 FC:/Users/user/Desktop/JPEG/verilog/IDCT_second.v
 L0 1
-R6
+R17
 r1
-!s85 0
 31
-R14
-Z32 !s107 C:/Users/Chung/Desktop/JPEG/verilog/Quantization_re.v|
-Z33 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/Quantization_re.v|
-!i113 1
-R10
-R11
-n@quantization_re
-vRLE
-R15
-!i10b 1
-!s100 ;_RUkFR?XkCjFhIjeQfGd1
-IUe;P7h?T>N7^?GeIaHmNN1
-R1
-R2
-w1596118587
-8C:/Users/Chung/Desktop/JPEG/verilog/RLE.v
-FC:/Users/Chung/Desktop/JPEG/verilog/RLE.v
-=======
-Z89 !s108 1596097653.891000
-Z90 !s107 C:/Users/user/Desktop/JPEG/verilog/IDCT_first.v|
-Z91 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/IDCT_first.v|
-R12
-Z92 n@i@d@c@t_first
+Z240 !s108 1596169819.208000
+Z241 !s107 C:/Users/user/Desktop/JPEG/verilog/IDCT_second.v|
+Z242 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/IDCT_second.v|
+R27
+Z243 n@i@d@c@t_second
 !i10b 1
 !s85 0
 !s101 -O0
 vQuantization
-Z93 !s100 053EWLW8C7?Z_2<d@D]ze2
-Z94 I3OZlDnN0E3Y>TiEWR_SKA1
-Z95 VWCcWM8>Geh;_RUog`f[O52
-R4
-R48
-Z96 8C:/Users/user/Desktop/JPEG/verilog/Quantization.v
-Z97 FC:/Users/user/Desktop/JPEG/verilog/Quantization.v
+Z244 Ie1[nX`^O1?koEJXa?O;ga0
+R10
+R11
+Z245 w1595426206
+Z246 8C:/Users/Chung/Desktop/JPEG/verilog/Quantization.v
+Z247 FC:/Users/Chung/Desktop/JPEG/verilog/Quantization.v
+R9
+Z248 !s108 1596097651.916000
+Z249 !s107 C:/Users/user/Desktop/JPEG/verilog/DCT_second.v|
+Z250 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/DCT_second.v|
+R27
+R53
+R13
+Z251 !s110 1596118728
+Z252 !s100 JKbUo763CFRC6Q35cfl7k3
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vQuantization
+Z253 !s100 053EWLW8C7?Z_2<d@D]ze2
+Z254 I3OZlDnN0E3Y>TiEWR_SKA1
+Z255 VWCcWM8>Geh;_RUog`f[O52
+R13
+R173
+Z256 8C:/Users/user/Desktop/JPEG/verilog/Quantization.v
+Z257 FC:/Users/user/Desktop/JPEG/verilog/Quantization.v
 L0 1
-R8
+R20
 r1
 31
-Z98 !s108 1596097652.004000
-Z99 !s107 C:/Users/user/Desktop/JPEG/verilog/Quantization.v|
-Z100 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/Quantization.v|
-R12
-Z101 n@quantization
+Z258 !s108 1596097652.004000
+Z259 !s107 C:/Users/user/Desktop/JPEG/verilog/Quantization.v|
+Z260 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/Quantization.v|
+R27
+R55
 !i10b 1
 !s85 0
 !s101 -O0
 vQuantization_re
-Z102 !s100 YeP3T10=WN8OXhAN0B7MQ1
-Z103 I`B]=BlV<;fcL^8e1IN`oK3
-Z104 V6PzRkhZKk6]Dc@C<7aX[42
-R4
-Z105 w1595570307
-Z106 8C:/Users/user/Desktop/JPEG/verilog/Quantization_re.v
-Z107 FC:/Users/user/Desktop/JPEG/verilog/Quantization_re.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+R1
+Z261 IGoQ2e1:Zb;Nm>1;;ER[ER2
+R10
+R11
+Z262 w1596115087
+Z263 8C:/Users/Chung/Desktop/JPEG/verilog/Quantization_re.v
+Z264 FC:/Users/Chung/Desktop/JPEG/verilog/Quantization_re.v
 L0 1
-R8
+R15
 r1
 31
-Z108 !s108 1596097653.756000
-Z109 !s107 C:/Users/user/Desktop/JPEG/verilog/Quantization_re.v|
-Z110 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/Quantization_re.v|
-R12
-Z111 n@quantization_re
+R44
+R75
+R76
+R39
+R40
+R136
+R13
+Z265 !s100 ai57ASzGM^^gKNfjbLW4@0
+!i10b 1
+!s85 0
+!i113 1
+vQuantization_re
+Z266 !s100 YeP3T10=WN8OXhAN0B7MQ1
+Z267 I`B]=BlV<;fcL^8e1IN`oK3
+Z268 V6PzRkhZKk6]Dc@C<7aX[42
+R13
+Z269 w1595570307
+Z270 8C:/Users/user/Desktop/JPEG/verilog/Quantization_re.v
+Z271 FC:/Users/user/Desktop/JPEG/verilog/Quantization_re.v
+vRLD
+Z272 !s100 4I9fAE]7Db3`KcKTESjJJ0
+Z273 I^VncOO1`JRR6b5mOiji0_0
+Z274 VIckB>7Xe60^]LUA;aEo@R3
+R13
+Z275 w1596173964
+Z276 8C:/Users/user/Desktop/JPEG/verilog/RLD.v
+Z277 FC:/Users/user/Desktop/JPEG/verilog/RLD.v
+L0 1
+R17
+r1
+31
+Z278 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLD.v|
+R27
+Z279 n@r@l@d
+Z280 !s108 1596174068.825000
+Z281 !s107 C:/Users/user/Desktop/JPEG/verilog/RLD.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vRLE
-Z112 !s100 Ri]X4cgBo:=lOCc;G67h53
-Z113 IPi?im^8?N?AVcnmzYi:A81
-Z114 Vh>ZK3QZl;?cHJmZ^o9KT=3
-R4
-Z115 w1595294697
-Z116 8C:/Users/user/Desktop/JPEG/verilog/RLE.v
-Z117 FC:/Users/user/Desktop/JPEG/verilog/RLE.v
+R177
+Z282 IUe;P7h?T>N7^?GeIaHmNN1
+R10
+R11
+Z283 w1596118587
+Z284 8C:/Users/Chung/Desktop/JPEG/verilog/RLE.v
+Z285 FC:/Users/Chung/Desktop/JPEG/verilog/RLE.v
+R9
+Z286 !s108 1596097653.891000
+Z287 !s107 C:/Users/user/Desktop/JPEG/verilog/IDCT_first.v|
+Z288 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/IDCT_first.v|
+R27
+Z289 n@i@d@c@t_first
+R13
+Z290 !s100 ;_RUkFR?XkCjFhIjeQfGd1
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vRLE
+Z291 !s100 Ri]X4cgBo:=lOCc;G67h53
+Z292 IPi?im^8?N?AVcnmzYi:A81
+Z293 Vh>ZK3QZl;?cHJmZ^o9KT=3
+R13
+Z294 w1595294697
+Z295 8C:/Users/user/Desktop/JPEG/verilog/RLE.v
+Z296 FC:/Users/user/Desktop/JPEG/verilog/RLE.v
 L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R16
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE.v|
-!i113 1
-R10
-R11
-n@r@l@e
-vRLE2
-Z34 !s110 1596117635
-!i10b 1
-!s100 K0Y^@ejHbPZmW1nj2QYY>1
-I1A>eokI=k^W`0kAV]]Q<Z0
-R1
-R2
-w1595428957
-8C:/Users/Chung/Desktop/JPEG/verilog/RLE2.v
-FC:/Users/Chung/Desktop/JPEG/verilog/RLE2.v
-=======
-Z118 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE.v|
-R12
-Z119 n@r@l@e
-Z120 !s108 1596097652.139000
-Z121 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vRLE2
-Z122 !s100 6c7J1KFJ4AKUNGn8?UnFo2
-Z123 If[?X<?BY7D_]M=B@M@gJ32
-Z124 VPJ`fWCGb`7YRJ]2HAe35`3
-R4
-Z125 w1595565677
-Z126 8C:/Users/user/Desktop/JPEG/verilog/RLE2.v
-Z127 FC:/Users/user/Desktop/JPEG/verilog/RLE2.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-Z35 !s108 1596117635.000000
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE2.v|
-!i113 1
-R10
-R11
-n@r@l@e2
-vRLE_top
-R15
-!i10b 1
-!s100 9FekP[fzcFo8Z7bbP7GZ:0
-IhSbYO?>dzT[MYAR`nESC^2
-R1
-R2
-w1596118583
-8C:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v
-FC:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v
-=======
-Z128 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE2.v|
-R12
-Z129 n@r@l@e2
-Z130 !s108 1596097652.429000
-Z131 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE2.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vRLE_88
-Z132 !s100 ENEj244jz60a`zXNzf;I<2
-Z133 IY0Od5aM7?WPZT@ZXXf>S[1
-Z134 VSYC5h9eaJf081CIYRkGdE0
-R4
-Z135 w1595563874
-Z136 8C:/Users/user/Desktop/JPEG/verilog/RLE_88.v
-Z137 FC:/Users/user/Desktop/JPEG/verilog/RLE_88.v
-L0 2
-R8
-r1
-31
-Z138 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE_88.v|
-R12
-Z139 n@r@l@e_88
-Z140 !s108 1596097653.689000
-Z141 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE_88.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vRLE_top
-Z142 !s100 Olfe4;e4M6nJCF:H@W[lZ0
-Z143 IbdgF_XLSWSM@Y7NfiMR`K2
-Z144 V<BH@HhG:@e>34BY[f1eSS3
-R4
-Z145 w1595298938
-Z146 8C:/Users/user/Desktop/JPEG/verilog/RLE_top.v
-Z147 FC:/Users/user/Desktop/JPEG/verilog/RLE_top.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R16
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v|
-!i113 1
-R10
-R11
-n@r@l@e_top
-vRLE_top2
-R34
-!i10b 1
-!s100 V?5`EAWfLOag^Fhz4WL^]2
-ISM3[[oKb30fJb_YL3>d5Q0
-R1
-R2
-w1595413031
-8C:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v
-FC:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v
-=======
-Z148 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE_top.v|
-R12
-Z149 n@r@l@e_top
-Z150 !s108 1596097652.224000
-Z151 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE_top.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vRLE_top2
-Z152 !s100 abj48UUEbLmm3N8Ih9V>`1
-Z153 I?OHC@LOfg^Q;E_zOYfO8=0
-Z154 V6CUlJ5]7ZUI4OmMoo[<FH3
-R4
-R48
-Z155 8C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v
-Z156 FC:/Users/user/Desktop/JPEG/verilog/RLE_top2.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R35
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v|
-!i113 1
-R10
-R11
-n@r@l@e_top2
-vRLE_top3
-R34
-!i10b 1
-!s100 CkL@Q^fDn?c@EYFBj2CL20
-IR16g34]Gg_03fK;TTg38O0
-R1
-R2
-w1595429359
-8C:/Users/Chung/Desktop/JPEG/verilog/RLE_top3.v
-FC:/Users/Chung/Desktop/JPEG/verilog/RLE_top3.v
-=======
-Z157 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v|
-R12
-Z158 n@r@l@e_top2
-Z159 !s108 1596097652.289000
-Z160 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vRLE_top3
-Z161 !s100 ;K6kU@5]LS1b5h`kL:_>c0
-Z162 I2lQM<JHG?zZHn>86i1jLV1
-Z163 V8A47n@?@`@fUTU6[VK4432
-R4
-Z164 w1595565629
-Z165 8C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v
-Z166 FC:/Users/user/Desktop/JPEG/verilog/RLE_top3.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R35
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/RLE_top3.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/RLE_top3.v|
-!i113 1
-R10
-R11
-n@r@l@e_top3
-vround
-R0
-!i10b 1
-!s100 X[MXTUI5fbIQiUBaH:=b_0
-I>89l[AoR81_dW2f?=6Wda1
-R1
-R2
-R29
-R30
-R31
-L0 123
-R6
-=======
-Z167 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v|
-R12
-Z168 n@r@l@e_top3
-Z169 !s108 1596097652.359000
-Z170 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vround
-Z171 IFMJ>0T0IW:WjVg[G=_fTl1
-Z172 V7gXY3L=:NR2g7V8o;ngP>2
-R4
-R76
-R77
-R78
-Z173 L0 133
-R8
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-r1
-31
-<<<<<<< HEAD
-R14
-R32
-R33
-!i113 1
-R10
-R11
-vround1
-R17
-!i10b 1
-!s100 i8C8kI9>d3=SYh]@ihT5H1
-I@9`zglO@cZ?TAWOX[[JP92
-R1
-R2
-R18
-R19
 R20
-L0 111
-R6
-=======
+r1
+31
+vRLE2
+Z297 !s110 1596117635
+Z298 I1A>eokI=k^W`0kAV]]Q<Z0
+R10
+R11
+Z299 w1595428957
+Z300 8C:/Users/Chung/Desktop/JPEG/verilog/RLE2.v
+Z301 FC:/Users/Chung/Desktop/JPEG/verilog/RLE2.v
+R9
+Z302 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE.v|
+R27
+R59
+Z303 !s108 1596097652.139000
+Z304 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE.v|
+R13
+Z305 !s100 K0Y^@ejHbPZmW1nj2QYY>1
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vRLE2
+Z306 !s100 6c7J1KFJ4AKUNGn8?UnFo2
+Z307 If[?X<?BY7D_]M=B@M@gJ32
+Z308 VPJ`fWCGb`7YRJ]2HAe35`3
+R13
+Z309 w1595565677
+Z310 8C:/Users/user/Desktop/JPEG/verilog/RLE2.v
+Z311 FC:/Users/user/Desktop/JPEG/verilog/RLE2.v
+vRLE_88
+Z312 !s100 ENEj244jz60a`zXNzf;I<2
+Z313 IY0Od5aM7?WPZT@ZXXf>S[1
+Z314 VSYC5h9eaJf081CIYRkGdE0
+R13
+Z315 w1595563874
+Z316 8C:/Users/user/Desktop/JPEG/verilog/RLE_88.v
+Z317 FC:/Users/user/Desktop/JPEG/verilog/RLE_88.v
+L0 2
+R20
+r1
+31
+Z318 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE_88.v|
+R27
+Z319 n@r@l@e_88
+Z320 !s108 1596097653.689000
+Z321 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE_88.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRLE_top
+R177
+Z322 IhSbYO?>dzT[MYAR`nESC^2
+R10
+R11
+Z323 w1596118583
+Z324 8C:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v
+Z325 FC:/Users/Chung/Desktop/JPEG/verilog/RLE_top.v
+R9
+Z326 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE2.v|
+R27
+R63
+Z327 !s108 1596097652.429000
+Z328 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE2.v|
+R13
+Z329 !s100 9FekP[fzcFo8Z7bbP7GZ:0
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vRLE_top
+Z330 !s100 Olfe4;e4M6nJCF:H@W[lZ0
+Z331 IbdgF_XLSWSM@Y7NfiMR`K2
+Z332 V<BH@HhG:@e>34BY[f1eSS3
+R13
+Z333 w1595298938
+Z334 8C:/Users/user/Desktop/JPEG/verilog/RLE_top.v
+Z335 FC:/Users/user/Desktop/JPEG/verilog/RLE_top.v
+vRLE_top2
+R297
+Z336 ISM3[[oKb30fJb_YL3>d5Q0
+R10
+R11
+Z337 w1595413031
+Z338 8C:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v
+Z339 FC:/Users/Chung/Desktop/JPEG/verilog/RLE_top2.v
+R9
+Z340 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE_top.v|
+R27
+R66
+Z341 !s108 1596097652.224000
+Z342 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE_top.v|
+R13
+Z343 !s100 V?5`EAWfLOag^Fhz4WL^]2
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vRLE_top2
+Z344 !s100 abj48UUEbLmm3N8Ih9V>`1
+Z345 I?OHC@LOfg^Q;E_zOYfO8=0
+Z346 V6CUlJ5]7ZUI4OmMoo[<FH3
+R13
+R173
+Z347 8C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v
+Z348 FC:/Users/user/Desktop/JPEG/verilog/RLE_top2.v
+vRLE_top3
+R297
+Z349 IR16g34]Gg_03fK;TTg38O0
+R10
+R11
+Z350 w1595429359
+Z351 8C:/Users/Chung/Desktop/JPEG/verilog/RLE_top3.v
+Z352 FC:/Users/Chung/Desktop/JPEG/verilog/RLE_top3.v
+R9
+Z353 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v|
+R27
+R69
+Z354 !s108 1596097652.289000
+Z355 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE_top2.v|
+R13
+Z356 !s100 CkL@Q^fDn?c@EYFBj2CL20
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vRLE_top3
+Z357 !s100 ;K6kU@5]LS1b5h`kL:_>c0
+Z358 I2lQM<JHG?zZHn>86i1jLV1
+Z359 V8A47n@?@`@fUTU6[VK4432
+R13
+Z360 w1595565629
+Z361 8C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v
+Z362 FC:/Users/user/Desktop/JPEG/verilog/RLE_top3.v
+vround
+R1
+Z363 I>89l[AoR81_dW2f?=6Wda1
+R10
+R11
+R262
+R263
+R264
+Z364 L0 123
+R15
+R9
+Z365 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v|
+R27
+R72
+Z366 !s108 1596097652.359000
+Z367 !s107 C:/Users/user/Desktop/JPEG/verilog/RLE_top3.v|
+R13
+Z368 !s100 X[MXTUI5fbIQiUBaH:=b_0
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vround
+Z369 IFMJ>0T0IW:WjVg[G=_fTl1
+Z370 V7gXY3L=:NR2g7V8o;ngP>2
+R13
+R215
+R216
+R217
+R150
+R20
+vround1
+Z371 !s100 ^0QUYzOUZefXi=VcDCS7d0
+Z372 IPfjA``2o:3SU9`N^1Vz4A0
+Z373 V5=73hS4^Oj99?3GFc=85c1
+R13
+R237
+R238
+R239
+Z374 L0 131
+R17
+r1
+31
+R240
+R241
+R242
+R27
+!i10b 1
+!s85 0
+!s101 -O0
+vround1
+R371
+R372
+R373
+R13
+w0
+R238
+R239
+R374
+R17
+r1
+31
+R242
+R27
+Z375 !s108 1596169771.100000
+R241
+!i10b 1
+!s85 0
+!s101 -O0
+vround2
+R186
+Z376 Ij0O`ke?UhdY7cXz`I3o^43
+R10
+R11
+R200
+R201
+R202
+L0 58
+R15
+R9
+R286
+R287
+R288
+R27
+Z377 !s100 74Q^eg2m_EDkIeVD@GIJW1
+R13
+Z378 !s100 ]7iU62=gDON<L_2?hUEWO2
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vround2
+Z379 !s100 <T3K9?S7Ak6egg0Rd90J:0
+Z380 II4DVaR_zK2EE>l?6LK0on3
+Z381 VQc>Lc_FDm8bL92;I@N[AO0
+R13
+R173
+R210
+R211
+L0 57
+R20
+vspsram_hd_32768x64m16
+R186
+Z382 I1D[@>d::_I5I1ifmKm7oN1
+R10
+R11
+R27
+R83
+R84
+L0 43
+R15
+r1
+R9
+R248
+R249
+R250
+R27
+R13
+Z383 !s100 gPam[aXV21?oaX;`57Che1
+!i10b 1
+!i10b 1
+vspsram_hd_32768x64m16
+Z384 !s100 H[LEKfeJdUefh`^mOa1bk1
+Z385 IFgSBAcg1BP[aYZge:]NAN3
+Z386 V?nfjggkS]9^2b2eC4RePW0
+R13
+Z387 w1590057760
+Z388 8C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v
+Z389 FC:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v
+L0 43
+R20
+r1
+31
+vspsram_hd_32768x80m16
+R177
+Z390 InGJi@0iz4chn]zNRUcUBE0
+R10
+R11
+Z391 w1596011887
+Z392 8C:/Users/Chung/Desktop/JPEG/verilog/SRAM16384x112.v
+Z393 FC:/Users/Chung/Desktop/JPEG/verilog/SRAM16384x112.v
+L0 42
+R15
+r1
+R9
+Z394 !s108 1596097652.497000
+Z395 !s107 C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v|
+Z396 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v|
+R27
+R13
+Z397 !s100 Hb8TQTX@FnPQ_B@h]kJUV0
+!i10b 1
+!i10b 1
+vspsram_hd_32768x80m16
+Z398 I9W`YZ2Zecll;Y=aciS^8O3
+Z399 VhcWJ?4XYUZ973e<90CDZ;2
+R13
+Z400 w1595564019
+Z401 8C:/Users/user/Desktop/JPEG/verilog/SRAM16384x112.v
+Z402 FC:/Users/user/Desktop/JPEG/verilog/SRAM16384x112.v
+L0 42
+R20
+r1
+31
+vSRAM
+R186
+Z403 IY[HZCFIUOL9Of6e]KS;Ck0
+R10
+R11
+R27
+R83
+R84
+L0 65
+R15
+r1
+R9
+Z404 !s108 1596097653.591000
+Z405 !s107 C:/Users/user/Desktop/JPEG/verilog/SRAM16384x112.v|
+Z406 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/SRAM16384x112.v|
+R27
+Z407 !s100 e[dgUVEj0UfCo<Bg3O[g11
+R13
+Z408 !s100 UZF0Q84F;@84fc@dRAAGo3
+!i10b 1
+!i10b 1
+vSRAM
+Z409 !s100 59oU_;;Qi1Z4R7:azmA_81
+Z410 I=9LGbO0[Va>EQKV0jJo3K1
+Z411 Vb6U@;GhGW`NO1i3>?<gT_0
+R13
+R387
+R388
+R389
+L0 65
+R20
+r1
+31
+vSRAM16384x112
+R177
+Z412 I?6cWgHnM3NiE3CHf=U8;G3
+R10
+R11
+R391
+R392
+R393
+L0 9
+R15
+r1
+R9
+R394
+R395
+R396
+R27
+R81
+R13
+Z413 !s100 HmP=bY>E:OgECz0fSIVcY2
+!i10b 1
+!i10b 1
+vSRAM16384x112
+Z414 !s100 BHnK3fKV39e^H:OdUKN002
+Z415 IaPSdYTi`2gOn:^8@JhWWL3
+Z416 VJ<C:NUlfU9E=UVaLSoK2K3
+R13
+R400
+R401
+R402
+L0 9
+R20
+r1
+31
+vSRAM2
+R177
+Z417 If4S13DNQlZZRbiaK3YWK52
+R10
+R11
+R391
+R392
+R393
+L0 64
+R15
+r1
+31
+R58
 R79
 R80
-R81
-R12
-!i10b 1
-Z174 !s100 Yj`@Z65nPoCf=:LjOI<lH0
-!s85 0
-!s101 -O0
-vround1
-Z175 IaY8G;_CoC2gB>I4L5ZS:b2
-Z176 V5=73hS4^Oj99?3GFc=85c1
-R4
-R86
-R87
-R88
-Z177 L0 131
-R8
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-r1
-31
-<<<<<<< HEAD
+R39
+R40
+R85
 R13
-R21
-R22
-!i113 1
-R10
-R11
-vround2
-R17
-!i10b 1
-!s100 ]7iU62=gDON<L_2?hUEWO2
-Ij0O`ke?UhdY7cXz`I3o^43
-R1
-R2
-R23
-R24
-R25
-L0 58
-R6
-=======
-R89
-R90
-R91
-R12
-Z178 !s100 74Q^eg2m_EDkIeVD@GIJW1
+Z418 !s100 CR7ahi8]9W9a35??@G3Lz3
 !i10b 1
 !s85 0
-!s101 -O0
-vround2
-Z179 !s100 <T3K9?S7Ak6egg0Rd90J:0
-Z180 II4DVaR_zK2EE>l?6LK0on3
-Z181 VQc>Lc_FDm8bL92;I@N[AO0
-R4
-R48
-R67
-R68
-L0 57
-R8
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+!i113 1
+vSRAM2
+Z419 Ii>flUW>4P8=A5fJKRk5=j0
+Z420 VX3OL^ileH0AdK[C0bgKSK0
+R13
+R400
+R401
+R402
+L0 64
+R20
 r1
 31
-<<<<<<< HEAD
-R7
-R26
+R404
+R405
+R406
 R27
-!i113 1
-R10
-R11
-vspsram_hd_32768x64m16
-R17
-!i10b 1
-!s100 gPam[aXV21?oaX;`57Che1
-I1D[@>d::_I5I1ifmKm7oN1
-R1
-R2
-R12
-Z36 8C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v
-Z37 FC:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v
-L0 43
-R6
-r1
-=======
-R69
-R70
-R71
-R12
-!i10b 1
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-!s85 0
-!s101 -O0
-vspsram_hd_32768x64m16
-Z182 !s100 H[LEKfeJdUefh`^mOa1bk1
-Z183 IFgSBAcg1BP[aYZge:]NAN3
-Z184 V?nfjggkS]9^2b2eC4RePW0
-R4
-Z185 w1590057760
-Z186 8C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v
-Z187 FC:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v
-L0 43
-R8
-r1
-31
-<<<<<<< HEAD
-R7
-Z38 !s107 C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v|
-Z39 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x64.v|
-!i113 1
-R10
-R11
-vspsram_hd_32768x80m16
-R15
-!i10b 1
-!s100 Hb8TQTX@FnPQ_B@h]kJUV0
-InGJi@0iz4chn]zNRUcUBE0
-R1
-R2
-Z40 w1596011887
-Z41 8C:/Users/Chung/Desktop/JPEG/verilog/SRAM16384x112.v
-Z42 FC:/Users/Chung/Desktop/JPEG/verilog/SRAM16384x112.v
-L0 42
-R6
-r1
-=======
-Z188 !s108 1596097652.497000
-Z189 !s107 C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v|
-Z190 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/SRAM32768x64.v|
-R12
-!i10b 1
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-!s85 0
-!s101 -O0
-vspsram_hd_32768x80m16
-Z191 I9W`YZ2Zecll;Y=aciS^8O3
-Z192 VhcWJ?4XYUZ973e<90CDZ;2
-R4
-Z193 w1595564019
-Z194 8C:/Users/user/Desktop/JPEG/verilog/SRAM16384x112.v
-Z195 FC:/Users/user/Desktop/JPEG/verilog/SRAM16384x112.v
-L0 42
-R8
-r1
-31
-<<<<<<< HEAD
-R16
-Z43 !s107 C:/Users/Chung/Desktop/JPEG/verilog/SRAM16384x112.v|
-Z44 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/SRAM16384x112.v|
-!i113 1
-R10
-R11
-vSRAM
-R17
-!i10b 1
-!s100 UZF0Q84F;@84fc@dRAAGo3
-IY[HZCFIUOL9Of6e]KS;Ck0
-R1
-R2
-R12
-R36
-R37
-L0 65
-R6
-r1
-=======
-Z196 !s108 1596097653.591000
-Z197 !s107 C:/Users/user/Desktop/JPEG/verilog/SRAM16384x112.v|
-Z198 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/SRAM16384x112.v|
-R12
-Z199 !s100 e[dgUVEj0UfCo<Bg3O[g11
-!i10b 1
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-!s85 0
-!s101 -O0
-vSRAM
-Z200 !s100 59oU_;;Qi1Z4R7:azmA_81
-Z201 I=9LGbO0[Va>EQKV0jJo3K1
-Z202 Vb6U@;GhGW`NO1i3>?<gT_0
-R4
-R185
-R186
-R187
-L0 65
-R8
-r1
-31
-<<<<<<< HEAD
-R7
-R38
-R39
-!i113 1
-R10
-R11
-n@s@r@a@m
-vSRAM16384x112
-R15
-!i10b 1
-!s100 HmP=bY>E:OgECz0fSIVcY2
-I?6cWgHnM3NiE3CHf=U8;G3
-R1
-R2
-R40
-R41
-R42
-L0 9
-R6
-r1
-=======
-R188
-R189
-R190
-R12
-Z203 n@s@r@a@m
-!i10b 1
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-!s85 0
-!s101 -O0
-vSRAM16384x112
-Z204 !s100 BHnK3fKV39e^H:OdUKN002
-Z205 IaPSdYTi`2gOn:^8@JhWWL3
-Z206 VJ<C:NUlfU9E=UVaLSoK2K3
-R4
-R193
-R194
-R195
-L0 9
-R8
-r1
-31
-<<<<<<< HEAD
-R16
-R43
-R44
-!i113 1
-R10
-R11
-n@s@r@a@m16384x112
-vSRAM2
-R15
-!i10b 1
-!s100 CR7ahi8]9W9a35??@G3Lz3
-If4S13DNQlZZRbiaK3YWK52
-R1
-R2
-R40
-R41
-R42
-L0 64
-R6
-r1
-!s85 0
-31
-R16
-R43
-R44
-!i113 1
-R10
-R11
-n@s@r@a@m2
 vSRAM32768x64
-R17
-=======
-R196
-R197
-R198
-R12
-Z207 n@s@r@a@m16384x112
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-!i10b 1
-!s85 0
-!s101 -O0
-vSRAM2
-Z208 Ii>flUW>4P8=A5fJKRk5=j0
-Z209 VX3OL^ileH0AdK[C0bgKSK0
-R4
-R193
-R194
-R195
-L0 64
-R8
-r1
-31
-R196
-R197
-R198
-R12
-<<<<<<< HEAD
-R36
-R37
-=======
-Z210 n@s@r@a@m2
-Z211 !s100 kjL]e6]H@biBEjAEm6?F32
-!i10b 1
-!s85 0
-!s101 -O0
-vSRAM32768x64
-Z212 !s100 fm^>A?8z4A:i:=fOV_a>I1
-Z213 ILbz`AbldPYnK@OemTA<2z0
-Z214 VH4QDd9XA4z6iOf?zZF^KK1
-R4
-R185
 R186
-R187
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 9
-R8
-r1
-31
-<<<<<<< HEAD
-R7
-R38
-R39
-!i113 1
-R10
-R11
-n@s@r@a@m32768x64
-vSRAM32768x80
-R17
-!i10b 1
-!s100 Kgma7?QjEjGVEG9O>WNhI1
-IK:d0Z53dz1U9Xm7Si^E2P2
-R1
-R2
-R12
-8C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v
-FC:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v
-=======
-R188
-R189
-R190
-R12
-Z215 n@s@r@a@m32768x64
-!i10b 1
-!s85 0
-!s101 -O0
-vSRAM32768x80
-Z216 !s100 DzS2SzY?i_6PXF7J;YekC0
-Z217 ILV6IPS>fk_`cXHbGghaKI1
-Z218 VRgEbgljZz;<]Azn=I3nT;2
-R4
-Z219 w1594781663
-Z220 8C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v
-Z221 FC:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 9
-R8
-r1
-31
-<<<<<<< HEAD
-R7
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v|
-!i113 1
-R10
-R11
-n@s@r@a@m32768x80
-vSRAM512x16
-R17
-!i10b 1
-!s100 Wc=He2fJI;Ube18T2_c[B0
-I=MAOkS?VfNPJ`]I:KRb4W1
-R1
-R2
-=======
-Z222 !s108 1596097652.597000
-Z223 !s107 C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v|
-Z224 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v|
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R12
-Z225 n@s@r@a@m32768x80
-!i10b 1
-!s85 0
-!s101 -O0
-vSRAM512x16
-Z226 !s100 @QlzB0kI:R>G6IKB1j5P53
-Z227 IKCUi@CGGkM9P5QeNKR<=X3
-Z228 V8=oFXMJ1A1^k6HU_<^W`U3
-R4
-Z229 w1595407226
-Z230 8C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v
-Z231 FC:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v
-L0 9
-R8
-r1
-31
-<<<<<<< HEAD
-R7
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/SRAM512x16.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/SRAM512x16.v|
-!i113 1
-R10
-R11
-n@s@r@a@m512x16
-vsti
-Z45 !s110 1596118729
-!i10b 1
-!s100 ;=e[?@>dSc:8AKMbOeFgM0
-ITVL_R`242^?L=fPRo;dYU2
-R1
-R2
-=======
-Z232 !s108 1595490047.295000
-Z233 !s107 C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v|
-Z234 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v|
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R12
-Z235 n@s@r@a@m512x16
-!i10b 1
-!s85 0
-!s101 -O0
-vsti
-Z236 !s100 e?VOW2<g?@hA?6ThDU@mU1
-Z237 IgFo>5mzFDoLMo49cQbE141
-Z238 V:dFXmM0g04dgI^4gBBzbR3
-R4
-Z239 w1595382820
-Z240 8C:/Users/user/Desktop/JPEG/verilog/sti.v
-Z241 FC:/Users/user/Desktop/JPEG/verilog/sti.v
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R28
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/sti.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti.v|
-!i113 1
-R10
-R11
-vsti_project2
-R45
-!i10b 1
-!s100 e>iUKb7[Ob<fEV5n1`H3z3
-IUM[aP=DGT4WUVDc`Y0KjW3
-R1
-R2
-=======
-Z242 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti.v|
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R12
-Z243 !s108 1596097652.713000
-Z244 !s107 C:/Users/user/Desktop/JPEG/verilog/sti.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vsti_project2
-Z245 !s100 W[B75aa]j=AN^:OXcecmm3
-Z246 IiYT_:CFTl`gYKaMRhZ3XW0
-Z247 VRm@62SfJ1b8@T_Qoi1;Ul1
-R4
-Z248 w1592568796
-Z249 8C:/Users/user/Desktop/JPEG/verilog/sti_project2.v
-Z250 FC:/Users/user/Desktop/JPEG/verilog/sti_project2.v
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-Z46 !s108 1596118729.000000
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_project2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_project2.v|
-!i113 1
-R10
-R11
-vsti_quant
-R45
-!i10b 1
-!s100 IF8obgS;9Ro<BBzNOaaGK2
-I@5LdfbEWlN2i`5;NU83lO2
-R1
-R2
-=======
-Z251 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_project2.v|
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R12
-Z252 !s108 1596097652.769000
-Z253 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_project2.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vsti_quant
-Z254 !s100 kPU3]gZl>R2Z_zXDkX6kE3
-Z255 IBL<D`LVERO[7M:^;HmSdZ0
-Z256 V^]ePYUn]TzIEU0]U5SEQ31
-R4
-Z257 w1594776074
-Z258 8C:/Users/user/Desktop/JPEG/verilog/sti_quant.v
-Z259 FC:/Users/user/Desktop/JPEG/verilog/sti_quant.v
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R46
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_quant.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_quant.v|
-!i113 1
-R10
-R11
-vsti_rle2
-R45
-!i10b 1
-!s100 olN7PO>J9PIGj;4Z_EZK23
-IY]d:Qj3iBC5cfnBTAI61K2
-R1
-R2
-=======
-Z260 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_quant.v|
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R12
-Z261 !s108 1596097652.846000
-Z262 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_quant.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vsti_rle2
-Z263 !s100 4dV7d9hk`aXWPAfofmF3X2
-Z264 ITg<Y9eEH9iQh=HzVkE^Q21
-Z265 VUh0QM?J;0z_;SV?VG9YKd1
-R4
-Z266 w1595565573
-Z267 8C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v
-Z268 FC:/Users/user/Desktop/JPEG/verilog/sti_rle2.v
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R46
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_rle2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_rle2.v|
-!i113 1
-R10
-R11
-vsti_test
-R45
-!i10b 1
-!s100 nDAN0U=0>^B6no:XKQ[an2
-IkEY:PgNhi]6PA`SziWAPQ1
-R1
-R2
-=======
-Z269 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v|
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R12
-Z270 !s108 1596097652.915000
-Z271 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vsti_test
-Z272 !s100 NYSebEVNXPYP1SGajXhZ62
-Z273 IaE9=AFn^WE7VcFd@7z9bk2
-Z274 V?@8gLom1S:geZW`F5hSNj1
-R4
-Z275 w1594817970
-Z276 8C:/Users/user/Desktop/JPEG/verilog/sti_test.v
-Z277 FC:/Users/user/Desktop/JPEG/verilog/sti_test.v
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R46
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_test.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_test.v|
-!i113 1
-R10
-R11
-vsti_version
-R17
-!i10b 1
-!s100 afY7zj5LKgPU8zN5NiME32
-IkQ;L9ZHH2@EYLf6LoSbUd1
-R1
-R2
-w1596121250
-8C:/Users/Chung/Desktop/JPEG/verilog/sti_version.v
-FC:/Users/Chung/Desktop/JPEG/verilog/sti_version.v
-=======
-Z278 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_test.v|
-R12
-Z279 !s108 1596097652.984000
-Z280 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_test.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vsti_version
-Z281 IVMJH6ZkC0en1Ah7zo@2L]1
-Z282 V4?HD`WMNkHHW1fk>7:5jo1
-R4
-Z283 w1596095555
-Z284 8C:/Users/user/Desktop/JPEG/verilog/sti_version.v
-Z285 FC:/Users/user/Desktop/JPEG/verilog/sti_version.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R7
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_version.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_version.v|
-!i113 1
-R10
-R11
-vsti_zig
-Z47 !s110 1596118730
-!i10b 1
-!s100 :XVlG3kHfYdPCRb_CClm92
-ID4Bb5eYfZAbm9nUNEnQ833
-R1
-R2
-=======
-Z286 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_version.v|
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R12
-Z287 !s100 @e`G2>M;C?He5^Me@N95b2
-Z288 !s108 1596097653.048000
-Z289 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_version.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vsti_zig
-Z290 !s100 WS2m=oazUSmh76EDGMYG83
-Z291 IE62[M27^0OPh`PUY_zA;^2
-Z292 VH6H]14[_SNNb<_:?jMDjW1
-R4
-Z293 w1594700663
-Z294 8C:/Users/user/Desktop/JPEG/verilog/sti_zig.v
-Z295 FC:/Users/user/Desktop/JPEG/verilog/sti_zig.v
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R46
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/sti_zig.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/sti_zig.v|
-!i113 1
-R10
-R11
-vtest
-R47
-!i10b 1
-!s100 j>;c_Vm_IjK>]jPmH8?h<0
-IB^1E]Lhem0j@I7oGd33lR0
-R1
-R2
-=======
-Z296 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_zig.v|
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R12
-Z297 !s108 1596097653.114000
-Z298 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_zig.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vtest
-Z299 !s100 _jUDIcV7KJE^21khog`832
-Z300 IAAmcfF=fZHPMcXeD=LTU?2
-Z301 Vf@f6fLkn=b>58VF0T`lAB0
-R4
-Z302 w1594818043
-Z303 8C:/Users/user/Desktop/JPEG/verilog/test.v
-Z304 FC:/Users/user/Desktop/JPEG/verilog/test.v
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-Z48 !s108 1596118730.000000
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/test.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/test.v|
-!i113 1
-R10
-R11
-vtop_memory_test
-R0
-!i10b 1
-!s100 SAKmZb06@U5[G[=VPX8az1
-I8g<;lmQ_NIAl8EaQ3oQFY3
-R1
-R2
-R3
-=======
-Z305 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/test.v|
-R12
-Z306 !s108 1596097653.169000
-Z307 !s107 C:/Users/user/Desktop/JPEG/verilog/test.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vtop_memory_test
-Z308 !s100 3Zh@ho`:Ga];m_@e5cZ9o0
-Z309 IBb_Nic=jlaJWlK>G<z>c[2
-Z310 V`LOfb:>GITKz7740o0P^V0
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R4
-R5
-R6
-R7
-L0 1
-R8
-r1
-31
 R9
+R404
+R405
+R406
+R27
+R82
+R13
+vSRAM32768x64
+Z421 !s100 fm^>A?8z4A:i:=fOV_a>I1
+Z422 ILbz`AbldPYnK@OemTA<2z0
+Z423 VH4QDd9XA4z6iOf?zZF^KK1
+R13
+R387
+R388
+R389
+vSRAM32768x80
+R186
+Z424 IK:d0Z53dz1U9Xm7Si^E2P2
+R10
+R11
+R27
+Z425 8C:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v
+Z426 FC:/Users/Chung/Desktop/JPEG/verilog/SRAM32768x80.v
+R9
+R394
+R395
+R396
+R27
+R87
+R13
+Z427 !s100 Kgma7?QjEjGVEG9O>WNhI1
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vSRAM32768x80
+Z428 !s100 DzS2SzY?i_6PXF7J;YekC0
+Z429 ILV6IPS>fk_`cXHbGghaKI1
+Z430 VRgEbgljZz;<]Azn=I3nT;2
+R13
+Z431 w1594781663
+Z432 8C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v
+Z433 FC:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v
+vSRAM512x16
+R186
+Z434 I=MAOkS?VfNPJ`]I:KRb4W1
+R10
+R11
+R9
+Z435 !s108 1596097652.597000
+Z436 !s107 C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v|
+Z437 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/SRAM32768x80.v|
+R13
+Z438 !s100 Wc=He2fJI;Ube18T2_c[B0
+!i10b 1
+vSRAM512x16
+Z439 !s100 @QlzB0kI:R>G6IKB1j5P53
+Z440 IKCUi@CGGkM9P5QeNKR<=X3
+Z441 V8=oFXMJ1A1^k6HU_<^W`U3
+R13
+Z442 w1595407226
+Z443 8C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v
+Z444 FC:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v
+L0 9
+R20
+r1
+31
+vsti
+Z445 !s110 1596118729
+Z446 ITVL_R`242^?L=fPRo;dYU2
+R10
+R11
+R9
+Z447 !s108 1595490047.295000
+Z448 !s107 C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v|
+Z449 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/SRAM512x16.v|
+R13
+Z450 !s100 ;=e[?@>dSc:8AKMbOeFgM0
+!i10b 1
+vsti
+Z451 !s100 e?VOW2<g?@hA?6ThDU@mU1
+Z452 IgFo>5mzFDoLMo49cQbE141
+Z453 V:dFXmM0g04dgI^4gBBzbR3
+R13
+Z454 w1595382820
+Z455 8C:/Users/user/Desktop/JPEG/verilog/sti.v
+Z456 FC:/Users/user/Desktop/JPEG/verilog/sti.v
+L0 1
+R20
+r1
+31
+vsti_decoding
+Z457 !s100 YUL0WClIZ<4l08h7Sd=aC3
+Z458 I4:SC651[f9O<`GB?Ojd8l3
+Z459 VNz:df@PZ7L<03_U]65[eH1
+R13
+Z460 w1596168708
+Z461 8C:/Users/user/Desktop/JPEG/verilog/sti_decoding.v
+Z462 FC:/Users/user/Desktop/JPEG/verilog/sti_decoding.v
+L0 1
+R17
+r1
+31
+Z463 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_decoding.v|
+R27
+!i10b 1
+!s85 0
+Z464 !s108 1596174068.881000
+Z465 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_decoding.v|
+!s101 -O0
+vsti_project2
+R445
+Z466 IUM[aP=DGT4WUVDc`Y0KjW3
+R10
+R11
+R9
+Z467 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti.v|
+R13
+Z468 !s100 e>iUKb7[Ob<fEV5n1`H3z3
+!i10b 1
+vsti_project2
+Z469 !s100 W[B75aa]j=AN^:OXcecmm3
+Z470 IiYT_:CFTl`gYKaMRhZ3XW0
+Z471 VRm@62SfJ1b8@T_Qoi1;Ul1
+R13
+Z472 w1592568796
+Z473 8C:/Users/user/Desktop/JPEG/verilog/sti_project2.v
+Z474 FC:/Users/user/Desktop/JPEG/verilog/sti_project2.v
+L0 1
+R20
+r1
+31
+vsti_quant
+R445
+Z475 I@5LdfbEWlN2i`5;NU83lO2
+R10
+R11
+R9
+Z476 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_project2.v|
+R13
+Z477 !s100 IF8obgS;9Ro<BBzNOaaGK2
+!i10b 1
+vsti_quant
+Z478 !s100 kPU3]gZl>R2Z_zXDkX6kE3
+Z479 IBL<D`LVERO[7M:^;HmSdZ0
+Z480 V^]ePYUn]TzIEU0]U5SEQ31
+R13
+Z481 w1594776074
+Z482 8C:/Users/user/Desktop/JPEG/verilog/sti_quant.v
+Z483 FC:/Users/user/Desktop/JPEG/verilog/sti_quant.v
+L0 1
+R20
+r1
+31
+vsti_rle2
+R445
+Z484 IY]d:Qj3iBC5cfnBTAI61K2
+R10
+R11
+R9
+Z485 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_quant.v|
+R13
+Z486 !s100 olN7PO>J9PIGj;4Z_EZK23
+!i10b 1
+vsti_rle2
+Z487 !s100 4dV7d9hk`aXWPAfofmF3X2
+Z488 ITg<Y9eEH9iQh=HzVkE^Q21
+Z489 VUh0QM?J;0z_;SV?VG9YKd1
+R13
+Z490 w1595565573
+Z491 8C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v
+Z492 FC:/Users/user/Desktop/JPEG/verilog/sti_rle2.v
+L0 1
+R20
+r1
+31
+vsti_test
+R445
+Z493 IkEY:PgNhi]6PA`SziWAPQ1
+R10
+R11
+R9
+Z494 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_rle2.v|
+R13
+Z495 !s100 nDAN0U=0>^B6no:XKQ[an2
+!i10b 1
+vsti_test
+Z496 !s100 NYSebEVNXPYP1SGajXhZ62
+Z497 IaE9=AFn^WE7VcFd@7z9bk2
+Z498 V?@8gLom1S:geZW`F5hSNj1
+R13
+Z499 w1594817970
+Z500 8C:/Users/user/Desktop/JPEG/verilog/sti_test.v
+Z501 FC:/Users/user/Desktop/JPEG/verilog/sti_test.v
+L0 1
+R20
+r1
+31
+vsti_version
+R186
+Z502 IkQ;L9ZHH2@EYLf6LoSbUd1
+R10
+R11
+Z503 w1596121250
+Z504 8C:/Users/Chung/Desktop/JPEG/verilog/sti_version.v
+Z505 FC:/Users/Chung/Desktop/JPEG/verilog/sti_version.v
+R9
+Z506 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_test.v|
+R27
+Z507 !s108 1596097652.984000
+Z508 !s107 C:/Users/user/Desktop/JPEG/verilog/sti_test.v|
+R13
+Z509 !s100 afY7zj5LKgPU8zN5NiME32
+!i10b 1
+!i10b 1
+!s85 0
+!s101 -O0
+vsti_version
+Z510 IVMJH6ZkC0en1Ah7zo@2L]1
+Z511 V4?HD`WMNkHHW1fk>7:5jo1
+R13
+Z512 w1596095555
+Z513 8C:/Users/user/Desktop/JPEG/verilog/sti_version.v
+Z514 FC:/Users/user/Desktop/JPEG/verilog/sti_version.v
+vsti_zig
+Z515 !s110 1596118730
+Z516 ID4Bb5eYfZAbm9nUNEnQ833
+R10
+R11
+R9
+Z517 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_version.v|
+R13
+Z518 !s100 :XVlG3kHfYdPCRb_CClm92
+!i10b 1
+vsti_zig
+Z519 !s100 WS2m=oazUSmh76EDGMYG83
+Z520 IE62[M27^0OPh`PUY_zA;^2
+Z521 VH6H]14[_SNNb<_:?jMDjW1
+R13
+Z522 w1594700663
+Z523 8C:/Users/user/Desktop/JPEG/verilog/sti_zig.v
+Z524 FC:/Users/user/Desktop/JPEG/verilog/sti_zig.v
+L0 1
+R20
+r1
+31
+vtest
+R515
+Z525 IB^1E]Lhem0j@I7oGd33lR0
+R10
+R11
+R9
+Z526 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/sti_zig.v|
+R13
+Z527 !s100 j>;c_Vm_IjK>]jPmH8?h<0
+!i10b 1
+vtest
+Z528 !s100 _jUDIcV7KJE^21khog`832
+Z529 IAAmcfF=fZHPMcXeD=LTU?2
+Z530 Vf@f6fLkn=b>58VF0T`lAB0
+R13
+Z531 w1594818043
+Z532 8C:/Users/user/Desktop/JPEG/verilog/test.v
+Z533 FC:/Users/user/Desktop/JPEG/verilog/test.v
+L0 1
+R20
+r1
+31
+vtop_memory_test
+R1
+Z534 I8g<;lmQ_NIAl8EaQ3oQFY3
 R10
 R11
 R12
+R9
+Z535 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/test.v|
+R27
+Z536 !s108 1596097653.169000
+Z537 !s107 C:/Users/user/Desktop/JPEG/verilog/test.v|
+R13
+Z538 !s100 SAKmZb06@U5[G[=VPX8az1
 !i10b 1
-<<<<<<< HEAD
-!s100 8WK^<X;gCP^GX6e]V3cnh1
-IYlcOXbkVh]`7CCU]dCOFe2
-R1
-R2
-R3
-R4
-R5
-L0 117
-=======
+!i10b 1
 !s85 0
 !s101 -O0
+vtop_memory_test
+Z539 !s100 3Zh@ho`:Ga];m_@e5cZ9o0
+Z540 IBb_Nic=jlaJWlK>G<z>c[2
+Z541 V`LOfb:>GITKz7740o0P^V0
+R13
 vTPcontrol
-Z311 !s100 AJISfKJ1^@`:EE<a16G@G0
-Z312 IC3]k7Mc;Qf48D@3[PXD=P3
-Z313 V`VfzgT7FfgL7oS;Q3Q2UU2
-R4
-R5
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-R6
-R7
-R173
-R8
-r1
-31
-R9
-R10
-R11
-R12
-Z314 n@t@pcontrol
-!i10b 1
-!s85 0
-!s101 -O0
+Z542 !s100 AJISfKJ1^@`:EE<a16G@G0
+Z543 IC3]k7Mc;Qf48D@3[PXD=P3
+Z544 V`VfzgT7FfgL7oS;Q3Q2UU2
+R13
+R14
 vTPmem1
-Z315 !s100 mS]m=z03OQ`0@:W>5h`k^1
-Z316 IUom77;ZU?<Q<Dii=9L[Xo0
-Z317 VEZcLoR`22a:H`XClgm]]N3
-R4
-Z318 w1592495112
-Z319 8C:/Users/user/Desktop/JPEG/verilog/TPmem1.v
-Z320 FC:/Users/user/Desktop/JPEG/verilog/TPmem1.v
+Z545 !s100 mS]m=z03OQ`0@:W>5h`k^1
+Z546 IUom77;ZU?<Q<Dii=9L[Xo0
+Z547 VEZcLoR`22a:H`XClgm]]N3
+R13
+Z548 w1592495112
+Z549 8C:/Users/user/Desktop/JPEG/verilog/TPmem1.v
+Z550 FC:/Users/user/Desktop/JPEG/verilog/TPmem1.v
 L0 1
-R8
+R20
 r1
 31
-<<<<<<< HEAD
-R14
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/TPmem1.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/TPmem1.v|
-!i113 1
-R10
-R11
-n@t@pmem1
-=======
-Z321 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/TPmem1.v|
-R12
-Z322 n@t@pmem1
-Z323 !s108 1596097653.386000
-Z324 !s107 C:/Users/user/Desktop/JPEG/verilog/TPmem1.v|
-!i10b 1
-!s85 0
-!s101 -O0
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
 vTPmem2
-Z325 !s100 IibER6Oe^9`CHF7R<5i`]0
-Z326 IcKh1mMV[?XS`Q1ieD9Ph[0
-Z327 VHh4DYkE>AXII47m=`6:8C1
-R4
-Z328 w1592495125
-Z329 8C:/Users/user/Desktop/JPEG/verilog/TPmem2.v
-Z330 FC:/Users/user/Desktop/JPEG/verilog/TPmem2.v
+Z551 !s100 IibER6Oe^9`CHF7R<5i`]0
+Z552 IcKh1mMV[?XS`Q1ieD9Ph[0
+Z553 VHh4DYkE>AXII47m=`6:8C1
+R13
+Z554 w1592495125
+Z555 8C:/Users/user/Desktop/JPEG/verilog/TPmem2.v
+Z556 FC:/Users/user/Desktop/JPEG/verilog/TPmem2.v
 L0 1
-R8
+R20
 r1
 31
-Z331 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/TPmem2.v|
-R12
-Z332 n@t@pmem2
-Z333 !s108 1596097653.455000
-Z334 !s107 C:/Users/user/Desktop/JPEG/verilog/TPmem2.v|
+Z557 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/TPmem2.v|
+R27
+R121
+Z558 !s108 1596097653.455000
+Z559 !s107 C:/Users/user/Desktop/JPEG/verilog/TPmem2.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vZigZag
-Z335 !s100 ^9b7F^T_G2R>TdjO<o@al2
-Z336 ImGdMh55ZjTEeMCQa`nnF03
-Z337 V5?7NBf3i62:^:;=9PN[WB0
-R4
-R48
-Z338 8C:/Users/user/Desktop/JPEG/verilog/ZigZag.v
-Z339 FC:/Users/user/Desktop/JPEG/verilog/ZigZag.v
+Z560 !s100 ^9b7F^T_G2R>TdjO<o@al2
+Z561 ImGdMh55ZjTEeMCQa`nnF03
+Z562 V5?7NBf3i62:^:;=9PN[WB0
+R13
+R109
+Z563 8C:/Users/user/Desktop/JPEG/verilog/ZigZag.v
+Z564 FC:/Users/user/Desktop/JPEG/verilog/ZigZag.v
 L0 1
-R8
+R20
 r1
 31
-Z340 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/ZigZag.v|
-R12
-Z341 n@zig@zag
-Z342 !s108 1596097653.525000
-Z343 !s107 C:/Users/user/Desktop/JPEG/verilog/ZigZag.v|
+Z565 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/ZigZag.v|
+R27
+R124
+Z566 !s108 1596097653.525000
+Z567 !s107 C:/Users/user/Desktop/JPEG/verilog/ZigZag.v|
 !i10b 1
 !s85 0
 !s101 -O0
-vZigZag_TP
-!i10b 1
-!s100 QRZD:USgPTmcR`4Vjgh@h3
-IW;FRFmK9@C=9IZdH9A@kB1
-Z344 V3<NXXiEV1>cP_Ug_dOFDf3
-R4
-w1596097630
-Z345 8C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v
-Z346 FC:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v
-L0 1
-R8
-r1
-!s85 0
-31
-<<<<<<< HEAD
-R14
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/TPmem2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/TPmem2.v|
-!i113 1
+vZigZag
+R515
+Z568 IiGMl=RCoGjTD3M=W3;DdN3
 R10
 R11
-n@t@pmem2
-vZigZag
-R47
+Z569 w1595426100
+Z570 8C:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v
+Z571 FC:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v
+R9
+Z572 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v|
+R27
+Z573 n@zig@zag_@t@p
+R13
+Z574 !s100 O;>@aUUG^kan>boT15SZ63
+Z575 !s108 1596097654.071000
+Z576 !s107 C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v|
 !i10b 1
-!s100 O;>@aUUG^kan>boT15SZ63
-IiGMl=RCoGjTD3M=W3;DdN3
-R1
-R2
-w1595426100
-8C:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v
-FC:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v
-=======
-!s108 1596097654.071000
-!s107 C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v|
-Z347 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v|
 !s101 -O0
-R12
-Z348 n@zig@zag_@t@p
+vZigZag_TP
+Z577 IW;FRFmK9@C=9IZdH9A@kB1
+Z578 V3<NXXiEV1>cP_Ug_dOFDf3
+R13
+Z579 w1596097630
+Z580 8C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v
+Z581 FC:/Users/user/Desktop/JPEG/verilog/ZigZag_TP.v
+L0 1
+R20
+r1
+31
+Z582 !s100 QRZD:USgPTmcR`4Vjgh@h3
+!i10b 1
+!s85 0
+vZigZag_TP
+R1
+Z583 IE=8EI2N03k5NenigZ215S2
+R10
+R11
+Z584 w1596116925
+Z585 8C:/Users/Chung/Desktop/JPEG/verilog/ZigZag_TP.v
+Z586 FC:/Users/Chung/Desktop/JPEG/verilog/ZigZag_TP.v
+L0 1
+R15
+r1
+31
+R44
+R39
+R40
+R573
+R9
+Z587 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP_original.v|
+R27
+Z588 n@zig@zag_@t@p_original
+Z589 !s108 1596095472.340000
+Z590 !s107 C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP_original.v|
+R13
+Z591 !s100 b>=`MNz0i[0jmWbBGhMRG0
+Z592 !s107 C:/Users/Chung/Desktop/JPEG/verilog/ZigZag_TP.v|
+Z593 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/ZigZag_TP.v|
+!i10b 1
+!s85 0
+!i113 1
+!i10b 1
+!s85 0
+!s101 -O0
 vZigZag_TP_original
-Z349 !s100 Pf`A5cdlGVgbb>XkdWa]V2
-Z350 Ia]i[DLRI>jFNDa8>ZZ0jW1
-Z351 VVTRlNDi1TZ3b^kg[cjhO=1
-R4
-Z352 w1596092620
-Z353 8C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP_original.v
-Z354 FC:/Users/user/Desktop/JPEG/verilog/ZigZag_TP_original.v
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
-L0 1
-R8
-r1
-31
-<<<<<<< HEAD
-R48
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/ZigZag.v|
-!i113 1
-R10
-R11
-n@zig@zag
-vZigZag_TP
-R0
-!i10b 1
-!s100 b>=`MNz0i[0jmWbBGhMRG0
-IE=8EI2N03k5NenigZ215S2
-R1
-R2
-w1596116925
-8C:/Users/Chung/Desktop/JPEG/verilog/ZigZag_TP.v
-FC:/Users/Chung/Desktop/JPEG/verilog/ZigZag_TP.v
-L0 1
-R6
-r1
-!s85 0
-31
-R14
-!s107 C:/Users/Chung/Desktop/JPEG/verilog/ZigZag_TP.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Chung/Desktop/JPEG/verilog/ZigZag_TP.v|
-!i113 1
-R10
-R11
-n@zig@zag_@t@p
-=======
-Z355 !s90 -reportprogress|300|-work|work|C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP_original.v|
-R12
-Z356 n@zig@zag_@t@p_original
-Z357 !s108 1596095472.340000
-Z358 !s107 C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP_original.v|
-!i10b 1
-!s85 0
-!s101 -O0
->>>>>>> 08994d5726a6be19c6546bf350c9c3cf88d5c7a4
+Z594 !s100 Pf`A5cdlGVgbb>XkdWa]V2
+Z595 Ia]i[DLRI>jFNDa8>ZZ0jW1
+Z596 VVTRlNDi1TZ3b^kg[cjhO=1
+R13
+Z597 w1596092620
+Z598 8C:/Users/user/Desktop/JPEG/verilog/ZigZag_TP_original.v
+Z599 FC:/Users/user/Desktop/JPEG/verilog/ZigZag_TP_original.v

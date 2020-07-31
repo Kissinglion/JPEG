@@ -17,6 +17,7 @@ module top_memory_test (clk,reset);
 
 
   
+  
   SRAM32768x64 MEM_IN(1'b1,64'b0,count1[14:4],count1[3:0],1'b0,clk, DIN1 );
   
   DCT_first     d1(DIN1,DCT_out1);

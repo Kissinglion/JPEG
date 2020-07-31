@@ -3,10 +3,16 @@ close all
 clc
 
 
-min1 = 255;
-minn = 255;
-max1 = -255;
-maxx = -255;
+min_1D_DCT = 255;
+max_1D_DCT = -255;
+min_2D_DCT = 255;
+max_2D_DCT = -255;
+min_Q1 = 255;
+min_Q2 = 255;
+max_Q1 = -255;
+max_Q2 = -255;
+max_IDCT = -255;
+min_IDCT = 255;
  for image_number = 3:3 %%%%%%%%%% "Change this number" to test many different images.
 
     %---------------------------- Get the Image data Input ----------------------------------
@@ -42,11 +48,11 @@ maxx = -255;
     m = floor(m/8)*8;
     n = floor(n/8)*8;
      
-    %------------------------------------ show input image -----------------------------------
-     subplot(4,4,image_number*2-1);
-     imshow(original);
-     title ( sprintf('Original image #%d \n size : %dx%d',image_number,m,n) );
-    %-----------------------------------------------------------------------------------------    
+%     %------------------------------------ show input image -----------------------------------
+%      subplot(4,4,image_number*2-1);
+%      imshow(original);
+%      title ( sprintf('Original image #%d \n size : %dx%d',image_number,m,n) );
+%     %-----------------------------------------------------------------------------------------    
     
 
 %% ------------------------------------generate input text file -----------------------------------
@@ -145,25 +151,54 @@ Q_pre=[4   11  10  16    24    40     51    61;
                 Block_temp = input_image_512x512((8*i-7):8*i,(8*j-7):8*j);
                     
                 Block_DCT_1D_temp = T1*Block_temp';
+                
+                for aa = 1:8
+                    for bb =1:8
+                        min_1D_DCT = min(min_1D_DCT,Block_DCT_1D_temp(aa,bb));
+                    end
+                end
+                for aa = 1:8
+                    for bb =1:8
+                        max_1D_DCT = max(max_1D_DCT,Block_DCT_1D_temp(aa,bb));
+                    end
+                end
+                
+                
                 Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant(Block_DCT_1D_temp, Result_1D_DCT_quantization_bit, num_int);   % result of 1D DCT for debugging
+                
+                
                 
 %                 Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j) = quantization(8,Block_DCT_1D_temp); 
 
-                Block_DCT_2D_temp = T2*Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j)';            
+                Block_DCT_2D_temp = T2*Block_DCT_1D_quant((8*i-7):8*i,(8*j-7):8*j)';    
+                
+                for aa = 1:8
+                    for bb =1:8
+                        min_2D_DCT = min(min_2D_DCT,Block_DCT_2D_temp(aa,bb));
+                    end
+                end
+                for aa = 1:8
+                    for bb =1:8
+                        max_2D_DCT = max(max_2D_DCT,Block_DCT_2D_temp(aa,bb));
+                    end
+                end
+                
                 Block_DCT_2D_quant((8*i-7):8*i,(8*j-7):8*j) = func_DCTquant_trunc(Block_DCT_2D_temp); % result of 2D DCT for debugging
             
                 Block_DCT = Block_DCT_2D_quant((8*i-7):8*i,(8*j-7):8*j);
-                for aa = 1:8
-                    for bb =1:8
-                        min1 = min(min1,Block_DCT(aa,bb));
-                    end
-                end
-                for aa = 1:8
-                    for bb =1:8
-                        max1 = max(max1,Block_DCT(aa,bb));
-                    end
-                end
+                
                 Block_r = round(Block_DCT.*Q_pre);
+                
+                for aa = 1:8
+                    for bb =1:8
+                        min_Q1 = min(min_Q1,Block_r(aa,bb));
+                    end
+                end
+                for aa = 1:8
+                    for bb =1:8
+                        max_Q1 = max(max_Q1,Block_r(aa,bb));
+                    end
+                end
                 
                 Image_tran((8*i-7):8*i,(8*j-7):8*j) = Block_r;
                 
@@ -307,11 +342,20 @@ Q_pre=[4   11  10  16    24    40     51    61;
                 Block_rq = Q.*Block_temp;
                 for x = 1:8
                     for y = 1:8
-                        maxx = max(maxx,Block_rq(x,y));
-                        minn = min(minn,Block_rq(x,y));
+                        max_Q2 = max(max_Q2,Block_rq(x,y));
+                        min_Q2 = min(min_Q2,Block_rq(x,y));
                     end
                 end
                 Block_IDCT = T2'*Block_rq*T1;
+                
+                for x = 1:8
+                    for y = 1:8
+                        max_IDCT = max(max_IDCT,Block_IDCT(x,y));
+                        min_IDCT = min(min_IDCT,Block_IDCT(x,y));
+                    end
+                end
+                
+                
                 Image_restore((8*i-7):8*i,(8*j-7):8*j) = Block_IDCT;
             end
         end   
@@ -352,14 +396,14 @@ Q_pre=[4   11  10  16    24    40     51    61;
     end
 
     MSE = MSE / (m * n);
-    PSNR(1,image_number) = 10 * log10 ((255^2) / MSE);
+    PSNR(1,image_number) = 10 * log10 ((255^2) / MSE)
     %---------------------------------------------------------------------------
 
 
-    %-------------------------Show the output image -----------------------------------
-     subplot(4,4,image_number*2);
-     imshow(Image_restore./255);
-     title ( sprintf('Restored image #%d \n PSNR : %d',image_number,PSNR(image_number)) );
-    %-----------------------------------------------------------------------------------
+%     %-------------------------Show the output image -----------------------------------
+%      subplot(4,4,image_number*2);
+%      imshow(Image_restore./255);
+%      title ( sprintf('Restored image #%d \n PSNR : %d',image_number,PSNR(image_number)) );
+%     %-----------------------------------------------------------------------------------
  end
  
